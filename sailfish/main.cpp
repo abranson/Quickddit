@@ -98,6 +98,10 @@ int main(int argc, char *argv[])
     view->setSource(SailfishApp::pathTo("qml/main.qml"));
     view->show();
 
+    if (argc == 2) {
+        dbusApp.requestOpenURL(argv[1]);
+    }
+
     return app->exec();
 }
 
