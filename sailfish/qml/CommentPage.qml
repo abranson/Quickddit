@@ -24,6 +24,7 @@ import harbour.quickddit.Core 1.0
 AbstractPage {
     id: commentPage
     title: qsTr("Comments")
+    summary: link.title
     busy: (commentModel.busy && commentListView.count > 0) || commentVoteManager.busy || commentManager.busy || linkVoteManager.busy
 
     property alias link: commentModel.link
