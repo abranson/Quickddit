@@ -202,7 +202,7 @@ AbstractPage {
             var i
             var formats = python.info["_type"] === "playlist" ? python.info["entries"][0]["formats"] : python.info["formats"]
             if (formats === undefined)
-                fail(qsTr("Problem finding stream URL"))
+                formats = [ python.info ]
             for (i = 0; i < formats.length; i++) {
                 format = formats[i]
                 if (~["mp4"].indexOf(format["ext"]) && ~[360,480].indexOf(format["height"])) {
