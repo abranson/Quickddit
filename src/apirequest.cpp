@@ -36,7 +36,7 @@ static const QByteArray USER_AGENT = QByteArray("Quickddit/") + APP_VERSION + " 
 
 #define REDDIT_NORMAL_DOMAIN "https://www.reddit.com"
 #define REDDIT_OAUTH_DOMAIN "https://oauth.reddit.com"
-#define REDDIT_ACCESS_TOKEN_URL "https://ssl.reddit.com/api/v1/access_token"
+#define REDDIT_ACCESS_TOKEN_URL "https://www.reddit.com/api/v1/access_token"
 
 APIRequest::APIRequest(Type type, QNetworkAccessManager *netManager, QObject *parent) :
     QObject(parent), m_type(type), m_netManager(netManager), m_reply(0)
