@@ -29,9 +29,9 @@ DbusApp::DbusApp(QObject *parent) :
     new ViewAdaptor(this);
 
     QDBusConnection c = QDBusConnection::sessionBus();
-    bool ret = c.registerService("org.quickddit");
+    bool ret = c.registerService("nl.outrightsolutions.Quickddit");
     Q_ASSERT(ret);
-    ret = c.registerObject("/", this);
+    ret = c.registerObject("/nl/outrightsolutions/Quickddit", this);
     Q_ASSERT(ret);
     Q_UNUSED(ret);
 }
