@@ -412,73 +412,78 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>CommentPage</name>
     <message>
-        <location filename="../qml/CommentPage.qml" line="26"/>
+        <location filename="../qml/CommentPage.qml" line="27"/>
         <source>Comments</source>
         <translation>Commentaires</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Best</source>
         <translation>Meilleur</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Top</source>
         <translation>Top</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>New</source>
         <translation>Nouveau</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Hot</source>
         <translation>Populaire</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Controversial</source>
         <translation>Controversé</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Old</source>
         <translation>Ancien</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="57"/>
+        <location filename="../qml/CommentPage.qml" line="64"/>
         <source>Edit Post</source>
         <translation>Modifier le post</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="71"/>
-        <location filename="../qml/CommentPage.qml" line="72"/>
+        <location filename="../qml/CommentPage.qml" line="78"/>
+        <location filename="../qml/CommentPage.qml" line="79"/>
         <source>Sort</source>
         <translation>Trier</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="83"/>
+        <location filename="../qml/CommentPage.qml" line="90"/>
         <source>Add comment</source>
         <translation>Ajouter un commentaire</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="93"/>
+        <location filename="../qml/CommentPage.qml" line="99"/>
+        <source>Share</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/CommentPage.qml" line="108"/>
         <source>Refresh</source>
         <translation>Rafraîchir</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="226"/>
+        <location filename="../qml/CommentPage.qml" line="241"/>
         <source>Viewing a single comment&apos;s thread</source>
         <translation>Visualisation d&apos;un seul commentaire de la discussion</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="231"/>
+        <location filename="../qml/CommentPage.qml" line="246"/>
         <source>View All Comments</source>
         <translation>Voir tous les commentaires</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="263"/>
+        <location filename="../qml/CommentPage.qml" line="278"/>
         <source>Deleting comment</source>
         <translation>Suppression du commentaire</translation>
     </message>
@@ -509,32 +514,37 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>ImageViewPage</name>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="26"/>
+        <location filename="../qml/ImageViewPage.qml" line="27"/>
         <source>Image</source>
         <translation>Image</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="53"/>
+        <location filename="../qml/ImageViewPage.qml" line="59"/>
         <source>Save Image</source>
         <translation>Enregistrer l&apos;image</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="58"/>
+        <location filename="../qml/ImageViewPage.qml" line="64"/>
+        <source>Share Image</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/ImageViewPage.qml" line="75"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="112"/>
+        <location filename="../qml/ImageViewPage.qml" line="129"/>
         <source>Error loading image</source>
         <translation>Erreur lors du chargement de l&apos;image</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="214"/>
+        <location filename="../qml/ImageViewPage.qml" line="231"/>
         <source>Image saved to gallery</source>
         <translation>Image enregistrée dans la galerie</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="215"/>
+        <location filename="../qml/ImageViewPage.qml" line="232"/>
         <source>Image save failed!</source>
         <translation>Échec lors de l&apos;enregistrement de l&apos;image !</translation>
     </message>
@@ -1741,7 +1751,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Erreur lors du chargement de la vidéo</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="205"/>
         <location filename="../qml/VideoViewPage.qml" line="278"/>
         <source>Problem finding stream URL</source>
         <translation>Problème pour trouver l&apos;URL de flux</translation>
@@ -1788,43 +1797,43 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="318"/>
+        <location filename="../qml/main.qml" line="320"/>
         <source>Unsupported reddit url</source>
         <translation>URL Reddit non supportée</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="371"/>
+        <location filename="../qml/main.qml" line="373"/>
         <source>Unsupported image url</source>
         <translation>URL Image non supportée</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="380"/>
+        <location filename="../qml/main.qml" line="382"/>
         <source>Unsupported video url</source>
         <translation>URL Vidéo non supportée</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="460"/>
+        <location filename="../qml/main.qml" line="462"/>
         <source>Please log in again</source>
         <translation>Merci de vous connecter à nouveau</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="490"/>
+        <location filename="../qml/main.qml" line="492"/>
         <source> and %1 other</source>
         <translation>et %1 autres</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="499"/>
-        <location filename="../qml/main.qml" line="500"/>
+        <location filename="../qml/main.qml" line="501"/>
+        <location filename="../qml/main.qml" line="502"/>
         <source>Message from %1</source>
         <translation>Message de %1</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="510"/>
+        <location filename="../qml/main.qml" line="512"/>
         <source>New message from %1</source>
         <translation>Nouveau message de %1</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/main.qml" line="511"/>
+        <location filename="../qml/main.qml" line="513"/>
         <source>%n new messages</source>
         <comment>0</comment>
         <translation>
