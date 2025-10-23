@@ -20,6 +20,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import harbour.quickddit.Core 1.0
+import Sailfish.Share 1.0
 
 AbstractPage {
     id: commentPage
@@ -50,6 +51,11 @@ AbstractPage {
         id: commentListView
         anchors.fill: parent
         model: undefined
+
+        ShareAction {
+            id: sharer
+            mimeType: "text/x-url"
+        }
 
         PullDownMenu {
             MenuItem {
@@ -86,6 +92,15 @@ AbstractPage {
                     commentModel.showNewComment();
                     commentListView.currentIndex = 0;
                     commentListView.positionViewAtIndex(0, ListView.Beginning);
+                }
+            }
+
+            MenuItem {
+                text: qsTr("Share")
+                onClicked: {
+                    sharer.title = link.title
+                    sharer.resources = [{ "type": "text/x-url", "linkTitle": link.title, "status": link.url.toString() }]
+                    sharer.trigger()
                 }
             }
 

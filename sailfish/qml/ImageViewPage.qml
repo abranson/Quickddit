@@ -20,6 +20,7 @@
 import QtQuick 2.0
 import Sailfish.Silica 1.0
 import harbour.quickddit.Core 1.0
+import Sailfish.Share 1.0
 
 AbstractPage {
     id: imageViewPage
@@ -48,11 +49,28 @@ AbstractPage {
             resizeTimer.start()
         }
 
+        ShareAction {
+            id: sharer
+            mimeType: "text/x-url"
+        }
+
         PullDownMenu {
             MenuItem {
                 text: qsTr("Save Image")
                 enabled: imageUrl.toString() !== ""
                 onClicked: QMLUtils.saveImage(imageUrl.toString());
+            }
+            MenuItem {
+                text: qsTr("Share Image")
+                enabled: viewer.status == Image.Ready
+                onClicked: {
+                    var url;
+                    if (imgurUrl.toString() !== "") { url = imgurUrl.toString(); console.log("Imgur "+url); }
+                    else if (galleryUrl.toString() !== "") { url = galleryUrl.toString(); console.log("Gallery "+url); }
+                    else if (imageUrl.toString() !== "") { url = imageUrl.toString(); console.log("Image "+url); }
+                    sharer.resources = [{ "type": "text/x-url", "linkTitle": "Image from Reddit", "status": url.toString() }]
+                    sharer.trigger()
+                }
             }
             MenuItem {
                 text: qsTr("URL")
