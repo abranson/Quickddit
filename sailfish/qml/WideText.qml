@@ -16,7 +16,7 @@
     along with this program.  If not, see [http://www.gnu.org/licenses/].
 */
 
-import QtQuick 2.0
+import QtQuick 2.6
 import Sailfish.Silica 1.0
 
 Item {
@@ -27,11 +27,39 @@ Item {
 
     signal clicked
 
-    height: commentLoader.height
+    height: childrenRect.height
+    Column {
+        spacing: 2
+        id: imageCol
+        Loader {
+            id: commentLoader
+            sourceComponent: normalCommentComponent
+        }
+    }
 
-    Loader {
-        id: commentLoader
-        sourceComponent: normalCommentComponent
+    function updateImages() {
+        var regex = /<img\ssrc="(https?:\/\/external-preview\.redd\.it\/([^\.]*\.gif)[^"]*)"[^>]*width="([0-9]*)"[^>]*>/gi
+        var match;
+        while ((match = regex.exec(body)) !== null) {
+            console.log("Found gif: "+match[2]);
+            var newImage = Qt.createQmlObject('import QtQuick 2.6; AnimatedImage { source: "'
+                 + match[1] + '"; width: ' + match[3] + '; fillMode: Image.PreserveAspectFit; }', imageCol)
+        }
+        body = body.replace(regex, "");
+        regex = /href="(https?:\/\/preview\.redd\.it\/([^\.]*)[^"]*width=[^"]*)"/gi
+        while ((match = regex.exec(body)) !== null) {
+            console.log("Found preview image: "+match[2]);
+            var re = new RegExp(">https:\/\/preview.redd.it\/" + match[2] + "[^<]*<", "i");
+            body = body.replace(re, ">[Full Image]<");
+            var newImage = Qt.createQmlObject('import QtQuick 2.6; Image { source: "'
+                 + match[1].replace(/&amp;/g, "&") + '"; width: ' + match[3] + '; fillMode: Image.PreserveAspectFit; }', imageCol)
+
+        }
+        
+    }
+
+    Component.onCompleted: {
+        updateImages()
     }
 
     Component {
