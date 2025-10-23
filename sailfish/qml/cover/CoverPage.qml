@@ -41,7 +41,13 @@ CoverBackground {
     }
 
     CoverPlaceholder {
-        text: pageStack.currentPage.title || ""
+        text: truncate(pageStack.currentPage.summary || pageStack.currentPage.title || "", 50)
+        function truncate(text, maxLength) {
+            if (text.length > maxLength) {
+                return text.substring(0, maxLength) + "..."; // Append ellipsis if truncated
+            } else {
+                return text;
+            }
+        }
     }
-
 }

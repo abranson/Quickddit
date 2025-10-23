@@ -26,4 +26,5 @@ Page {
 
     property bool busy: false
     property string title: ""
+    property string summary: ""
 }
