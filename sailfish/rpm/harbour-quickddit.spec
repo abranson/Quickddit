@@ -6,11 +6,11 @@
 
 Name:       harbour-quickddit
 Summary:    Reddit client for mobile phones
-Version:    1.11.1
+Version:    1.13
 Release:    1
 Group:      Qt/Qt
 License:    GPLv3+
-URL:        https://github.com/accumulator/Quickddit
+URL:        https://github.com/abranson/Quickddit
 Source0:    %{name}-%{version}.tar.bz2
 Requires:   sailfishsilica-qt5
 Requires:   mapplauncherd-booster-silica-qt5

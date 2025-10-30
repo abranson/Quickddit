@@ -108,7 +108,8 @@ AbstractPage {
                     font.pixelSize: constant.fontSizeSmall
                     color: constant.colorLight
                     wrapMode: Text.Wrap
-                    text: "Copyright (c) 2015-2020 Sander van Grieken\n" +
+                    text: "Copyright (c) 2025 Andrew Branson\n" +
+                          "Copyright (c) 2015-2020 Sander van Grieken\n" +
                           "Copyright (c) 2013-2014 Dickson Leong\n\n" +
                           qsTr("App icon by Andrew Zhilin") + "\n\n" +
                           //: _translator is used as a placeholder for the name of the translator (you :)
@@ -138,11 +139,6 @@ AbstractPage {
                     Button {
                         text: qsTr("Translations")
                         onClicked: globalUtils.createOpenLinkDialog(QMLUtils.TRANSLATIONS_URL);
-                    }
-
-                    Button {
-                        text: qsTr("Donate!")
-                        onClicked: pageStack.push(Qt.resolvedUrl("DonatePage.qml"));
                     }
                 }
             }

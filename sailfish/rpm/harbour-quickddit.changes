@@ -4,6 +4,17 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Thu Oct 30 2025 Andrew Branson <github@andrewbranson.net> 1.13-1
+- fix: access token URL
+- fix: opening notifications
+- fix: some thumbnail URLs were escaped
+- fix: improve video stream detection
+- new: Comments cover page now shows post title
+- new: Inline images in comments
+- new: Filter subreddit list when typing subreddit name
+- chg: update youtube-dl
+- chg: ownership URLs to me as was abandoned
+- chg: translations & translation host
 
 * Mon Mar 06 2023 Sander van Grieken <sander@outrightsolutions.nl> 1.11.1-1
 - fix: remember settings (thanks DeathByDenim)

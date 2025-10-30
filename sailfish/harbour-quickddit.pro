@@ -104,8 +104,7 @@ OTHER_FILES += \
     qml/WebViewer.qml \
     qml/SectionSelectionDialog.qml \
     qml/ModeratorListPage.qml \
-    qml/AccountsPage.qml \
-    qml/DonatePage.qml
+    qml/AccountsPage.qml
 
 # Translations
 CONFIG += sailfishapp_i18n
