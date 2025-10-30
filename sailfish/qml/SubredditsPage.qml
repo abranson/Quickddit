@@ -27,7 +27,30 @@ AbstractPage {
 
     readonly property string title: qsTr("Subreddits")
 
+    property string filterText: ""
+    onFilterTextChanged: loadSubredditsTimer.restart()
+
     property string _unsubsub
+
+    Timer {
+        id: loadSubredditsTimer
+        interval: 0
+        repeat: false
+        onTriggered:{
+            checkNeedsMoreSubreddits();
+        } 
+    }
+
+    Connections {
+        target: subredditModel
+        onBusyChanged: if (!subredditModel.busy) checkNeedsMoreSubreddits();
+    }
+
+    function checkNeedsMoreSubreddits() {
+        if ( (subredditListView.contentHeight <= subredditListView.height || subredditListView.atYEnd) 
+            && quickdditManager.isSignedIn && !!subredditModel && !subredditModel.busy && subredditModel.canLoadMore )
+            subredditModel.refresh(true);
+    }
 
     function showSubreddit(subreddit) {
         var mainPage = globalUtils.getMainPage();
@@ -96,6 +119,7 @@ AbstractPage {
 
             TextField {
                 id: subredditTextField
+                onTextChanged: filterText = (text || "").toLowerCase()
                 anchors { left: parent.left; right: parent.right }
                 placeholderText: qsTr("Go to a specific subreddit")
                 labelVisible: false
@@ -147,6 +171,9 @@ AbstractPage {
             onClicked: subredditsPage.showSubreddit(model.displayName);
 
             showMenuOnPressAndHold: true
+            readonly property string normalizedName: (model.displayName || "").toLowerCase()
+            readonly property bool matches: filterText.length === 0 || normalizedName.indexOf(filterText) === 0
+            visible: matches
 
             menu: Component {
                 ContextMenu {
@@ -173,8 +200,7 @@ AbstractPage {
         }
 
         onAtYEndChanged: {
-            if (atYEnd && count > 0 && quickdditManager.isSignedIn && !!subredditModel && !subredditModel.busy && subredditModel.canLoadMore)
-                subredditModel.refresh(true);
+            checkNeedsMoreSubreddits()
         }
 
         add: Transition {

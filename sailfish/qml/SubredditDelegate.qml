@@ -22,7 +22,8 @@ import Sailfish.Silica 1.0
 
 ListItem {
     id: subredditDelegate
-    contentHeight: mainColumn.height + constant.paddingSmall
+    contentHeight: visible ? mainColumn.height + constant.paddingSmall : 0
+    opacity: visible ? 1 : 0
 
     Column {
         id: mainColumn
