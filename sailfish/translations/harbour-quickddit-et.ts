@@ -142,17 +142,17 @@
     <message numerus="yes">
         <location filename="../qml/AboutSubredditPage.qml" line="143"/>
         <source>%n subscribers</source>
-        <translation type="unfinished">
-            <numerusform>%n subscriber</numerusform>
-            <numerusform>%n subscribers</numerusform>
+        <translation>
+            <numerusform>%n tellija</numerusform>
+            <numerusform>%n tellijat</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/AboutSubredditPage.qml" line="144"/>
         <source>%n active users</source>
-        <translation type="unfinished">
-            <numerusform>%n active user</numerusform>
-            <numerusform>%n active users</numerusform>
+        <translation>
+            <numerusform>%n aktiivne kasutaja</numerusform>
+            <numerusform>%n aktiivset kasutajat</numerusform>
         </translation>
     </message>
     <message>
