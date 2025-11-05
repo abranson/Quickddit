@@ -23,42 +23,90 @@ Item {
     id: rootItem
 
     property string body
+    property string displayBody: ""
     property ListItem listItem
+    property var inlineMedia: []
 
     signal clicked
 
     height: childrenRect.height
     Column {
-        spacing: 2
-        id: imageCol
+        spacing: Theme.paddingSmall
+        id: commentCol
         Loader {
             id: commentLoader
             sourceComponent: normalCommentComponent
         }
+        Repeater {
+            model: inlineMedia
+            delegate: Loader {
+                width: commentCol.width
+                property var media: modelData
+                sourceComponent: media.type === "gif" ? gifDelegate : imgDelegate
+                onLoaded: {
+                    item.media = media;
+                    console.log("Loaded "+media.type+" "+media.source+" width:"+media.widthHint);
+                }
+            }
+        }
     }
 
     function updateImages() {
+        var newInlineMedia = []
+        var updatedBody = body || ""
+        // Look for gifs
         var regex = /<[a-z\s]*="(https?:\/\/[^\.]+\.redd\.it\/([^\.]*\.gif)[^"]*)"[^>]*[^>]*>/gi
         var match;
-        while ((match = regex.exec(body)) !== null) {
+        while ((match = regex.exec(updatedBody)) !== null) {
             console.log("Found gif: "+match[2]);
-            var newImage = Qt.createQmlObject('import QtQuick 2.6; AnimatedImage { source: "'
-                 + match[1].replace(/&amp;/g, "&") + '"; fillMode: Image.PreserveAspectFit; }', imageCol)
+            newInlineMedia.push({
+                type: "gif",
+                source: match[1].replace(/&amp;/g, "&")
+            })
         }
+        updatedBody = updatedBody.replace(regex, "");
+        // Look for linked images
         regex = /href="(https?:\/\/preview\.redd\.it\/([^\.]*\.[a-z]{3,4})[^"]*width=([0-9]+)[^"]*)"/gi
-        while ((match = regex.exec(body)) !== null) {
+        while ((match = regex.exec(updatedBody)) !== null) {
             console.log("Found preview image: "+match[2]);
             var re = new RegExp(">https:\/\/preview.redd.it\/" + match[2] + "[^<]*<", "i");
-            body = body.replace(re, ">https://preview.redd.it/"+match[2]+"<");
-            var newImage = Qt.createQmlObject('import QtQuick 2.6; Image { source: "'
-                 + match[1].replace(/&amp;/g, "&") + '"; width: Math.min('+imageCol.width+', ' + match[3] + '); fillMode: Image.PreserveAspectFit; }', imageCol)
-            //console.log("Width: "+imageCol.width+", "+match[3]);
+            updatedBody = updatedBody.replace(re, ">https://preview.redd.it/"+match[2]+"<");
+            newInlineMedia.push({
+                type: "image",
+                source: match[1].replace(/&amp;/g, "&"),
+                widthHint: parseInt(match[3], 10)
+            })
         }
         
+        inlineMedia = newInlineMedia
+        if (displayBody !== updatedBody)
+            displayBody = updatedBody
     }
 
     Component.onCompleted: {
         updateImages()
+    }
+
+    onBodyChanged: updateImages()
+
+    Component {
+        id: gifDelegate
+        AnimatedImage {
+            property var media
+            width: commentCol.width
+            source: media ? media.source : ""
+            fillMode: Image.PreserveAspectFit
+        }
+    }
+
+    Component {
+        id: imgDelegate
+        Image {
+            property var media
+            width: media && media.widthHint ? Math.min(commentCol.width, media.widthHint) : commentCol.width
+            source: media ? media.source : ""
+            fillMode: Image.PreserveAspectFit
+        }
     }
 
     Component {
@@ -69,7 +117,10 @@ Item {
             // viewhack to render richtext wide again after orientation goes horizontal (?)
             property bool oriChanged: false
             onWidthChanged: {
-                if (oriChanged) text = text + " ";
+                if (oriChanged) {
+                    text = text + " ";
+                    updateImages();
+                }
             }
             Connections {
                 target: appWindow
@@ -82,7 +133,7 @@ Item {
                                     : constant.colorDisabled
             wrapMode: Text.Wrap
             textFormat: Text.RichText
-            text: constant.contentStyle(listItem.enabled) + body
+            text: constant.contentStyle(listItem.enabled) + displayBody
             onLinkActivated: globalUtils.openLink(link);
 
             Component.onCompleted: {
@@ -117,7 +168,10 @@ Item {
                 // viewhack to render richtext wide again after orientation goes horizontal (?)
                 property bool oriChanged: false
                 onWidthChanged: {
-                    if (oriChanged) text = text + " ";
+                    if (oriChanged) {
+                        text = text + " ";
+                        updateImages();
+                    }
                 }
                 Connections {
                     target: appWindow
@@ -130,7 +184,7 @@ Item {
                                         : constant.colorDisabled
                 wrapMode: Text.Wrap
                 textFormat: Text.RichText
-                text: constant.contentStyle(listItem.enabled) + body
+                text: constant.contentStyle(listItem.enabled) + displayBody
                 onLinkActivated: globalUtils.openLink(link);
             }
         }
