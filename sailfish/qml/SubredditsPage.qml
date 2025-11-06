@@ -117,21 +117,6 @@ AbstractPage {
 
             QuickdditPageHeader { title: subredditsPage.title }
 
-            TextField {
-                id: subredditTextField
-                onTextChanged: filterText = (text || "").toLowerCase()
-                anchors { left: parent.left; right: parent.right }
-                placeholderText: qsTr("Go to a specific subreddit")
-                labelVisible: false
-                errorHighlight: activeFocus && !acceptableInput
-                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
-                // RegExp based on <https://github.com/reddit/reddit/blob/aae622d/r2/r2/lib/validator/validator.py#L525>
-                validator: RegExpValidator { regExp: /^([A-Za-z0-9][A-Za-z0-9_]{2,20}|[a-z]{2})$/ }
-                EnterKey.enabled: acceptableInput
-                EnterKey.iconSource: "image://theme/icon-m-enter-accept"
-                EnterKey.onClicked: showSubreddit(text);
-            }
-
             Repeater {
                 id: mainOptionRepeater
                 anchors { left: parent.left; right: parent.right }
@@ -151,6 +136,26 @@ AbstractPage {
                         }
                     }
                 }
+            }
+
+            Item {
+                width: 1
+                height: Theme.paddingMedium
+            }
+
+            TextField {
+                id: subredditTextField
+                onTextChanged: filterText = (text || "").toLowerCase()
+                anchors { left: parent.left; right: parent.right }
+                placeholderText: qsTr("Go to a specific subreddit")
+                labelVisible: false
+                errorHighlight: activeFocus && !acceptableInput
+                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
+                // RegExp based on <https://github.com/reddit/reddit/blob/aae622d/r2/r2/lib/validator/validator.py#L525>
+                validator: RegExpValidator { regExp: /^([A-Za-z0-9][A-Za-z0-9_]{2,20}|[a-z]{2})$/ }
+                EnterKey.enabled: acceptableInput
+                EnterKey.iconSource: "image://theme/icon-m-enter-accept"
+                EnterKey.onClicked: showSubreddit(text);
             }
 
             SectionHeader {
