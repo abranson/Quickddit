@@ -31,6 +31,7 @@ Features
 | search posts           | Y | | Y |
 | search subreddits      | Y | Y | Y |
 | inbox notifications    | Y | | Y |
+| share posts            | Y | | Y |
 | watch clipboard for reddit links | Y | | Y |
 | TOR                    | Y | | Y |
 | Post flair             | partial | partial | |
@@ -51,7 +52,7 @@ Optionally you can also define `IMGUR_CLIENT_ID` with your own Imgur API client 
 Download
 --------
 - MeeGo Harmattan (Nokia N9/N950): [OpenRepos](https://openrepos.net/content/accumulator/quickddit)
-- SailfishOS (Jolla): [OpenRepos](https://openrepos.net/content/accumulator/quickddit-0)
+- SailfishOS (Jolla): [OpenRepos](https://openrepos.net/content/abranson/quickddit)
 - Ubuntu-touch: [OpenStore](https://open-store.io/app/quickddit) or build with `clickable -c ubuntu-touch/clickable.json`
 
 Translations

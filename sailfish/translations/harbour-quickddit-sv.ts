@@ -872,6 +872,19 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     </message>
 </context>
 <context>
+    <name>QMLUtils</name>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="188"/>
+        <source>Invalid share URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="202"/>
+        <source>Unable to resolve share URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SearchDialog</name>
     <message>
         <location filename="../qml/SearchDialog.qml" line="25"/>
@@ -1431,52 +1444,52 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <translation>Meddelanden</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="124"/>
+        <location filename="../qml/SubredditsPage.qml" line="150"/>
         <source>Go to a specific subreddit</source>
         <translation>Gå till en specifik underreddit</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Front Page</source>
         <translation>Startsida</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Popular</source>
         <translation>Heta</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
         <translation>Alla</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse for Subreddits...</source>
         <translation>Bläddra efter underredditar...</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Multireddits</source>
         <translation>Multiredditar</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="159"/>
+        <location filename="../qml/SubredditsPage.qml" line="164"/>
         <source>Subscribed Subreddits</source>
         <translation>Prenumererade underredditar</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="181"/>
+        <location filename="../qml/SubredditsPage.qml" line="186"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="187"/>
+        <location filename="../qml/SubredditsPage.qml" line="192"/>
         <source>Unsubscribe</source>
         <translation>Avsluta prenumeration</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="252"/>
+        <location filename="../qml/SubredditsPage.qml" line="257"/>
         <source>You have unsubscribed from %1</source>
         <translation>Du har avslutat prenumerationen på %1</translation>
     </message>
@@ -1771,43 +1784,49 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="320"/>
+        <location filename="../qml/main.qml" line="304"/>
+        <location filename="../qml/main.qml" line="560"/>
+        <source>Unable to resolve reddit share link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/main.qml" line="326"/>
         <source>Unsupported reddit url</source>
         <translation>Reddit-länken stöds inte</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="373"/>
+        <location filename="../qml/main.qml" line="379"/>
         <source>Unsupported image url</source>
         <translation>Bildlänken stöds inte</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="382"/>
+        <location filename="../qml/main.qml" line="388"/>
         <source>Unsupported video url</source>
         <translation>Videolänken stöds inte</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="462"/>
+        <location filename="../qml/main.qml" line="468"/>
         <source>Please log in again</source>
         <translation>Logga in igen</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="492"/>
+        <location filename="../qml/main.qml" line="498"/>
         <source> and %1 other</source>
         <translation> och %1 andra</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="501"/>
-        <location filename="../qml/main.qml" line="502"/>
+        <location filename="../qml/main.qml" line="507"/>
+        <location filename="../qml/main.qml" line="508"/>
         <source>Message from %1</source>
         <translation>Meddelande från %1</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="512"/>
+        <location filename="../qml/main.qml" line="518"/>
         <source>New message from %1</source>
         <translation>Nytt meddelande från %1</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/main.qml" line="513"/>
+        <location filename="../qml/main.qml" line="519"/>
         <source>%n new messages</source>
         <comment>0</comment>
         <translation>

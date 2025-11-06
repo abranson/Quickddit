@@ -872,6 +872,19 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
     </message>
 </context>
 <context>
+    <name>QMLUtils</name>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="188"/>
+        <source>Invalid share URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="202"/>
+        <source>Unable to resolve share URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SearchDialog</name>
     <message>
         <location filename="../qml/SearchDialog.qml" line="25"/>
@@ -1431,52 +1444,52 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
         <translation>Berichten</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="124"/>
+        <location filename="../qml/SubredditsPage.qml" line="150"/>
         <source>Go to a specific subreddit</source>
         <translation>Ga naar ne specifieke subreddit</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Front Page</source>
         <translation>Voorpagina</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Popular</source>
         <translation>Populair</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
         <translation>Alles</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse for Subreddits...</source>
         <translation>Bladeren door subreddits...</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="138"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Multireddits</source>
         <translation>Multireddits</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="159"/>
+        <location filename="../qml/SubredditsPage.qml" line="164"/>
         <source>Subscribed Subreddits</source>
         <translation>Geabonneerde subreddits</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="181"/>
+        <location filename="../qml/SubredditsPage.qml" line="186"/>
         <source>About</source>
         <translation>Over</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="187"/>
+        <location filename="../qml/SubredditsPage.qml" line="192"/>
         <source>Unsubscribe</source>
         <translation>Uitschrijven</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="252"/>
+        <location filename="../qml/SubredditsPage.qml" line="257"/>
         <source>You have unsubscribed from %1</source>
         <translation>Ge zijt nie meer geabonneerd op %1</translation>
     </message>
@@ -1771,43 +1784,49 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="320"/>
+        <location filename="../qml/main.qml" line="304"/>
+        <location filename="../qml/main.qml" line="560"/>
+        <source>Unable to resolve reddit share link</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/main.qml" line="326"/>
         <source>Unsupported reddit url</source>
         <translation>Reddit-URL nie ondersteund</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="373"/>
+        <location filename="../qml/main.qml" line="379"/>
         <source>Unsupported image url</source>
         <translation>Afbeeldings-URL nie ondersteund</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="382"/>
+        <location filename="../qml/main.qml" line="388"/>
         <source>Unsupported video url</source>
         <translation>Video-URL nie ondersteund</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="462"/>
+        <location filename="../qml/main.qml" line="468"/>
         <source>Please log in again</source>
         <translation>Logt terug in</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="492"/>
+        <location filename="../qml/main.qml" line="498"/>
         <source> and %1 other</source>
         <translation>en %1 andere</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="501"/>
-        <location filename="../qml/main.qml" line="502"/>
+        <location filename="../qml/main.qml" line="507"/>
+        <location filename="../qml/main.qml" line="508"/>
         <source>Message from %1</source>
         <translation>Bericht van %1</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="512"/>
+        <location filename="../qml/main.qml" line="518"/>
         <source>New message from %1</source>
         <translation>Nieuw bericht van %1</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/main.qml" line="513"/>
+        <location filename="../qml/main.qml" line="519"/>
         <source>%n new messages</source>
         <comment>0</comment>
         <translation>
