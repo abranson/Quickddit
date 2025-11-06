@@ -48,19 +48,18 @@ id and secret](https://github.com/reddit/reddit/wiki/OAuth2) and fill it up in
 
 Optionally you can also define `IMGUR_CLIENT_ID` with your own Imgur API client id.
 
-TODO
------
-
-- (Local) browse history
-- bookmark users, locally or using reddit 'friend' feature.
-- Add more filtering options, e.g. by flair
-- Reddit Live and/or a method of 'live' following a post
-
 Download
 --------
 - MeeGo Harmattan (Nokia N9/N950): [OpenRepos](https://openrepos.net/content/accumulator/quickddit)
 - SailfishOS (Jolla): [OpenRepos](https://openrepos.net/content/accumulator/quickddit-0)
 - Ubuntu-touch: [OpenStore](https://open-store.io/app/quickddit) or build with `clickable -c ubuntu-touch/clickable.json`
+
+Translations
+------------
+
+You can help translation Quickddit into different languages here:
+
+https://hosted.weblate.org/projects/Quickddit/
 
 License
 -------
@@ -69,6 +68,7 @@ All files in this project are licensed under the GNU GPLv3+, unless otherwise st
     Quickddit - Reddit client for mobile phones
     Copyright (C) 2013-2014  Dickson Leong
     Copyright (C) 2015-2020  Sander van Grieken
+    Copyright (C) 2025       Andrew Branson
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

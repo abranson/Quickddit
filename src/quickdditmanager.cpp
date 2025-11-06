@@ -43,8 +43,8 @@
 #define REDDIT_OAUTH_SCOPE "read,mysubreddits,subscribe,vote,submit,edit,identity,privatemessages,history,save,flair,report,wikiread"
 
 QuickdditManager::QuickdditManager(QObject *parent) :
-    QObject(parent), m_netManager(new QNetworkAccessManager(this)), m_settings(0), m_signedIn(false),
-    m_accessTokenRequest(0), m_pendingRequest(0), m_userInfoReply(0)
+    QObject(parent), m_netManager(new QNetworkAccessManager(this)), m_settings(0), m_busy(false),
+    m_signedIn(false), m_accessTokenRequest(0), m_pendingRequest(0), m_userInfoReply(0)
 {
 }
 

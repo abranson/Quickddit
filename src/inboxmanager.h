@@ -60,7 +60,7 @@ private slots:
 private:
     bool m_hasUnread;
     bool m_enabled;
-    QTimer* m_pollTimer;
+    QTimer m_pollTimer;
 
     void setHasUnread(bool hasUnread);
 

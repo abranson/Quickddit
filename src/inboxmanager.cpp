@@ -33,13 +33,11 @@
  * 2. notifications. emit event on *new* unread message.
  */
 InboxManager::InboxManager(QObject *parent) :
-    AbstractManager(parent), m_enabled(true)
+    AbstractManager(parent), m_hasUnread(false), m_enabled(false), m_pollTimer(this)
 {
-    m_pollTimer = new QTimer(this);
-    m_pollTimer->setInterval(TIMER_INI_INTERVAL);
-    m_pollTimer->setSingleShot(false);
-    connect(m_pollTimer, SIGNAL(timeout()), this, SLOT(pollTimeout()));
-    m_pollTimer->start();
+    m_pollTimer.setInterval(TIMER_INI_INTERVAL);
+    m_pollTimer.setSingleShot(false);
+    connect(&m_pollTimer, SIGNAL(timeout()), this, SLOT(pollTimeout()));
 }
 
 bool InboxManager::hasUnread()
@@ -62,36 +60,45 @@ bool InboxManager::enabled()
 
 void InboxManager::setEnabled(bool enabled)
 {
-    if (enabled != m_enabled) {
-        m_enabled = enabled;
-        emit enabledChanged(enabled);
-        if (enabled)
-            resetTimer();
+    if (enabled == m_enabled) return;
+
+    m_enabled = enabled;
+    emit enabledChanged(enabled);
+
+    if (enabled) {
+        resetTimer();
+        if (!m_pollTimer.isActive())
+            m_pollTimer.start();
+        if (manager() && manager()->isSignedIn())
+            request();
+    } else {
+        qDebug() << "Stopping inbox timer";
+        m_pollTimer.stop();
+        setHasUnread(false);
     }
 }
 
 void InboxManager::pollTimeout()
 {
-    int interval = m_pollTimer->interval();
+    int interval = m_pollTimer.interval();
     // exponential back-off to max interval
     interval = qMin(interval * 3, TIMER_MAX_INTERVAL);
     // interval lower bound
     interval = qMax(interval, TIMER_MIN_INTERVAL);
 
-    m_pollTimer->setInterval(interval);
+    m_pollTimer.setInterval(interval);
 
     if (m_enabled)
         request();
 }
 
 void InboxManager::resetTimer(){
-    qDebug();
-    m_pollTimer->setInterval(TIMER_INI_INTERVAL);
+    m_pollTimer.setInterval(TIMER_INI_INTERVAL);
 }
 
 void InboxManager::request()
 {
-    if (!manager()->isSignedIn())
+    if (manager() == 0 || !manager()->isSignedIn())
         return;
 
     QHash<QString, QString> parameters;
@@ -145,6 +152,7 @@ void InboxManager::onInboxReceived(QNetworkReply *reply)
 
 void InboxManager::filterInbox(Listing<MessageObject> messages)
 {
+    if (manager() == 0) return;
     QString lastSeenMessage = manager()->settings()->lastSeenMessage();
 
     QVariantList unreadMessages;
