@@ -21,6 +21,7 @@
 #define QMLUTILS_H
 
 #include <QtCore/QObject>
+#include <QUrl>
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QFile>
@@ -67,6 +68,13 @@ public:
     Q_INVOKABLE QString getRedditShortUrl(const QString &fullname);
 
     /**
+     * Follow all redirects on a reddit share URL to find where it really points to.
+     * Used for /s/ URLs.
+     * @param url the URL to resolve
+     */
+    Q_INVOKABLE bool resolveRedditShareUrl(const QString &url);
+
+    /**
      * Get a absolute Reddit url from a relative url
      * Return the same string if the url is already an absolute url
      * Return empty string if not able to absolute the url
@@ -82,11 +90,14 @@ public:
 private slots:
     void onSaveImageFinished();
     void onClipboardChanged();
+    void onResolveShareUrlFinished();
 
 signals:
     void saveImageSucceeded(const QString &name);
     void saveImageFailed(const QString &name);
     void clipboardChanged();
+    void redditShareUrlResolved(const QString &resolvedUrl);
+    void redditShareUrlFailed(const QString &errorString);
 
 private:
     QNetworkAccessManager m_manager;

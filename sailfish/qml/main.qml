@@ -299,6 +299,12 @@ ApplicationWindow {
                     return;
                 }
 
+                if (path[3] === "s" ) { // Share link
+                    if (!QMLUtils.resolveRedditShareUrl(url))
+                        infoBanner.alert(qsTr("Unable to resolve reddit share link"));
+                    return;
+                }
+
                 if (path[3] !== undefined && path[3] !== "")
                     params["section"] = path[3];
                 pushOrReplace(Qt.resolvedUrl("MainPage.qml"), params);
@@ -546,6 +552,12 @@ ApplicationWindow {
             console.log("clip changed");
             if (globalUtils.redditLink(QMLUtils.clipboardText))
                 clipboardNotifier.show()
+        }
+        onRedditShareUrlResolved: {
+                globalUtils.openRedditLink(resolvedUrl);
+        }
+        onRedditShareUrlFailed: {
+                infoBanner.alert(qsTr("Unable to resolve reddit share link"));
         }
     }
 

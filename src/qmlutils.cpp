@@ -22,6 +22,8 @@
 #include <QtCore/QUrl>
 #include <QtGui/QClipboard>
 #include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QVariant>
 #include <QScreen>
 #include <QDir>
 #include <QDebug>
@@ -177,6 +179,44 @@ void QMLUtils::onSaveImageFinished()
     }
     m_reply->deleteLater();
     m_reply = 0;
+}
+
+bool QMLUtils::resolveRedditShareUrl(const QString &url)
+{
+    QUrl requestUrl(url);
+    if (!requestUrl.isValid()) {
+        emit redditShareUrlFailed(tr("Invalid share URL"));
+        return false;
+    }
+
+    qDebug() << "Resolving share URL: " << url;
+
+    QNetworkRequest request(requestUrl);
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0))
+    // TODO: this will need to be done manually on Harmattan
+    request.setAttribute(QNetworkRequest::FollowRedirectsAttribute, true);
+#endif
+
+    QNetworkReply *reply = m_manager.get(request);
+    if (!reply) {
+        emit redditShareUrlFailed(tr("Unable to resolve share URL"));
+        return false;
+    }
+
+    connect(reply, SIGNAL(finished()), this, SLOT(onResolveShareUrlFinished()));
+    return true;
+}
+
+void QMLUtils::onResolveShareUrlFinished()
+{
+    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
+
+    if (reply->error() == QNetworkReply::NoError)
+        emit redditShareUrlResolved(reply->url().toString());
+    else
+        emit redditShareUrlFailed(reply->errorString());
+
+    reply->deleteLater();
 }
 
 void QMLUtils::publishNotification(const QString &summary, const QString &body,
