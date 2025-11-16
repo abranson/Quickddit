@@ -144,14 +144,12 @@
         <source>%n subscribers</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/AboutSubredditPage.qml" line="144"/>
         <source>%n active users</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -258,6 +256,21 @@
         <source>No known accounts yet.
 
 To add accounts, simply log in. Quickddit will remember succesful logins and list the accounts here</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/AccountsPage.qml" line="40"/>
+        <source>You have signed out from Reddit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/AccountsPage.qml" line="36"/>
+        <source>Sign in to Reddit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/AccountsPage.qml" line="36"/>
+        <source>Sign out</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -378,6 +391,11 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>Accounts</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="16"/>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>CommentDelegate</name>
@@ -401,14 +419,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>%n pts</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/CommentDelegate.qml" line="360"/>
         <source>Load %n hidden comments</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -421,7 +437,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/CommentDelegate.qml" line="395"/>
         <source>Show %n collapsed comments</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -580,6 +595,11 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>Deleting comment</source>
         <translation>Hozzászólás törlése</translation>
     </message>
+    <message>
+        <location filename="../qml/CommentPage.qml" line="99"/>
+        <source>Share</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>DonatePage</name>
@@ -615,6 +635,11 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/ImageViewPage.qml" line="215"/>
         <source>Image save failed!</source>
         <translation>Kép mentése sikertelen!</translation>
+    </message>
+    <message>
+        <location filename="../qml/ImageViewPage.qml" line="64"/>
+        <source>Share Image</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -945,7 +970,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>%n crossposts</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -953,14 +977,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>%n points</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/PostInfoText.qml" line="155"/>
         <source>%n comments</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -1271,7 +1293,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/SubredditBrowseDelegate.qml" line="82"/>
         <source>%n subscribers</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -1641,14 +1662,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>%n mins ago</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../../src/utils.cpp" line="48"/>
         <source>%n hours ago</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -1657,7 +1676,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>%n days ago</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1665,14 +1683,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>%n months ago</source>
         <translation type="unfinished">
             <numerusform></numerusform>
-            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../../src/utils.cpp" line="61"/>
         <source>%n years ago</source>
         <translation type="unfinished">
-            <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
     </message>
@@ -1783,8 +1799,26 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <comment>0</comment>
         <translation>
             <numerusform>%n új üzenet</numerusform>
-            <numerusform>%n új üzenet</numerusform>
         </translation>
+    </message>
+    <message>
+        <location filename="../qml/main.qml" line="304"/>
+        <location filename="../qml/main.qml" line="560"/>
+        <source>Unable to resolve reddit share link</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QMLUtils</name>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="188"/>
+        <source>Invalid share URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="202"/>
+        <source>Unable to resolve share URL</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>
