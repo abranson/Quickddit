@@ -1813,5 +1813,24 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
             <numerusform>%n new messages</numerusform>
         </translation>
     </message>
+    <message>
+        <location filename="../qml/main.qml" line="304"/>
+        <location filename="../qml/main.qml" line="560"/>
+        <source>Unable to resolve reddit share link</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QMLUtils</name>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="188"/>
+        <source>Invalid share URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="202"/>
+        <source>Unable to resolve share URL</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>
