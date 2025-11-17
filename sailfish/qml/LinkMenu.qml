@@ -60,7 +60,7 @@ FancyContextMenu {
                 } else if (globalUtils.redditLink(link.url)) {
                     globalUtils.openRedditLink(link.url);
                 } else {
-                    pageStack.push(globalUtils.getWebViewPage(), {url: link.url});
+                    pageStack.push(Qt.resolvedUrl("WebViewer.qml"), {url: link.url});
                 }
             }
         }

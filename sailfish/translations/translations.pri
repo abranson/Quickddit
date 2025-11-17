@@ -9,7 +9,10 @@ TRANSLATIONS = translations/harbour-quickddit-en_GB.ts \
     translations/harbour-quickddit-fr.ts \
     translations/harbour-quickddit-it.ts \
     translations/harbour-quickddit-pl.ts \
-    translations/harbour-quickddit-pt_BR.ts
+    translations/harbour-quickddit-pt_BR.ts \
+    translations/harbour-quickddit-hu.ts \
+    translations/harbour-quickddit-et.ts \
+    translations/harbour-quickddit-cs.ts \
 
 
 updateqm.input = TRANSLATIONS

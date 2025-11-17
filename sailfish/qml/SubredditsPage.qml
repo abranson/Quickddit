@@ -25,7 +25,7 @@ AbstractPage {
     id: subredditsPage
     objectName: "subredditsPage"
 
-    readonly property string title: qsTr("Subreddits")
+    readonly property string title: qsTr("Quickddit")
 
     property string filterText: ""
     onFilterTextChanged: loadSubredditsTimer.restart()
@@ -52,26 +52,16 @@ AbstractPage {
             subredditModel.refresh(true);
     }
 
-    function showSubreddit(subreddit) {
-        var mainPage = globalUtils.getMainPage();
-        mainPage.refresh(subreddit);
-        pageStack.navigateBack();
-    }
-
-    function replacePage(newpage, parms) {
-        var mainPage = globalUtils.getMainPage();
-        mainPage.__pushedAttached = false;
-        pageStack.replaceAbove(mainPage, newpage, parms);
-    }
-
-    function getMultiredditModel() {
-        return multiredditModel
+    function showSubreddit(viewSub) {
+        pageStack.push(Qt.resolvedUrl("MainPage.qml"), { subreddit: viewSub } );
     }
 
     onStatusChanged: {
         if (status === PageStatus.Activating) {
-            if (subredditModel.rowCount() === 0 && quickdditManager.isSignedIn)
-                subredditModel.refresh(false)
+            if (quickdditManager.isSignedIn) {
+                if (subredditModel.rowCount() === 0) subredditModel.refresh(false)
+                if (multiredditModel.rowCount() === 0) multiredditModel.refresh(false)
+            }
         } else if (status === PageStatus.Inactive) {
             subredditListView.headerItem.resetTextField();
             subredditListView.positionViewAtBeginning();
@@ -86,24 +76,24 @@ AbstractPage {
         PullDownMenu {
             MenuItem {
                 text: qsTr("About Quickddit")
-                onClicked: replacePage(Qt.resolvedUrl("AboutPage.qml"))
+                onClicked: pageStack.push(Qt.resolvedUrl("AboutPage.qml"))
             }
 
             MenuItem {
                 text: qsTr("Settings")
-                onClicked: replacePage(Qt.resolvedUrl("SettingsPage.qml"))
+                onClicked: pageStack.push(Qt.resolvedUrl("SettingsPage.qml"))
             }
 
             MenuItem {
                 enabled: quickdditManager.isSignedIn
                 text: qsTr("My Profile")
-                onClicked: replacePage(Qt.resolvedUrl("UserPage.qml"), {username: settings.redditUsername});
+                onClicked: pageStack.push(Qt.resolvedUrl("UserPage.qml"), {username: settings.redditUsername});
             }
 
             MenuItem {
                 enabled: quickdditManager.isSignedIn
                 text: qsTr("Messages")
-                onClicked: replacePage(Qt.resolvedUrl("MessagePage.qml"));
+                onClicked: pageStack.push(Qt.resolvedUrl("MessagePage.qml"));
             }
         }
 
@@ -131,8 +121,8 @@ AbstractPage {
                         case 0: subredditsPage.showSubreddit(""); break;
                         case 1: subredditsPage.showSubreddit("popular"); break;
                         case 2: subredditsPage.showSubreddit("all"); break;
-                        case 3: replacePage(Qt.resolvedUrl("SubredditsBrowsePage.qml")); break;
-                        case 4: replacePage(Qt.resolvedUrl("MultiredditsPage.qml"), { _model: multiredditModel }); break;
+                        case 3: pageStack.push(Qt.resolvedUrl("SubredditsBrowsePage.qml")); break;
+                        case 4: pageStack.push(Qt.resolvedUrl("MultiredditsPage.qml"), { _model: multiredditModel }); break;
                         }
                     }
                 }
@@ -237,9 +227,8 @@ AbstractPage {
         target: quickdditManager
         onSignedInChanged: {
             if (quickdditManager.isSignedIn) {
-                // only load the list if there is an existing list (otherwise wait for page to activate, see above)
-                if (subredditModel.rowCount() === 0)
-                    return;
+                // only load the list if the page is active
+                if (status === PageStatus.Inactive) return;
                 subredditModel.refresh(false)
                 multiredditModel.refresh(false)
             } else {

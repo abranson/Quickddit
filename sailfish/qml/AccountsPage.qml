@@ -96,7 +96,7 @@ AbstractPage {
                 });
                 dialog.activateAccount.connect(function() {
                     quickdditManager.selectAccount(modelData);
-                    pageStack.pop()
+                    pageStack.pop(pageStack.find(function(page) { return page.objectName === "subredditsPage"; }));
                 });
             }
 

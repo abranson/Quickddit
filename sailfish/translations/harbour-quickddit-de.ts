@@ -22,38 +22,38 @@
         <translation>Über %1</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="38"/>
-        <location filename="../qml/AboutMultiredditPage.qml" line="153"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="39"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="150"/>
         <source>Add Subreddit</source>
         <translation>Subreddit hinzufügen</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="56"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="57"/>
         <source>Description</source>
         <translation>Beschreibung</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="66"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="67"/>
         <source>No description</source>
         <translation>Keine Beschreibung</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="70"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="71"/>
         <source>Subreddits</source>
         <translation>Subreddits</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="122"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="123"/>
         <source>Go to %1</source>
         <translation>Gehe zu %1</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="131"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="128"/>
         <source>Remove</source>
         <translation>Entfernen</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="158"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="155"/>
         <source>Enter subreddit name</source>
         <translation>Subreddit Namen eintragen</translation>
     </message>
@@ -573,43 +573,43 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/MainPage.qml" line="107"/>
+        <location filename="../qml/MainPage.qml" line="97"/>
         <source>About %1</source>
         <translation>Über %1</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="119"/>
+        <location filename="../qml/MainPage.qml" line="109"/>
         <source>New Post</source>
         <translation>Neuer Beitrag</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="125"/>
-        <location filename="../qml/MainPage.qml" line="127"/>
+        <location filename="../qml/MainPage.qml" line="115"/>
+        <location filename="../qml/MainPage.qml" line="117"/>
         <source>Section</source>
         <translation>Sektion</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="137"/>
+        <location filename="../qml/MainPage.qml" line="127"/>
         <source>Search</source>
         <translation>Suchen</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="141"/>
+        <location filename="../qml/MainPage.qml" line="131"/>
         <source>Refresh</source>
         <translation>Neu laden</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="163"/>
+        <location filename="../qml/MainPage.qml" line="153"/>
         <source>Delete link</source>
         <translation>Link Löschen</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="168"/>
+        <location filename="../qml/MainPage.qml" line="158"/>
         <source>Hide link</source>
         <translation>Link ausblenden</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="188"/>
+        <location filename="../qml/MainPage.qml" line="178"/>
         <source>Nothing here :(</source>
         <translation>Nichts hier :(</translation>
     </message>
@@ -744,22 +744,22 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="27"/>
         <source>Multireddits</source>
-        <translation>Multireddits</translation>
+        <translation type="unfinished">Multireddits</translation>
     </message>
     <message>
-        <location filename="../qml/MultiredditsPage.qml" line="54"/>
+        <location filename="../qml/MultiredditsPage.qml" line="52"/>
         <source>Refresh</source>
-        <translation>Neu laden</translation>
+        <translation type="unfinished">Neu laden</translation>
     </message>
     <message>
-        <location filename="../qml/MultiredditsPage.qml" line="69"/>
+        <location filename="../qml/MultiredditsPage.qml" line="67"/>
         <source>About</source>
-        <translation>Über</translation>
+        <translation type="unfinished">Über</translation>
     </message>
     <message>
-        <location filename="../qml/MultiredditsPage.qml" line="108"/>
+        <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
-        <translation>Nichts hier :(</translation>
+        <translation type="unfinished">Nichts hier :(</translation>
     </message>
 </context>
 <context>
@@ -1419,77 +1419,77 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
 <context>
     <name>SubredditsPage</name>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="28"/>
-        <source>Subreddits</source>
-        <translation>Subreddits</translation>
-    </message>
-    <message>
-        <location filename="../qml/SubredditsPage.qml" line="88"/>
+        <location filename="../qml/SubredditsPage.qml" line="78"/>
         <source>About Quickddit</source>
         <translation>Über Quickddit</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="93"/>
+        <location filename="../qml/SubredditsPage.qml" line="83"/>
         <source>Settings</source>
         <translation>Einstellungen</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="99"/>
+        <location filename="../qml/SubredditsPage.qml" line="89"/>
         <source>My Profile</source>
         <translation>Mein Profil</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="105"/>
+        <location filename="../qml/SubredditsPage.qml" line="95"/>
         <source>Messages</source>
         <translation>Nachrichten</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="150"/>
+        <location filename="../qml/SubredditsPage.qml" line="140"/>
         <source>Go to a specific subreddit</source>
         <translation>Gehe zum Subreddit</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>Front Page</source>
         <translation>Erste Seite</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <location filename="../qml/SubredditsPage.qml" line="28"/>
+        <source>Quickddit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>Popular</source>
         <translation>Populär</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>All</source>
         <translation>Alle</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>Browse for Subreddits...</source>
         <translation>Suche nach Subreddits</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>Multireddits</source>
         <translation>Multireddits</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="164"/>
+        <location filename="../qml/SubredditsPage.qml" line="154"/>
         <source>Subscribed Subreddits</source>
         <translation>Abbonierte Subreddits</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="186"/>
+        <location filename="../qml/SubredditsPage.qml" line="176"/>
         <source>About</source>
         <translation>Über</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="192"/>
+        <location filename="../qml/SubredditsPage.qml" line="182"/>
         <source>Unsubscribe</source>
         <translation>Abmelden</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="257"/>
+        <location filename="../qml/SubredditsPage.qml" line="246"/>
         <source>You have unsubscribed from %1</source>
         <translation>Du hast dich von %1 abgemeldet.</translation>
     </message>
@@ -1784,49 +1784,49 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="304"/>
-        <location filename="../qml/main.qml" line="560"/>
+        <location filename="../qml/main.qml" line="275"/>
+        <location filename="../qml/main.qml" line="521"/>
         <source>Unable to resolve reddit share link</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="326"/>
+        <location filename="../qml/main.qml" line="297"/>
         <source>Unsupported reddit url</source>
         <translation>Nicht unterstützte Reddit url</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="379"/>
+        <location filename="../qml/main.qml" line="340"/>
         <source>Unsupported image url</source>
         <translation>Nicht unterstützte Bild url</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="388"/>
+        <location filename="../qml/main.qml" line="349"/>
         <source>Unsupported video url</source>
         <translation>Nicht unterstützte Video url</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="468"/>
+        <location filename="../qml/main.qml" line="429"/>
         <source>Please log in again</source>
         <translation>Bitte neu Anmelden</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="498"/>
+        <location filename="../qml/main.qml" line="459"/>
         <source> and %1 other</source>
         <translation>and %1 andere</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="507"/>
-        <location filename="../qml/main.qml" line="508"/>
+        <location filename="../qml/main.qml" line="468"/>
+        <location filename="../qml/main.qml" line="469"/>
         <source>Message from %1</source>
         <translation>Message von %1</translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="518"/>
+        <location filename="../qml/main.qml" line="479"/>
         <source>New message from %1</source>
         <translation>Neue Nachricht von %1</translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/main.qml" line="519"/>
+        <location filename="../qml/main.qml" line="480"/>
         <source>%n new messages</source>
         <comment>0</comment>
         <translation>

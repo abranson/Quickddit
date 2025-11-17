@@ -24,8 +24,12 @@ import harbour.quickddit.Core 1.0
 
 ApplicationWindow {
     id: appWindow
-    initialPage: Component { MainPage { } }
+    initialPage: Component { SubredditsPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml");
+
+    Component.onCompleted: {
+        pageStack.animatorPush("MainPage.qml", {}, PageStackAction.Immediate);
+    }
 
     Python {
         id: python
@@ -190,43 +194,10 @@ ApplicationWindow {
 
     InfoBanner { id: infoBanner }
 
-    property QtObject webViewPage: null
-    property Component __webViewPage: Component {
-        WebViewer {}
-    }
-
-    property QtObject subredditsPage
-    property Component __subredditsPage: Component {
-        SubredditsPage {}
-    }
 
     // A collections of global utility functions
     QtObject {
         id: globalUtils
-
-        property Component __openLinkDialogComponent: null
-
-        function getMainPage() {
-            return pageStack.find(function(page) { return page.objectName === "mainPage"; });
-        }
-
-        function getWebViewPage() {
-            if (webViewPage === null) {
-                webViewPage = __webViewPage.createObject(appWindow);
-            }
-            return webViewPage;
-        }
-
-        function getNavPage() {
-            if (subredditsPage == undefined) {
-                subredditsPage = __subredditsPage.createObject(appWindow);
-            }
-            return subredditsPage;
-        }
-
-        function getMultiredditModel() {
-            return getNavPage().getMultiredditModel()
-        }
 
         function previewableVideo(url) {
             if (python.isUrlSupported(url)) {
@@ -288,14 +259,14 @@ ApplicationWindow {
             var params = {}
 
             if (/^(\/r\/\w+)?\/comments\/\w+/.test(redditLink.path))
-                pushOrReplace(Qt.resolvedUrl("CommentPage.qml"), {linkPermalink: url});
+                pageStack.push(Qt.resolvedUrl("CommentPage.qml"), {linkPermalink: url});
             else if (/^\/r\/(\w+)/.test(redditLink.path)) {
                 var path = redditLink.path.split("/");
                 params["subreddit"] = path[2];
                 if (path[3] === "search") {
                     if (redditLink.queryMap["q"] !== undefined)
                         params["query"] = redditLink.queryMap["q"]
-                    pushOrReplace(Qt.resolvedUrl("SearchDialog.qml"), params);
+                    pageStack.push(Qt.resolvedUrl("SearchDialog.qml"), params);
                     return;
                 }
 
@@ -307,40 +278,30 @@ ApplicationWindow {
 
                 if (path[3] !== undefined && path[3] !== "")
                     params["section"] = path[3];
-                pushOrReplace(Qt.resolvedUrl("MainPage.qml"), params);
+                pageStack.push(Qt.resolvedUrl("MainPage.qml"), params);
             } else if (/^\/u(ser)?\/([A-Za-z0-9_-]+)/.test(redditLink.path)) {
                 var username = redditLink.path.split("/")[2];
-                pushOrReplace(Qt.resolvedUrl("UserPage.qml"), {username: username});
+                pageStack.push(Qt.resolvedUrl("UserPage.qml"), {username: username});
             } else if (/^\/message\/compose/.test(redditLink.path)) {
                 params["recipient"] = redditLink.queryMap["to"]
                 if (redditLink.queryMap["message"] !== null)
                     params["message"] = redditLink.queryMap["message"]
                 if (redditLink.queryMap["subject"] !== null)
                     params["subject"] = redditLink.queryMap["subject"]
-                pushOrReplace(Qt.resolvedUrl("SendMessagePage.qml"), params);
+                pageStack.push(Qt.resolvedUrl("SendMessagePage.qml"), params);
             } else if (/^\/search/.test(redditLink.path)) {
                 if (redditLink.queryMap["q"] !== undefined)
                     params["query"] = redditLink.queryMap["q"]
-                pushOrReplace(Qt.resolvedUrl("SearchDialog.qml"), params);
+                pageStack.push(Qt.resolvedUrl("SearchDialog.qml"), params);
             } else
                 infoBanner.alert(qsTr("Unsupported reddit url"));
-        }
-
-        function pushOrReplace(page, params) {
-            if (pageStack.currentPage.objectName === "subredditsPage") {
-                var mainPage = globalUtils.getMainPage();
-                mainPage.__pushedAttached = false;
-                pageStack.replaceAbove(mainPage, page, params);
-            } else {
-                pageStack.push(page, params)
-            }
         }
 
         function parseRedditLink(url) {
             var shortLinkRe = /^https?:\/\/redd.it\/([^/]+)\/?/.exec(url);
             var linkRe = /^(https?:\/\/(\w+\.)?reddit.com)?(\/[^?]*)(\?.*)?/.exec(url);
             if (linkRe === null && shortLinkRe === null) {
-                return null;
+                return { path: "" };
             }
 
             var link = {}

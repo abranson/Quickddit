@@ -34,6 +34,9 @@ AbstractPage {
 
     property bool _isComplete: false
 
+    property string multireddit
+    property MultiredditModel multiredditModel: null
+
     function refresh(sr, keepsection) {
         if (sr !== undefined) {
             // getting messy here :(
@@ -84,19 +87,6 @@ AbstractPage {
 
     }
 
-    property bool __pushedAttached: false
-
-    onStatusChanged: {
-        if (mainPage.status === PageStatus.Active && !__pushedAttached) {
-            // get subredditspage and push
-            pageStack.pushAttached(globalUtils.getNavPage());
-            __pushedAttached = true;
-        }
-        if (mainPage.status === PageStatus.Inactive && __pushedAttached) {
-            __pushedAttached = false
-        }
-    }
-
     SilicaListView {
         id: linkListView
         anchors.fill: parent
@@ -111,7 +101,7 @@ AbstractPage {
                     if (linkModel.location == LinkModel.Subreddit) {
                         pageStack.push(Qt.resolvedUrl("AboutSubredditPage.qml"), {subreddit: linkModel.subreddit});
                     } else {
-                        pageStack.push(Qt.resolvedUrl("AboutMultiredditPage.qml"), {multireddit: linkModel.multireddit});
+                        pageStack.push(Qt.resolvedUrl("AboutMultiredditPage.qml"), {multireddit: linkModel.multireddit, multiredditModel: multiredditModel});
                     }
                 }
             }
@@ -233,11 +223,13 @@ AbstractPage {
                     linkModel.sectionTimeRange = ri
             }
         }
+
         if (duplicatesOf && duplicatesOf !== "") {
             refreshDuplicates()
-            return
+        } else if (multireddit && multireddit !== "") {
+            refreshMR(multireddit)
+        } else {
+            refresh(subreddit, true);
         }
-
-        refresh(subreddit, true);
     }
 }

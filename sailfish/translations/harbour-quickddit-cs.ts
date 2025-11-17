@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS language="cs" sourcelanguage="en" version="2.1">
+<TS version="2.1" language="cs" sourcelanguage="en">
 <context>
     <name>AboutMultiredditManager</name>
     <message>
@@ -22,38 +22,38 @@
         <translation>O %1</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="38"/>
-        <location filename="../qml/AboutMultiredditPage.qml" line="153"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="39"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="150"/>
         <source>Add Subreddit</source>
         <translation>Přidat subreddit</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="56"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="57"/>
         <source>Description</source>
         <translation>Popis</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="66"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="67"/>
         <source>No description</source>
         <translation>Bez popisu</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="70"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="71"/>
         <source>Subreddits</source>
         <translation>Subreddity</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="122"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="123"/>
         <source>Go to %1</source>
         <translation>Jdi k %1</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="131"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="128"/>
         <source>Remove</source>
         <translation>Odstranit</translation>
     </message>
     <message>
-        <location filename="../qml/AboutMultiredditPage.qml" line="158"/>
+        <location filename="../qml/AboutMultiredditPage.qml" line="155"/>
         <source>Enter subreddit name</source>
         <translation>Zadejte název subredditu</translation>
     </message>
@@ -71,38 +71,38 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/AboutPage.qml" line="113"/>
+        <location filename="../qml/AboutPage.qml" line="114"/>
         <source>App icon by Andrew Zhilin</source>
         <translation>Icon aplikace od Andrew Zhilin</translation>
     </message>
     <message>
-        <location filename="../qml/AboutPage.qml" line="115"/>
+        <location filename="../qml/AboutPage.qml" line="116"/>
         <source>_translator</source>
         <extracomment>_translator is used as a placeholder for the name of the translator (you :)</extracomment>
         <translation>Překladatel</translation>
     </message>
     <message>
-        <location filename="../qml/AboutPage.qml" line="115"/>
+        <location filename="../qml/AboutPage.qml" line="116"/>
         <source>Current language translation by %1</source>
         <translation>Aktuální jazyk přeložen od %1</translation>
     </message>
     <message>
-        <location filename="../qml/AboutPage.qml" line="116"/>
+        <location filename="../qml/AboutPage.qml" line="117"/>
         <source>Licensed under GNU GPLv3+</source>
         <translation>Licencováno podle GNU GPLv3+</translation>
     </message>
     <message>
-        <location filename="../qml/AboutPage.qml" line="124"/>
+        <location filename="../qml/AboutPage.qml" line="125"/>
         <source>Source</source>
         <translation>Zdroj</translation>
     </message>
     <message>
-        <location filename="../qml/AboutPage.qml" line="129"/>
+        <location filename="../qml/AboutPage.qml" line="130"/>
         <source>License</source>
         <translation>Licence</translation>
     </message>
     <message>
-        <location filename="../qml/AboutPage.qml" line="139"/>
+        <location filename="../qml/AboutPage.qml" line="140"/>
         <source>Translations</source>
         <translation>Překlady</translation>
     </message>
@@ -241,22 +241,22 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/AccountsPage.qml" line="78"/>
+        <location filename="../qml/AccountsPage.qml" line="93"/>
         <source>Remove %1 account</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/AccountsPage.qml" line="95"/>
+        <location filename="../qml/AccountsPage.qml" line="110"/>
         <source>Activate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/AccountsPage.qml" line="99"/>
+        <location filename="../qml/AccountsPage.qml" line="114"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Odstranit</translation>
     </message>
     <message>
-        <location filename="../qml/AccountsPage.qml" line="108"/>
+        <location filename="../qml/AccountsPage.qml" line="123"/>
         <source>No known accounts yet.
 
 To add accounts, simply log in. Quickddit will remember succesful logins and list the accounts here</source>
@@ -275,129 +275,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign out</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>SettingsPage</name>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="38"/>
-        <source>UX</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="41"/>
-        <source>Font Size</source>
-        <translation>Velikost písma</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="51"/>
-        <source>Tiny</source>
-        <translation>Drobný</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="52"/>
-        <source>Small</source>
-        <translation>Malý</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="53"/>
-        <source>Medium</source>
-        <translation>Střední</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="54"/>
-        <source>Large</source>
-        <translation>Velký</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="67"/>
-        <source>Device Orientation</source>
-        <translation>Orientace zařízení</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="76"/>
-        <source>Automatic</source>
-        <translation>Automatický</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="77"/>
-        <source>Portrait only</source>
-        <translation>Pouze portrét</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="78"/>
-        <source>Landscape only</source>
-        <translation>Pouze na šířku</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="90"/>
-        <source>Thumbnail Size</source>
-        <translation>Velikost miniatur</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="103"/>
-        <source>Auto</source>
-        <translation>Auto</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="125"/>
-        <source>Thumbnail Link Type Indicator</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="133"/>
-        <source>Comments Tap To Hide</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="140"/>
-        <source>Notifications</source>
-        <translation>Oznámení</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="143"/>
-        <source>Check Messages</source>
-        <translation>Zkontrolujte zprávy</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="151"/>
-        <source>Media</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="154"/>
-        <source>Preferred Video Size</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="174"/>
-        <source>Loop Videos</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="181"/>
-        <source>Connection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="184"/>
-        <source>Use Tor</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="185"/>
-        <source>When enabled, please make sure Tor is installed and active.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="234"/>
-        <source>Accounts</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="16"/>
-        <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -535,73 +412,73 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>CommentPage</name>
     <message>
-        <location filename="../qml/CommentPage.qml" line="26"/>
+        <location filename="../qml/CommentPage.qml" line="27"/>
         <source>Comments</source>
         <translation>Komentáře</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Best</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Top</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>New</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Hot</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Controversial</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="41"/>
+        <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Old</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="57"/>
+        <location filename="../qml/CommentPage.qml" line="64"/>
         <source>Edit Post</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="71"/>
-        <location filename="../qml/CommentPage.qml" line="72"/>
+        <location filename="../qml/CommentPage.qml" line="78"/>
+        <location filename="../qml/CommentPage.qml" line="79"/>
         <source>Sort</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="83"/>
+        <location filename="../qml/CommentPage.qml" line="90"/>
         <source>Add comment</source>
         <translation>Přidat komentář</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="93"/>
+        <location filename="../qml/CommentPage.qml" line="109"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="226"/>
+        <location filename="../qml/CommentPage.qml" line="242"/>
         <source>Viewing a single comment&apos;s thread</source>
         <translation>Prohlížení vlákna jediného komentáře</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="231"/>
+        <location filename="../qml/CommentPage.qml" line="247"/>
         <source>View All Comments</source>
         <translation>Zobrazit vše komentáře</translation>
     </message>
     <message>
-        <location filename="../qml/CommentPage.qml" line="263"/>
+        <location filename="../qml/CommentPage.qml" line="279"/>
         <source>Deleting comment</source>
         <translation>Smazani komentáře</translation>
     </message>
@@ -612,37 +489,34 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
 </context>
 <context>
-    <name>DonatePage</name>
-</context>
-<context>
     <name>ImageViewPage</name>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="26"/>
+        <location filename="../qml/ImageViewPage.qml" line="27"/>
         <source>Image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="53"/>
+        <location filename="../qml/ImageViewPage.qml" line="59"/>
         <source>Save Image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="58"/>
+        <location filename="../qml/ImageViewPage.qml" line="76"/>
         <source>URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="112"/>
+        <location filename="../qml/ImageViewPage.qml" line="130"/>
         <source>Error loading image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="214"/>
+        <location filename="../qml/ImageViewPage.qml" line="232"/>
         <source>Image saved to gallery</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="215"/>
+        <location filename="../qml/ImageViewPage.qml" line="233"/>
         <source>Image save failed!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -702,43 +576,43 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../qml/MainPage.qml" line="107"/>
+        <location filename="../qml/MainPage.qml" line="97"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">O %1</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="119"/>
+        <location filename="../qml/MainPage.qml" line="109"/>
         <source>New Post</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="125"/>
-        <location filename="../qml/MainPage.qml" line="127"/>
+        <location filename="../qml/MainPage.qml" line="115"/>
+        <location filename="../qml/MainPage.qml" line="117"/>
         <source>Section</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="137"/>
+        <location filename="../qml/MainPage.qml" line="127"/>
         <source>Search</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="141"/>
+        <location filename="../qml/MainPage.qml" line="131"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="163"/>
+        <location filename="../qml/MainPage.qml" line="153"/>
         <source>Delete link</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="168"/>
+        <location filename="../qml/MainPage.qml" line="158"/>
         <source>Hide link</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="188"/>
+        <location filename="../qml/MainPage.qml" line="178"/>
         <source>Nothing here :(</source>
         <translation type="unfinished"></translation>
     </message>
@@ -865,7 +739,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/ModeratorListPage.qml" line="25"/>
         <source>Moderators</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Moderátoři</translation>
     </message>
 </context>
 <context>
@@ -876,17 +750,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MultiredditsPage.qml" line="54"/>
+        <location filename="../qml/MultiredditsPage.qml" line="52"/>
         <source>Refresh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MultiredditsPage.qml" line="69"/>
+        <location filename="../qml/MultiredditsPage.qml" line="67"/>
         <source>About</source>
         <translation>O</translation>
     </message>
     <message>
-        <location filename="../qml/MultiredditsPage.qml" line="108"/>
+        <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
         <translation type="unfinished"></translation>
     </message>
@@ -930,7 +804,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="131"/>
         <source>Source</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Zdroj</translation>
     </message>
 </context>
 <context>
@@ -943,7 +817,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/PostInfoText.qml" line="50"/>
         <source>NSFW</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">NSFW</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="57"/>
@@ -958,7 +832,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/PostInfoText.qml" line="71"/>
         <source>Archived</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Archivováno</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="78"/>
@@ -1001,6 +875,19 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
             <numerusform></numerusform>
             <numerusform></numerusform>
         </translation>
+    </message>
+</context>
+<context>
+    <name>QMLUtils</name>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="188"/>
+        <source>Invalid share URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../src/qmlutils.cpp" line="202"/>
+        <source>Unable to resolve share URL</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1286,19 +1173,143 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
 </context>
 <context>
+    <name>SettingsPage</name>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="35"/>
+        <source>UX</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="38"/>
+        <source>Font Size</source>
+        <translation>Velikost písma</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="48"/>
+        <source>Tiny</source>
+        <translation>Drobný</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="49"/>
+        <source>Small</source>
+        <translation>Malý</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="50"/>
+        <source>Medium</source>
+        <translation>Střední</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="51"/>
+        <source>Large</source>
+        <translation>Velký</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="64"/>
+        <source>Device Orientation</source>
+        <translation>Orientace zařízení</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="73"/>
+        <source>Automatic</source>
+        <translation>Automatický</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="74"/>
+        <source>Portrait only</source>
+        <translation>Pouze portrét</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="75"/>
+        <source>Landscape only</source>
+        <translation>Pouze na šířku</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="87"/>
+        <source>Thumbnail Size</source>
+        <translation>Velikost miniatur</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="100"/>
+        <source>Auto</source>
+        <translation>Auto</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="122"/>
+        <source>Thumbnail Link Type Indicator</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="130"/>
+        <source>Comments Tap To Hide</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="137"/>
+        <source>Notifications</source>
+        <translation>Oznámení</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="140"/>
+        <source>Check Messages</source>
+        <translation>Zkontrolujte zprávy</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="148"/>
+        <source>Media</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="151"/>
+        <source>Preferred Video Size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="171"/>
+        <source>Loop Videos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="178"/>
+        <source>Connection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="181"/>
+        <source>Use Tor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="182"/>
+        <source>When enabled, please make sure Tor is installed and active.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="24"/>
+        <source>Accounts</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="16"/>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>SignInPage</name>
     <message>
-        <location filename="../qml/SignInPage.qml" line="24"/>
+        <location filename="../qml/SignInPage.qml" line="20"/>
+        <location filename="../qml/SignInPage.qml" line="32"/>
         <source>Sign in to Reddit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SignInPage.qml" line="47"/>
+        <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SignInPage.qml" line="66"/>
+        <location filename="../qml/SignInPage.qml" line="76"/>
         <source>Sign in successful! Welcome! :)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1318,29 +1329,29 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>SubredditDelegate</name>
     <message>
-        <location filename="../qml/SubredditDelegate.qml" line="81"/>
+        <location filename="../qml/SubredditDelegate.qml" line="82"/>
         <source>NSFW</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">NSFW</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditDelegate.qml" line="87"/>
+        <location filename="../qml/SubredditDelegate.qml" line="88"/>
         <source>Contributor</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Přispěvatel</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditDelegate.qml" line="92"/>
+        <location filename="../qml/SubredditDelegate.qml" line="93"/>
         <source>Banned</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditDelegate.qml" line="98"/>
+        <location filename="../qml/SubredditDelegate.qml" line="99"/>
         <source>Mod</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mod</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditDelegate.qml" line="104"/>
+        <location filename="../qml/SubredditDelegate.qml" line="105"/>
         <source>Muted</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Tlumené</translation>
     </message>
 </context>
 <context>
@@ -1389,17 +1400,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="82"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">O</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="88"/>
         <source>Subscribe</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Abonovat</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="97"/>
         <source>Unsubscribe</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Odhlásit odběr</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="118"/>
@@ -1415,77 +1426,77 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>SubredditsPage</name>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="28"/>
-        <source>Subreddits</source>
-        <translation>Subreddity</translation>
-    </message>
-    <message>
-        <location filename="../qml/SubredditsPage.qml" line="65"/>
+        <location filename="../qml/SubredditsPage.qml" line="78"/>
         <source>About Quickddit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="70"/>
+        <location filename="../qml/SubredditsPage.qml" line="83"/>
         <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="76"/>
+        <location filename="../qml/SubredditsPage.qml" line="89"/>
         <source>My Profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="82"/>
+        <location filename="../qml/SubredditsPage.qml" line="95"/>
         <source>Messages</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="100"/>
+        <location filename="../qml/SubredditsPage.qml" line="140"/>
         <source>Go to a specific subreddit</source>
         <translation>Přejděte na konkrétní subreddit</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="114"/>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>Front Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="114"/>
+        <location filename="../qml/SubredditsPage.qml" line="28"/>
+        <source>Quickddit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>Popular</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="114"/>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>All</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="114"/>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>Browse for Subreddits...</source>
         <translation>Hledat subreddity...</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="114"/>
+        <location filename="../qml/SubredditsPage.qml" line="113"/>
         <source>Multireddits</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="135"/>
+        <location filename="../qml/SubredditsPage.qml" line="154"/>
         <source>Subscribed Subreddits</source>
         <translation>Abonnované subreddity</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="154"/>
+        <location filename="../qml/SubredditsPage.qml" line="176"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">O</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="160"/>
+        <location filename="../qml/SubredditsPage.qml" line="182"/>
         <source>Unsubscribe</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Odhlásit odběr</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="226"/>
+        <location filename="../qml/SubredditsPage.qml" line="246"/>
         <source>You have unsubscribed from %1</source>
         <translation>Vy jste se odhlásil od %1</translation>
     </message>
@@ -1574,7 +1585,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPage.qml" line="116"/>
         <source>Mod</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Mod</translation>
     </message>
     <message>
         <location filename="../qml/UserPage.qml" line="120"/>
@@ -1645,7 +1656,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPageLinkDelegate.qml" line="72"/>
         <source>NSFW</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">NSFW</translation>
     </message>
     <message>
         <location filename="../qml/UserPageLinkDelegate.qml" line="80"/>
@@ -1739,7 +1750,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="205"/>
         <location filename="../qml/VideoViewPage.qml" line="278"/>
         <source>Problem finding stream URL</source>
         <translation type="unfinished"></translation>
@@ -1753,32 +1763,32 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>WebViewer</name>
     <message>
-        <location filename="../qml/WebViewer.qml" line="25"/>
+        <location filename="../qml/WebViewer.qml" line="27"/>
         <source>WebViewer</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/WebViewer.qml" line="77"/>
+        <location filename="../qml/WebViewer.qml" line="87"/>
         <source>Copy URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/WebViewer.qml" line="80"/>
+        <location filename="../qml/WebViewer.qml" line="90"/>
         <source>URL copied to clipboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/WebViewer.qml" line="84"/>
+        <location filename="../qml/WebViewer.qml" line="94"/>
         <source>Open in browser</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/WebViewer.qml" line="90"/>
+        <location filename="../qml/WebViewer.qml" line="100"/>
         <source>Back</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/WebViewer.qml" line="95"/>
+        <location filename="../qml/WebViewer.qml" line="105"/>
         <source>Forward</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1786,43 +1796,43 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>main</name>
     <message>
-        <location filename="../qml/main.qml" line="318"/>
+        <location filename="../qml/main.qml" line="297"/>
         <source>Unsupported reddit url</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="371"/>
+        <location filename="../qml/main.qml" line="340"/>
         <source>Unsupported image url</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="380"/>
+        <location filename="../qml/main.qml" line="349"/>
         <source>Unsupported video url</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="460"/>
+        <location filename="../qml/main.qml" line="429"/>
         <source>Please log in again</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="490"/>
+        <location filename="../qml/main.qml" line="459"/>
         <source> and %1 other</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="499"/>
-        <location filename="../qml/main.qml" line="500"/>
+        <location filename="../qml/main.qml" line="468"/>
+        <location filename="../qml/main.qml" line="469"/>
         <source>Message from %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="510"/>
+        <location filename="../qml/main.qml" line="479"/>
         <source>New message from %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../qml/main.qml" line="511"/>
+        <location filename="../qml/main.qml" line="480"/>
         <source>%n new messages</source>
         <comment>0</comment>
         <translation type="unfinished">
@@ -1832,22 +1842,9 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         </translation>
     </message>
     <message>
-        <location filename="../qml/main.qml" line="304"/>
-        <location filename="../qml/main.qml" line="560"/>
+        <location filename="../qml/main.qml" line="275"/>
+        <location filename="../qml/main.qml" line="521"/>
         <source>Unable to resolve reddit share link</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QMLUtils</name>
-    <message>
-        <location filename="../../src/qmlutils.cpp" line="188"/>
-        <source>Invalid share URL</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../src/qmlutils.cpp" line="202"/>
-        <source>Unable to resolve share URL</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -27,6 +27,7 @@ AbstractPage {
     busy: multiredditManager.busy
 
     property alias multireddit: multiredditManager.name
+    property MultiredditModel multiredditModel: null
 
     SilicaFlickable {
         id: flickable
@@ -120,11 +121,7 @@ AbstractPage {
 
             MenuItem {
                 text: qsTr("Go to %1").arg("/r/" + subredditMenu.subreddit)
-                onClicked: {
-                    var mainPage = globalUtils.getMainPage();
-                    mainPage.refresh(subredditMenu.subreddit);
-                    pageStack.pop(mainPage);
-                }
+                onClicked: pageStack.push(Qt.resolvedUrl("MainPage.qml"), {subreddit: subredditMenu.subreddit} )
             }
 
             MenuItem {
@@ -172,7 +169,7 @@ AbstractPage {
     AboutMultiredditManager {
         id: multiredditManager
         manager: quickdditManager
-        model: globalUtils.getMultiredditModel()
+        model: multiredditModel
         onSuccess: infoBanner.alert(message);
         onError: infoBanner.warning(errorString);
     }

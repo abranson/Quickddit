@@ -75,10 +75,7 @@ Dialog {
         onAccessTokenSuccess: {
             infoBanner.alert(qsTr("Sign in successful! Welcome! :)"));
             inboxManager.resetTimer();
-            var mainPage = globalUtils.getMainPage();
-            mainPage.refresh("");
-            backNavigation = true;
-            pageStack.pop(mainPage);
+            pageStack.pop(pageStack.find(function(page) { return page.objectName === "subredditsPage"; }));
         }
     }
 }

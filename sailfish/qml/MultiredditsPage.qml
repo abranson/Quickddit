@@ -39,9 +39,7 @@ AbstractPage {
     signal accepted
 
     onAccepted: {
-        var mainPage = globalUtils.getMainPage();
-        mainPage.refreshMR(multiredditName);
-        pageStack.pop(mainPage);
+        pageStack.push(Qt.resolvedUrl("MainPage.qml"), { multireddit: multiredditName, multiredditModel: _model })
     }
 
     SilicaListView {
@@ -68,7 +66,7 @@ AbstractPage {
                     MenuItem {
                         text: qsTr("About")
                         onClicked: {
-                            pageStack.push(Qt.resolvedUrl("AboutMultiredditPage.qml"), {multireddit: model.name} );
+                            pageStack.push(Qt.resolvedUrl("AboutMultiredditPage.qml"), {multireddit: model.name, multiredditModel: _model} );
                         }
                     }
                 }

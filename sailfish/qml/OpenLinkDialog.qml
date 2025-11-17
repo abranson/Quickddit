@@ -28,10 +28,10 @@ AbstractDialog {
     property string url
     property string source
 
-    acceptDestination: globalUtils.getWebViewPage()
+    acceptDestination: Qt.resolvedUrl("WebViewer.qml")
 
     onAccepted: {
-        pageStack.replace(globalUtils.getWebViewPage(), {url: url});
+        pageStack.replace(Qt.resolvedUrl("WebViewer.qml"), {url: url});
     }
 
     DialogHeader {
