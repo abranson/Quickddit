@@ -4,6 +4,16 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Wed Nov 19 2025 Andrew Branson <github@andrewbranson.net> 1.14-1
+- Tweak Subreddit page, use it as the root page and stack pages more.
+- Drop singleton WebViewer to avoid closing hangs and crashes
+- Drop all other globalUtil variables
+- Refresh properly after switching accounts or signing in
+- Support shared reddit comment links
+- Improve inline images
+- Update translations
+- Github action build.
+
 * Thu Oct 30 2025 Andrew Branson <github@andrewbranson.net> 1.13-1
 - fix: access token URL
 - fix: opening notifications
