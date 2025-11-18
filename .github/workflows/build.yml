@@ -1,0 +1,103 @@
+name: SailfishOS Build
+
+on:
+  push:
+    branches: [ "*" ]
+    tags: [ "*" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: quickddit-api-key
+    env:
+      REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+      REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+      REDDIT_REDIRECT_URL: ${{ secrets.REDDIT_REDIRECT_URL }}
+      RELEASE: 4.4.0.68
+      ARCHITECTURES: |
+        armv7hl
+        aarch64
+        i486
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+            submodules: recursive
+
+      - name: Validate Reddit OAuth secrets
+        run: |
+          missing=false
+          for var in REDDIT_CLIENT_ID REDDIT_CLIENT_SECRET REDDIT_REDIRECT_URL; do
+            if [ -z "${!var}" ]; then
+              echo "::error::Environment variable $var is required but was not provided."
+              missing=true
+            fi
+          done
+          if [ "$missing" = true ]; then
+            exit 1
+          fi
+
+      - name: Prepare
+        run: |
+          docker pull coderus/sailfishos-platform-sdk:${RELEASE}
+
+      - name: Build Sailfish OS packages
+        run: |
+          set -euo pipefail
+          mkdir .RPMs
+          docker run --rm --privileged \
+            -e REDDIT_CLIENT_ID \
+            -e REDDIT_CLIENT_SECRET \
+            -e REDDIT_REDIRECT_URL \
+            -e RELEASE \
+            -e ARCHITECTURES \
+            -v "$PWD":/share \
+            coderus/sailfishos-platform-sdk:${RELEASE} \
+            bash -c '
+              set -euo pipefail
+              while read -r arch; do
+                [ -n "$arch" ] || continue
+                target="SailfishOS-${RELEASE}-${arch}"
+                echo "::group::Building for $target ($arch)"
+                rm -rf build
+                mkdir -p build
+                cp -r /share/* /share/.git* build
+                cd build/sailfish
+                mb2 -t "$target" -s rpm/harbour-quickddit.spec build \
+                  --define "quickddit_reddit_client_id $REDDIT_CLIENT_ID" \
+                  --define "quickddit_reddit_client_secret $REDDIT_CLIENT_SECRET" \
+                  --define "quickddit_reddit_redirect_url $REDDIT_REDIRECT_URL"
+                sudo cp -v RPMS/*.rpm /share/.RPMs/
+                ls -la /share/.RPMs
+                echo "::endgroup::"
+              done <<< "$ARCHITECTURES"
+            '
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: harbour-quickddit
+          path: .RPMs/*
+          include-hidden-files: true
+
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/')
+
+    steps:
+      - name: Download RPMs
+        uses: actions/download-artifact@v4
+        with:
+          name: harbour-quickddit
+
+      - name: Create releases
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          files: '*.rpm'   # <— they’re now at the workspace root
