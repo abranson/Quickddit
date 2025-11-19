@@ -231,16 +231,17 @@ void QMLUtils::publishNotification(const QString &summary, const QString &body,
     notification.publish();
 #elif Q_OS_SAILFISH
     Notification notification;
-    notification.setCategory("harbour-quickddit.inbox");
 
     notification.setSummary(summary);
     notification.setBody(body);
     notification.setItemCount(count);
     notification.setReplacesId(0);
+    notification.setAppIcon("harbour-quickddit");
+    notification.setHintValue("x-nemo-feedback", "social");
 
     notification.setRemoteAction(
                 Notification::remoteAction(
-                    "default", "show Inbox", "nl.outrightsolutions.Quickddit", "/nl/outrightsolutions/Quickddit", "org.quickddit.view", "showInbox"));
+                    "default", "Show Inbox", "nl.outrightsolutions.Quickddit", "/nl/outrightsolutions/Quickddit", "org.quickddit.view", "showInbox"));
 
     notification.publish();
 #endif

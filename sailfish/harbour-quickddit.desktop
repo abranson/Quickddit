@@ -11,7 +11,7 @@ X-Maemo-Object-Path=/nl/outrightsolutions/Quickddit
 X-Maemo-Method=org.quickddit.view.openURL
 
 [X-Sailjail]
-Permissions=Internet;Audio;Pictures;WebView
+Permissions=Internet;Audio;Pictures;WebView;Notifications
 OrganizationName=nl.outrightsolutions
 ApplicationName=Quickddit
 ExecDBus=harbour-quickddit --prestart

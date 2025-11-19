@@ -494,7 +494,7 @@ ApplicationWindow {
             if (pageStack.currentPage.objectName === "messagePage") {
                 pageStack.currentPage.refresh();
             } else {
-                pageStack.push(Qt.resolvedUrl("MessagePage.qml"));
+                pageStack.push(Qt.resolvedUrl("MessagePage.qml"), { section: MessageModel.AllSection });
             }
 
             appWindow.activate();

@@ -20,11 +20,6 @@ CONFIG += sailfishapp link_pkgconfig
 
 SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 
-# Harbour is quite strict about what it allows. Quickddit has features that would not allow it to pass
-# through QA. Add CONFIG+=harbour to the .pro file (uncomment below) or add it to the qmake command
-# to force harbour compatibility.
-#CONFIG += harbour
-
 PKGCONFIG += sailfishapp nemonotifications-qt5 keepalive
 
 INCLUDEPATH += ..
@@ -118,24 +113,6 @@ include(translations/translations.pri)
     message("generating DBus adaptor and proxy..")
     system(qdbusxml2cpp iface/org.quickddit.xml -a app_adaptor -p app_interface)
 }
-
-harbour {
-    message("build: HARBOUR Compliant")
-    message("* Notification specification is excluded")
-    DEFINES += HARBOUR_COMPLIANCE
-    DEFINES += BUILD_VARIANT=\\\"Harbour\\\"
-} else {
-    message("build: Unrestricted")
-    DEFINES += BUILD_VARIANT=\\\"Standard\\\"
-
-    notification.files = notifications/harbour-quickddit.inbox.conf
-    notification.path = /usr/share/lipstick/notificationcategories
-
-    INSTALLS += notification
-}
-
-# kludge needed as qmake cannot control INSTALL permissions
-system(chmod 0644 ../youtube-dl/youtube_dl/__main__.py ../youtube-dl/youtube_dl/YoutubeDL.py)
 
 youtube-dl.files = ../youtube-dl/youtube_dl
 youtube-dl.path = /usr/share/$${TARGET}
