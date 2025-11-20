@@ -107,6 +107,16 @@ AbstractPage {
 
             QuickdditPageHeader { title: subredditsPage.title }
 
+            SectionHeader {
+                id: signedin
+                text: quickdditManager.isSignedIn ? qsTr("Signed in as %1").arg(settings.redditUsername) : qsTr("Not signed in")
+
+                MouseArea {
+                    anchors.fill: signedin
+                    onClicked: pageStack.push(Qt.resolvedUrl("AccountsPage.qml"));
+                }
+            }
+
             Repeater {
                 id: mainOptionRepeater
                 anchors { left: parent.left; right: parent.right }
