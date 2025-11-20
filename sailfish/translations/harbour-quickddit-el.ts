@@ -1437,12 +1437,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Μηνύματα</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="140"/>
+        <location filename="../qml/SubredditsPage.qml" line="150"/>
         <source>Go to a specific subreddit</source>
         <translation>Μετάβαση σε ένα υπό-reddit</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Front Page</source>
         <translation>Πρωτοσέλιδο</translation>
     </message>
@@ -1452,42 +1452,52 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="112"/>
+        <source>Signed in as %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="112"/>
+        <source>Not signed in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Popular</source>
         <translation>Δημοφιλή</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
         <translation>Όλα</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse for Subreddits...</source>
         <translation>Περιήγηση στα Υπό-reddits...</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Multireddits</source>
         <translation>Πολλαπλά reddit</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="154"/>
+        <location filename="../qml/SubredditsPage.qml" line="164"/>
         <source>Subscribed Subreddits</source>
         <translation>Υπό-reddits με συνδρομή</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="176"/>
+        <location filename="../qml/SubredditsPage.qml" line="186"/>
         <source>About</source>
         <translation>Σχετικά</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="182"/>
+        <location filename="../qml/SubredditsPage.qml" line="192"/>
         <source>Unsubscribe</source>
         <translation>Ακύρωση συνδρομής</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="246"/>
+        <location filename="../qml/SubredditsPage.qml" line="256"/>
         <source>You have unsubscribed from %1</source>
         <translation>Ακυρώσατε την συνδρομή από το %1</translation>
     </message>

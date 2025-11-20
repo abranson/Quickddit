@@ -1439,12 +1439,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Messages</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="140"/>
+        <location filename="../qml/SubredditsPage.qml" line="150"/>
         <source>Go to a specific subreddit</source>
         <translation>Go to a specific subreddit</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Front Page</source>
         <translation>Front Page</translation>
     </message>
@@ -1454,42 +1454,52 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="112"/>
+        <source>Signed in as %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="112"/>
+        <source>Not signed in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Popular</source>
         <translation>Popular</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
         <translation>All</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse for Subreddits...</source>
         <translation>Browse for Subreddits...</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Multireddits</source>
         <translation>Multireddits</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="154"/>
+        <location filename="../qml/SubredditsPage.qml" line="164"/>
         <source>Subscribed Subreddits</source>
         <translation>Subscribed Subreddits</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="176"/>
+        <location filename="../qml/SubredditsPage.qml" line="186"/>
         <source>About</source>
         <translation>About</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="182"/>
+        <location filename="../qml/SubredditsPage.qml" line="192"/>
         <source>Unsubscribe</source>
         <translation>Unsubscribe</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="246"/>
+        <location filename="../qml/SubredditsPage.qml" line="256"/>
         <source>You have unsubscribed from %1</source>
         <translation>You have unsubscribed from %1</translation>
     </message>

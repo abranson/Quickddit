@@ -1439,12 +1439,12 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <translation>Meddelanden</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="140"/>
+        <location filename="../qml/SubredditsPage.qml" line="150"/>
         <source>Go to a specific subreddit</source>
         <translation>Gå till en specifik underreddit</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Front Page</source>
         <translation>Startsida</translation>
     </message>
@@ -1454,42 +1454,52 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="112"/>
+        <source>Signed in as %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="112"/>
+        <source>Not signed in</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Popular</source>
         <translation>Heta</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
         <translation>Alla</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse for Subreddits...</source>
         <translation>Bläddra efter underredditar...</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="113"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Multireddits</source>
         <translation>Multiredditar</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="154"/>
+        <location filename="../qml/SubredditsPage.qml" line="164"/>
         <source>Subscribed Subreddits</source>
         <translation>Prenumererade underredditar</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="176"/>
+        <location filename="../qml/SubredditsPage.qml" line="186"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="182"/>
+        <location filename="../qml/SubredditsPage.qml" line="192"/>
         <source>Unsubscribe</source>
         <translation>Avsluta prenumeration</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="246"/>
+        <location filename="../qml/SubredditsPage.qml" line="256"/>
         <source>You have unsubscribed from %1</source>
         <translation>Du har avslutat prenumerationen på %1</translation>
     </message>
