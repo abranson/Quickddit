@@ -230,7 +230,7 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="228"/>
         <source>You have unsubscribed from %1</source>
-        <translation>Anulowano subskrypcję %1</translation>
+        <translation>Anulowano subskrypcję&#xa0;%1</translation>
     </message>
 </context>
 <context>
@@ -1508,7 +1508,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="256"/>
         <source>You have unsubscribed from %1</source>
-        <translation>Anulowano subskrypcję %1</translation>
+        <translation>Anulowano subskrypcję&#xa0;%1</translation>
     </message>
 </context>
 <context>
