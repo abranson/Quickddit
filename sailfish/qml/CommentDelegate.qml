@@ -364,7 +364,7 @@ Item {
                             commentPage.loadMoreChildren(model.index, model.moreChildren);
                         } else {
                             var clink = QMLUtils.toAbsoluteUrl("/r/" + link.subreddit + "/comments/" + link.fullname.substring(3) +
-                                                               "//" + model.fullname.substring(3) + "?context=0")
+                                                               "?comment=" + model.fullname.substring(3) + "&context=0");
                             globalUtils.openLink(clink);
                         }
                     }
