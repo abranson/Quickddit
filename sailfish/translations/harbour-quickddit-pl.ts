@@ -230,7 +230,7 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="228"/>
         <source>You have unsubscribed from %1</source>
-        <translation>Anulowano subskrypcję&#xa0;%1</translation>
+        <translation>Anulowano subskrypcję %1</translation>
     </message>
 </context>
 <context>
