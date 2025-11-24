@@ -4,15 +4,20 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Mon Nov 24 2025 Andrew Branson <github@andrewbranson.net> 1.14.2-1
+- new: Add login details to Subreddit page. Tap opens Accounts to login or switch.
+- fix: Fix 'Continue this thread' button
+- fix: Notification opens all messages instead of last view
+
 * Wed Nov 19 2025 Andrew Branson <github@andrewbranson.net> 1.14-1
 - new: Tweak Subreddit page, use it as the root page and stack pages more.
-- fix: Drop singleton WebViewer to avoid closing hangs and crashes
-- chg: Drop all other globalUtil variables
-- fix: Refresh properly after switching accounts or signing in
 - new: Support shared reddit comment links
+- chg: Drop all other globalUtil variables
+- fix: Drop singleton WebViewer to avoid closing hangs and crashes
+- fix: Refresh properly after switching accounts or signing in
 - fix: Improve inline images
-- chg: Update translations
 - new: Github action build.
+- chg: Update translations
 
 * Thu Oct 30 2025 Andrew Branson <github@andrewbranson.net> 1.13-1
 - fix: access token URL
