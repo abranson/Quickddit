@@ -6,12 +6,12 @@
     <message>
         <location filename="../../src/aboutmultiredditmanager.cpp" line="134"/>
         <source>%1 has been added to %2</source>
-        <translation type="unfinished"></translation>
+        <translation>AboutMultiredditManager%1 has been added to %2</translation>
     </message>
     <message>
         <location filename="../../src/aboutmultiredditmanager.cpp" line="155"/>
         <source>%1 has been removed from %2</source>
-        <translation type="unfinished"></translation>
+        <translation>О Multireddit Менеджер %1 был удален из %2</translation>
     </message>
 </context>
 <context>
@@ -19,43 +19,43 @@
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="26"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Multireddit О сайте  %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="39"/>
         <location filename="../qml/AboutMultiredditPage.qml" line="150"/>
         <source>Add Subreddit</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Multireddit Добавить сабреддит</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="57"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Multireddit Описание</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="67"/>
         <source>No description</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Multireddit Нет описания</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="71"/>
         <source>Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Мультиреддита Субреддиты</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="123"/>
         <source>Go to %1</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Multireddit Перейти к %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="128"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Multireddit Удалить</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="155"/>
         <source>Enter subreddit name</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Мультиреддита Введите название сабреддита</translation>
     </message>
 </context>
 <context>
@@ -63,48 +63,48 @@
     <message>
         <location filename="../qml/AboutPage.qml" line="25"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице О сайте</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="101"/>
         <source>Quickddit - A free and open source Reddit client for mobile phones</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Quickddit - бесплатный клиент Reddit с открытым исходным кодом для мобильных телефонов</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="114"/>
         <source>App icon by Andrew Zhilin</source>
-        <translation type="unfinished"></translation>
+        <translation>О сайте Иконка PageApp от Андрея Жилина</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="116"/>
         <source>_translator</source>
         <extracomment>_translator is used as a placeholder for the name of the translator (you :)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Denis Lednev</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="116"/>
         <source>Current language translation by %1</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Текущий перевод на язык %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="117"/>
         <source>Licensed under GNU GPLv3+</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Лицензия GNU GPLv3+</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="125"/>
         <source>Source</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Источник</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="130"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Лицензия</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="140"/>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице Переводы</translation>
     </message>
 </context>
 <context>
@@ -112,125 +112,125 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="27"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице сабреддита О %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="40"/>
         <source>Moderators</source>
-        <translation type="unfinished"></translation>
+        <translation>Страница о субреддите Модераторы</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="47"/>
         <source>Message Moderators</source>
-        <translation type="unfinished"></translation>
+        <translation>О модераторах сообщений страницы Subreddit</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="55"/>
         <source>Unsubscribe</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице сабреддита Отписаться от рассылки</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="55"/>
         <source>Subscribe</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице сабреддита Подписаться</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="127"/>
         <source>This subreddit is Not Safe For Work</source>
-        <translation type="unfinished"></translation>
+        <translation>О сабреддите Страница Этот сабреддит не является безопасным для работы</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/AboutSubredditPage.qml" line="143"/>
         <source>%n subscribers</source>
-        <translation type="unfinished">
-            <numerusform>%n subscriber</numerusform>
-            <numerusform>%n subscribers</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n подписчик</numerusform>
+            <numerusform>%n подписчика</numerusform>
+            <numerusform>%n подписчиков</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/AboutSubredditPage.qml" line="144"/>
         <source>%n active users</source>
-        <translation type="unfinished">
-            <numerusform>%n active user</numerusform>
-            <numerusform>%n active users</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n активный пользователь</numerusform>
+            <numerusform>%n активных пользователя</numerusform>
+            <numerusform>%n активных пользователей</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="156"/>
         <source>Subscribed</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице сабреддита Подписчики</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="156"/>
         <source>Not Subscribed</source>
-        <translation type="unfinished"></translation>
+        <translation>О странице сабреддита Не подписаны</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="161"/>
         <source>Private</source>
-        <translation type="unfinished"></translation>
+        <translation>Страница о субреддите Приватный</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="162"/>
         <source>Restricted</source>
-        <translation type="unfinished"></translation>
+        <translation>Ограниченный доступ</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="163"/>
         <source>GoldRestricted</source>
-        <translation type="unfinished"></translation>
+        <translation>Ограниченный доступ для Reddit Premium</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="163"/>
         <source>Archived</source>
-        <translation type="unfinished"></translation>
+        <translation>Архивирован</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="168"/>
         <source>Links only</source>
-        <translation type="unfinished"></translation>
+        <translation>Только ссылки</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="168"/>
         <source>Self posts only</source>
-        <translation type="unfinished"></translation>
+        <translation>Только текстовые посты</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="173"/>
         <source>NSFW</source>
-        <translation type="unfinished"></translation>
+        <translation>Для взрослых</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="179"/>
         <source>Contributor</source>
-        <translation type="unfinished"></translation>
+        <translation>Автор</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="184"/>
         <source>Banned</source>
-        <translation type="unfinished"></translation>
+        <translation>Заблокирован</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="190"/>
         <source>Mod</source>
-        <translation type="unfinished"></translation>
+        <translation>Модератор</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="196"/>
         <source>Muted</source>
-        <translation type="unfinished"></translation>
+        <translation>Заглушён</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="226"/>
         <source>You have subscribed to %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы подписаны на %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="228"/>
         <source>You have unsubscribed from %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы отписались от %1</translation>
     </message>
 </context>
 <context>
@@ -238,44 +238,44 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="25"/>
         <source>Accounts</source>
-        <translation type="unfinished"></translation>
+        <translation>Аккаунты</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign out</source>
-        <translation type="unfinished"></translation>
+        <translation>Выйти из аккаунта</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign in to Reddit</source>
-        <translation type="unfinished"></translation>
+        <translation>Войти в аккаунт Reddit</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="40"/>
         <source>You have signed out from Reddit</source>
-        <translation type="unfinished"></translation>
+        <translation>Вы вышли из аккаунта Reddit</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="93"/>
         <source>Remove %1 account</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить аккаунт %1</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="110"/>
         <source>Activate</source>
-        <translation type="unfinished"></translation>
+        <translation>Активировать аккаунт</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="114"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить аккаунт</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="123"/>
         <source>No known accounts yet.
 
 To add accounts, simply log in. Quickddit will remember succesful logins and list the accounts here</source>
-        <translation type="unfinished"></translation>
+        <translation>Пока нет известных аккаунтов. Чтобы добавить аккаунты, просто войдите. Quickddit запомнит успешные входы и отобразит аккаунты здесь</translation>
     </message>
 </context>
 <context>
@@ -283,84 +283,84 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/CommentDelegate.qml" line="154"/>
         <source>Sticky</source>
-        <translation type="unfinished"></translation>
+        <translation>Закреплённый комментарий</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="161"/>
         <source>Gilded</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарий с наградой</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="253"/>
         <source>[score hidden]</source>
-        <translation type="unfinished"></translation>
+        <translation>[оценка скрыта]</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/CommentDelegate.qml" line="254"/>
         <source>%n pts</source>
-        <translation type="unfinished">
-            <numerusform>%n pt</numerusform>
-            <numerusform>%n pts</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n пт</numerusform>
+            <numerusform>%n пт</numerusform>
+            <numerusform>%n пт</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/CommentDelegate.qml" line="360"/>
         <source>Load %n hidden comments</source>
-        <translation type="unfinished">
-            <numerusform>Load %n hidden comment</numerusform>
-            <numerusform>Load %n hidden comments</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Загрузить %n скрытый комментарий</numerusform>
+            <numerusform>Загрузить %n скрытых комментария</numerusform>
+            <numerusform>Загрузить %n скрытых комментариев</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="360"/>
         <source>Continue this thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Продолжить обсуждение</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/CommentDelegate.qml" line="395"/>
         <source>Show %n collapsed comments</source>
-        <translation type="unfinished">
-            <numerusform>Show %n collapsed comment</numerusform>
-            <numerusform>Show %n collapsed comments</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>Показать %n свёрнутый комментарий</numerusform>
+            <numerusform>Показать %n свёрнутых комментария</numerusform>
+            <numerusform>Показать %n свёрнутых комментариев</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="424"/>
         <source>Editing Comment</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактирование комментария</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="425"/>
         <source>Comment Reply</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответить на комментарий</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="426"/>
         <source>New Comment</source>
-        <translation type="unfinished"></translation>
+        <translation>Новый комментарий</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
         <source>Enter your reply here...</source>
-        <translation type="unfinished"></translation>
+        <translation>Введите ваш комментарий здесь…</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
         <source>Enter your new comment here...</source>
-        <translation type="unfinished"></translation>
+        <translation>Введите ваш новый комментарий здесь…</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="456"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="456"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить</translation>
     </message>
 </context>
 <context>
@@ -368,17 +368,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../../src/commentmanager.cpp" line="103"/>
         <source>The comment has been added</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарий был добавлен</translation>
     </message>
     <message>
         <location filename="../../src/commentmanager.cpp" line="106"/>
         <source>The comment has been edited</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарий был отредактирован</translation>
     </message>
     <message>
         <location filename="../../src/commentmanager.cpp" line="110"/>
         <source>The comment has been deleted</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарий был удалён</translation>
     </message>
 </context>
 <context>
@@ -386,27 +386,27 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/CommentMenu.qml" line="78"/>
         <source>Copy Comment</source>
-        <translation type="unfinished"></translation>
+        <translation>Копировать комментарий</translation>
     </message>
     <message>
         <location filename="../qml/CommentMenu.qml" line="81"/>
         <source>Comment copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарий скопирован в буфер обмена</translation>
     </message>
     <message>
         <location filename="../qml/CommentMenu.qml" line="87"/>
         <source>Reply</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответить</translation>
     </message>
     <message>
         <location filename="../qml/CommentMenu.qml" line="97"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать</translation>
     </message>
     <message>
         <location filename="../qml/CommentMenu.qml" line="102"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
 </context>
 <context>
@@ -414,78 +414,78 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/CommentPage.qml" line="27"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарии</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Best</source>
-        <translation type="unfinished"></translation>
+        <translation>Лучшие</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Top</source>
-        <translation type="unfinished"></translation>
+        <translation>Топ</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>Новые</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Hot</source>
-        <translation type="unfinished"></translation>
+        <translation>Популярные</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Controversial</source>
-        <translation type="unfinished"></translation>
+        <translation>Противоречивые</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Old</source>
-        <translation type="unfinished"></translation>
+        <translation>Старые</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="64"/>
         <source>Edit Post</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать пост</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="78"/>
         <location filename="../qml/CommentPage.qml" line="79"/>
         <source>Sort</source>
-        <translation type="unfinished"></translation>
+        <translation>Сортировать</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="90"/>
         <source>Add comment</source>
-        <translation type="unfinished"></translation>
+        <translation>Добавить комментарий</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="99"/>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Поделиться</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="109"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="242"/>
         <source>Viewing a single comment&apos;s thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Просмотр ветки одного комментария</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="247"/>
         <source>View All Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Просмотреть все комментарии</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="279"/>
         <source>Deleting comment</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление комментария</translation>
     </message>
 </context>
 <context>
@@ -493,37 +493,37 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/ImageViewPage.qml" line="27"/>
         <source>Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Изображение</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="59"/>
         <source>Save Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить изображение</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="64"/>
         <source>Share Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Поделиться изображением</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="76"/>
         <source>URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Ссылка на изображение</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="130"/>
         <source>Error loading image</source>
-        <translation type="unfinished"></translation>
+        <translation>Ошибка загрузки изображения</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="232"/>
         <source>Image saved to gallery</source>
-        <translation type="unfinished"></translation>
+        <translation>Изображение сохранено в галерею</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="233"/>
         <source>Image save failed!</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось сохранить изображение!</translation>
     </message>
 </context>
 <context>
@@ -531,12 +531,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../../src/imgurmanager.cpp" line="147"/>
         <source>Unable to get Imgur ID from the url: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>ImgurManager: не удалось получить ID Imgur из URL: %1</translation>
     </message>
     <message>
         <location filename="../../src/imgurmanager.cpp" line="183"/>
         <source>Imgur API returns no image</source>
-        <translation type="unfinished"></translation>
+        <translation>ImgurManager: API Imgur не вернуло изображение</translation>
     </message>
 </context>
 <context>
@@ -544,12 +544,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../../src/linkmanager.cpp" line="127"/>
         <source>The link has been added</source>
-        <translation type="unfinished"></translation>
+        <translation>Ссылка добавлена</translation>
     </message>
     <message>
         <location filename="../../src/linkmanager.cpp" line="133"/>
         <source>The link text has been changed</source>
-        <translation type="unfinished"></translation>
+        <translation>Текст ссылки изменён</translation>
     </message>
 </context>
 <context>
@@ -557,12 +557,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/LinkMenu.qml" line="79"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить ссылку</translation>
     </message>
     <message>
         <location filename="../qml/LinkMenu.qml" line="85"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрыть ссылку</translation>
     </message>
 </context>
 <context>
@@ -570,7 +570,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/LoadingFooter.qml" line="61"/>
         <source>Load More...</source>
-        <translation type="unfinished"></translation>
+        <translation>Загрузить ещё...</translation>
     </message>
 </context>
 <context>
@@ -578,43 +578,43 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MainPage.qml" line="97"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation>О %1</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="109"/>
         <source>New Post</source>
-        <translation type="unfinished"></translation>
+        <translation>Новый пост</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="115"/>
         <location filename="../qml/MainPage.qml" line="117"/>
         <source>Section</source>
-        <translation type="unfinished"></translation>
+        <translation>Раздел главной страницы</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="127"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="131"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="153"/>
         <source>Delete link</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить ссылку</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="158"/>
         <source>Hide link</source>
-        <translation type="unfinished"></translation>
+        <translation>Скрыть ссылку</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="178"/>
         <source>Nothing here :(</source>
-        <translation type="unfinished"></translation>
+        <translation>Здесь ничего нет :(</translation>
     </message>
 </context>
 <context>
@@ -622,22 +622,22 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MessageDelegate.qml" line="82"/>
         <source>%1 from %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Сообщение %1 от %2</translation>
     </message>
     <message>
         <location filename="../qml/MessageDelegate.qml" line="94"/>
         <source>in %1</source>
-        <translation type="unfinished"></translation>
+        <translation>в %1</translation>
     </message>
     <message>
         <location filename="../qml/MessageDelegate.qml" line="96"/>
         <source>to %1</source>
-        <translation type="unfinished"></translation>
+        <translation>кому: %1</translation>
     </message>
     <message>
         <location filename="../qml/MessageDelegate.qml" line="98"/>
         <source>from %1</source>
-        <translation type="unfinished"></translation>
+        <translation>от %1</translation>
     </message>
 </context>
 <context>
@@ -645,22 +645,22 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MessageMenu.qml" line="36"/>
         <source>Reply</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответить</translation>
     </message>
     <message>
         <location filename="../qml/MessageMenu.qml" line="43"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Удалить</translation>
     </message>
     <message>
         <location filename="../qml/MessageMenu.qml" line="49"/>
         <source>Mark As Read</source>
-        <translation type="unfinished"></translation>
+        <translation>Отметить как прочитанное</translation>
     </message>
     <message>
         <location filename="../qml/MessageMenu.qml" line="49"/>
         <source>Mark As Unread</source>
-        <translation type="unfinished"></translation>
+        <translation>Отметить как непрочитанное</translation>
     </message>
 </context>
 <context>
@@ -669,69 +669,69 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/MessagePage.qml" line="27"/>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>Messages</source>
-        <translation type="unfinished"></translation>
+        <translation>Сообщения</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>All</source>
-        <translation type="unfinished"></translation>
+        <translation>Все сообщения</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>Unread</source>
-        <translation type="unfinished"></translation>
+        <translation>Непрочитанные</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>Comment Replies</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответы на комментарии</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>Post Replies</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответы на посты</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>Sent</source>
-        <translation type="unfinished"></translation>
+        <translation>Отправленные</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>Username Mentions</source>
-        <translation type="unfinished"></translation>
+        <translation>Упоминания</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="49"/>
         <source>New Message</source>
-        <translation type="unfinished"></translation>
+        <translation>Новое сообщение</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="53"/>
         <location filename="../qml/MessagePage.qml" line="55"/>
         <source>Section</source>
-        <translation type="unfinished"></translation>
+        <translation>Раздел</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="64"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="87"/>
         <source>Deleting message</source>
-        <translation type="unfinished"></translation>
+        <translation>Удаление сообщения</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="131"/>
         <source>Nothing here :(</source>
-        <translation type="unfinished"></translation>
+        <translation>Здесь ничего нет :(</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="146"/>
         <location filename="../qml/MessagePage.qml" line="150"/>
         <source>Message sent</source>
-        <translation type="unfinished"></translation>
+        <translation>Сообщение отправлено</translation>
     </message>
 </context>
 <context>
@@ -739,7 +739,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/ModeratorListPage.qml" line="25"/>
         <source>Moderators</source>
-        <translation type="unfinished"></translation>
+        <translation>Модераторы</translation>
     </message>
 </context>
 <context>
@@ -747,22 +747,22 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="27"/>
         <source>Multireddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Подборки сабреддитов</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="52"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="67"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О подборке</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
-        <translation type="unfinished"></translation>
+        <translation>Здесь ничего нет :(</translation>
     </message>
 </context>
 <context>
@@ -770,41 +770,41 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="27"/>
         <source>Open URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть ссылку</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="74"/>
         <location filename="../qml/OpenLinkDialog.qml" line="153"/>
         <source>Open in browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть в браузере</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="78"/>
         <location filename="../qml/OpenLinkDialog.qml" line="157"/>
         <source>Launching web browser...</source>
-        <translation type="unfinished"></translation>
+        <translation>Запуск веб‑браузера…</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="84"/>
         <location filename="../qml/OpenLinkDialog.qml" line="163"/>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Скопировать ссылку</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="87"/>
         <location filename="../qml/OpenLinkDialog.qml" line="167"/>
         <source>URL copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Ссылка скопирована в буфер обмена</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="123"/>
         <source>Open in Kodi</source>
-        <translation type="unfinished"></translation>
+        <translation>Открыть в Kodi</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="131"/>
         <source>Source</source>
-        <translation type="unfinished"></translation>
+        <translation>Источник</translation>
     </message>
 </context>
 <context>
@@ -812,68 +812,68 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/PostInfoText.qml" line="43"/>
         <source>Sticky</source>
-        <translation type="unfinished"></translation>
+        <translation>Закреплённый пост</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="50"/>
         <source>NSFW</source>
-        <translation type="unfinished"></translation>
+        <translation>18+</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="57"/>
         <source>Promoted</source>
-        <translation type="unfinished"></translation>
+        <translation>Рекламный пост</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="63"/>
         <source>Gilded</source>
-        <translation type="unfinished"></translation>
+        <translation>Пост с наградой</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="71"/>
         <source>Archived</source>
-        <translation type="unfinished"></translation>
+        <translation>Архивировано</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="78"/>
         <source>Locked</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарии закрыты</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="111"/>
         <source>submitted %1 by %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Опубликовано %1 пользователем %2</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="114"/>
         <source>to %1</source>
-        <translation type="unfinished"></translation>
+        <translation>В %1</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/PostInfoText.qml" line="116"/>
         <source>%n crossposts</source>
-        <translation type="unfinished">
-            <numerusform>%n crosspost</numerusform>
-            <numerusform>%n crossposts</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n кросспост</numerusform>
+            <numerusform>%n кросспоста</numerusform>
+            <numerusform>%n кросспостов</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/PostInfoText.qml" line="143"/>
         <source>%n points</source>
-        <translation type="unfinished">
-            <numerusform>%n point</numerusform>
-            <numerusform>%n points</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n очко</numerusform>
+            <numerusform>%n очка</numerusform>
+            <numerusform>%0n очков</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/PostInfoText.qml" line="155"/>
         <source>%n comments</source>
-        <translation type="unfinished">
-            <numerusform>%n comment</numerusform>
-            <numerusform>%n comments</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n комментарий</numerusform>
+            <numerusform>%n комментария</numerusform>
+            <numerusform>%n комментариев</numerusform>
         </translation>
     </message>
 </context>
@@ -882,12 +882,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../../src/qmlutils.cpp" line="188"/>
         <source>Invalid share URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Недействительная ссылка для общего доступа</translation>
     </message>
     <message>
         <location filename="../../src/qmlutils.cpp" line="202"/>
         <source>Unable to resolve share URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Не удалось определить ссылку для общего доступа</translation>
     </message>
 </context>
 <context>
@@ -895,37 +895,37 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SearchDialog.qml" line="25"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Поиск</translation>
     </message>
     <message>
         <location filename="../qml/SearchDialog.qml" line="53"/>
         <source>Enter search query</source>
-        <translation type="unfinished"></translation>
+        <translation>Введите поисковый запрос</translation>
     </message>
     <message>
         <location filename="../qml/SearchDialog.qml" line="64"/>
         <source>Search for</source>
-        <translation type="unfinished"></translation>
+        <translation>Поиск по</translation>
     </message>
     <message>
         <location filename="../qml/SearchDialog.qml" line="66"/>
         <source>Posts</source>
-        <translation type="unfinished"></translation>
+        <translation>Посты</translation>
     </message>
     <message>
         <location filename="../qml/SearchDialog.qml" line="67"/>
         <source>Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Сабреддиты</translation>
     </message>
     <message>
         <location filename="../qml/SearchDialog.qml" line="84"/>
         <source>Search within this subreddit:</source>
-        <translation type="unfinished"></translation>
+        <translation>Искать в этом сабреддите</translation>
     </message>
     <message>
         <location filename="../qml/SearchDialog.qml" line="93"/>
         <source>Enter subreddit name</source>
-        <translation type="unfinished"></translation>
+        <translation>Введите название сабреддита</translation>
     </message>
 </context>
 <context>
@@ -933,84 +933,84 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SearchPage.qml" line="25"/>
         <source>Search Result: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Результат поиска: %1</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="31"/>
         <source>Relevance</source>
-        <translation type="unfinished"></translation>
+        <translation>По релевантности</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="31"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>Новые</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="31"/>
         <source>Hot</source>
-        <translation type="unfinished"></translation>
+        <translation>Популярное</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="31"/>
         <source>Top</source>
-        <translation type="unfinished"></translation>
+        <translation>Лучшее</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="31"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарии</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="32"/>
         <source>All time</source>
-        <translation type="unfinished"></translation>
+        <translation>За всё время</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="32"/>
         <source>This hour</source>
-        <translation type="unfinished"></translation>
+        <translation>За последний час</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="32"/>
         <source>Today</source>
-        <translation type="unfinished"></translation>
+        <translation>Сегодня</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="32"/>
         <source>This week</source>
-        <translation type="unfinished"></translation>
+        <translation>На этой неделе</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="33"/>
         <source>This month</source>
-        <translation type="unfinished"></translation>
+        <translation>В этом месяце</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="33"/>
         <source>This year</source>
-        <translation type="unfinished"></translation>
+        <translation>В этом году</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="46"/>
         <source>Search Again</source>
-        <translation type="unfinished"></translation>
+        <translation>Искать снова</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="53"/>
         <location filename="../qml/SearchPage.qml" line="55"/>
         <source>Time Range</source>
-        <translation type="unfinished"></translation>
+        <translation>Период времени</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="64"/>
         <location filename="../qml/SearchPage.qml" line="66"/>
         <source>Sort</source>
-        <translation type="unfinished"></translation>
+        <translation>Сортировать</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="74"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
 </context>
 <context>
@@ -1019,66 +1019,66 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/SectionSelectionDialog.qml" line="36"/>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>Hot</source>
-        <translation type="unfinished"></translation>
+        <translation>Популярное</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="36"/>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>Новые</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="36"/>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>Rising</source>
-        <translation type="unfinished"></translation>
+        <translation>Набирающие популярность</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="36"/>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>Controversial</source>
-        <translation type="unfinished"></translation>
+        <translation>Спорное</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="36"/>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>Top</source>
-        <translation type="unfinished"></translation>
+        <translation>Лучшее</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>Best</source>
-        <translation type="unfinished"></translation>
+        <translation>Рекомендуемое</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="44"/>
         <source>Hour</source>
-        <translation type="unfinished"></translation>
+        <translation>Последний час</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="45"/>
         <source>Day</source>
-        <translation type="unfinished"></translation>
+        <translation>Сегодня</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="46"/>
         <source>Week</source>
-        <translation type="unfinished"></translation>
+        <translation>На этой неделе</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="47"/>
         <source>Month</source>
-        <translation type="unfinished"></translation>
+        <translation>В этом месяце</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="48"/>
         <source>Year</source>
-        <translation type="unfinished"></translation>
+        <translation>В этом году</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="49"/>
         <source>All time</source>
-        <translation type="unfinished"></translation>
+        <translation>За всё время</translation>
     </message>
 </context>
 <context>
@@ -1086,47 +1086,47 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SendLinkPage.qml" line="25"/>
         <source>New Post</source>
-        <translation type="unfinished"></translation>
+        <translation>Новый пост</translation>
     </message>
     <message>
         <location filename="../qml/SendLinkPage.qml" line="25"/>
         <source>Edit Post</source>
-        <translation type="unfinished"></translation>
+        <translation>Редактировать пост</translation>
     </message>
     <message>
         <location filename="../qml/SendLinkPage.qml" line="79"/>
         <source>Post Title</source>
-        <translation type="unfinished"></translation>
+        <translation>Заголовок поста</translation>
     </message>
     <message>
         <location filename="../qml/SendLinkPage.qml" line="87"/>
         <source>Self Post</source>
-        <translation type="unfinished"></translation>
+        <translation>Текстовый пост</translation>
     </message>
     <message>
         <location filename="../qml/SendLinkPage.qml" line="94"/>
         <source>Post URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Ссылка на пост</translation>
     </message>
     <message>
         <location filename="../qml/SendLinkPage.qml" line="106"/>
         <source>Post Text</source>
-        <translation type="unfinished"></translation>
+        <translation>Текст поста</translation>
     </message>
     <message>
         <location filename="../qml/SendLinkPage.qml" line="114"/>
         <source>Flair</source>
-        <translation type="unfinished"></translation>
+        <translation>Метка поста</translation>
     </message>
     <message>
         <location filename="../qml/SendLinkPage.qml" line="129"/>
         <source>Submit</source>
-        <translation type="unfinished"></translation>
+        <translation>Опубликовать</translation>
     </message>
     <message>
         <location filename="../qml/SendLinkPage.qml" line="129"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Сохранить</translation>
     </message>
 </context>
 <context>
@@ -1134,42 +1134,42 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SendMessagePage.qml" line="25"/>
         <source>New Message</source>
-        <translation type="unfinished"></translation>
+        <translation>Новое сообщение</translation>
     </message>
     <message>
         <location filename="../qml/SendMessagePage.qml" line="25"/>
         <source>Reply Message</source>
-        <translation type="unfinished"></translation>
+        <translation>Ответить на сообщение</translation>
     </message>
     <message>
         <location filename="../qml/SendMessagePage.qml" line="68"/>
         <source>Recipient</source>
-        <translation type="unfinished"></translation>
+        <translation>Получатель</translation>
     </message>
     <message>
         <location filename="../qml/SendMessagePage.qml" line="75"/>
         <source>to moderators of</source>
-        <translation type="unfinished"></translation>
+        <translation>Сообщение модераторам сообщества</translation>
     </message>
     <message>
         <location filename="../qml/SendMessagePage.qml" line="75"/>
         <source>to</source>
-        <translation type="unfinished"></translation>
+        <translation>Кому</translation>
     </message>
     <message>
         <location filename="../qml/SendMessagePage.qml" line="84"/>
         <source>Subject</source>
-        <translation type="unfinished"></translation>
+        <translation>Тема сообщения</translation>
     </message>
     <message>
         <location filename="../qml/SendMessagePage.qml" line="93"/>
         <source>Message</source>
-        <translation type="unfinished"></translation>
+        <translation>Текст сообщения</translation>
     </message>
     <message>
         <location filename="../qml/SendMessagePage.qml" line="99"/>
         <source>Send</source>
-        <translation type="unfinished"></translation>
+        <translation>Отправить</translation>
     </message>
 </context>
 <context>
@@ -1177,122 +1177,122 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="16"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation>Настройки</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="24"/>
         <source>Accounts</source>
-        <translation type="unfinished"></translation>
+        <translation>Аккаунты</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="35"/>
         <source>UX</source>
-        <translation type="unfinished"></translation>
+        <translation>Пользовательский интерфейс</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="38"/>
         <source>Font Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Размер шрифта</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="48"/>
         <source>Tiny</source>
-        <translation type="unfinished"></translation>
+        <translation>Очень маленький</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="49"/>
         <source>Small</source>
-        <translation type="unfinished"></translation>
+        <translation>Маленький</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="50"/>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Средний</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="51"/>
         <source>Large</source>
-        <translation type="unfinished"></translation>
+        <translation>Большой</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="64"/>
         <source>Device Orientation</source>
-        <translation type="unfinished"></translation>
+        <translation>Ориентация устройства</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="73"/>
         <source>Automatic</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматически</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="74"/>
         <source>Portrait only</source>
-        <translation type="unfinished"></translation>
+        <translation>Только портретная ориентация</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="75"/>
         <source>Landscape only</source>
-        <translation type="unfinished"></translation>
+        <translation>Только альбомная ориентация</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="87"/>
         <source>Thumbnail Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Размер изображений</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="100"/>
         <source>Auto</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоматически</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="122"/>
         <source>Thumbnail Link Type Indicator</source>
-        <translation type="unfinished"></translation>
+        <translation>Индикатор типа ссылки изображения</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="130"/>
         <source>Comments Tap To Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Нажмите, чтобы скрыть комментарии</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="137"/>
         <source>Notifications</source>
-        <translation type="unfinished"></translation>
+        <translation>Уведомления</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="140"/>
         <source>Check Messages</source>
-        <translation type="unfinished"></translation>
+        <translation>Проверка сообщений</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="148"/>
         <source>Media</source>
-        <translation type="unfinished"></translation>
+        <translation>Медиа</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="151"/>
         <source>Preferred Video Size</source>
-        <translation type="unfinished"></translation>
+        <translation>Предпочитаемый размер видео</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
         <source>Loop Videos</source>
-        <translation type="unfinished"></translation>
+        <translation>Автоповтор видео</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="178"/>
         <source>Connection</source>
-        <translation type="unfinished"></translation>
+        <translation>Подключение</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="181"/>
         <source>Use Tor</source>
-        <translation type="unfinished"></translation>
+        <translation>Tor</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="182"/>
         <source>When enabled, please make sure Tor is installed and active.</source>
-        <translation type="unfinished"></translation>
+        <translation>При включении убедитесь, что Tor установлен и активен</translation>
     </message>
 </context>
 <context>
@@ -1301,17 +1301,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/SignInPage.qml" line="20"/>
         <location filename="../qml/SignInPage.qml" line="32"/>
         <source>Sign in to Reddit</source>
-        <translation type="unfinished"></translation>
+        <translation>Войти в Reddit</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Отмена</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="76"/>
         <source>Sign in successful! Welcome! :)</source>
-        <translation type="unfinished"></translation>
+        <translation>Вход выполнен успешно! Добро пожаловать! :)</translation>
     </message>
 </context>
 <context>
@@ -1319,10 +1319,10 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message numerus="yes">
         <location filename="../qml/SubredditBrowseDelegate.qml" line="82"/>
         <source>%n subscribers</source>
-        <translation type="unfinished">
-            <numerusform>%n subscriber</numerusform>
-            <numerusform>%n subscribers</numerusform>
-            <numerusform></numerusform>
+        <translation>
+            <numerusform>%n подписчик</numerusform>
+            <numerusform>%n подписчики</numerusform>
+            <numerusform>%n подписчиков</numerusform>
         </translation>
     </message>
 </context>
@@ -1331,27 +1331,27 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="82"/>
         <source>NSFW</source>
-        <translation type="unfinished"></translation>
+        <translation>Сабреддит (18+)</translation>
     </message>
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="88"/>
         <source>Contributor</source>
-        <translation type="unfinished"></translation>
+        <translation>Участник сабреддита</translation>
     </message>
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="93"/>
         <source>Banned</source>
-        <translation type="unfinished"></translation>
+        <translation>Пользователь заблокирован</translation>
     </message>
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="99"/>
         <source>Mod</source>
-        <translation type="unfinished"></translation>
+        <translation>Модератор</translation>
     </message>
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="105"/>
         <source>Muted</source>
-        <translation type="unfinished"></translation>
+        <translation>Пользователь в муте</translation>
     </message>
 </context>
 <context>
@@ -1359,48 +1359,48 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="27"/>
         <source>Subreddits Search: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Поиск по сабреддитам: %1</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="36"/>
         <source>Popular Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Популярные сабреддиты</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="36"/>
         <source>New Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Новые сабреддиты</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="37"/>
         <source>My Subreddits - Subscriber</source>
-        <translation type="unfinished"></translation>
+        <translation>Мои сабреддиты — подписчик</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="37"/>
         <source>My Subreddits - Approved Submitter</source>
-        <translation type="unfinished"></translation>
+        <translation>Мои сабреддиты — одобренный автор</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="37"/>
         <source>My Subreddits - Moderator</source>
-        <translation type="unfinished"></translation>
+        <translation>Мои сабреддиты — модератор</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="57"/>
         <location filename="../qml/SubredditsBrowsePage.qml" line="59"/>
         <source>Section</source>
-        <translation type="unfinished"></translation>
+        <translation>Раздел сабреддитов</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="67"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Обновить</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="82"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>О сабреддитах</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="88"/>
