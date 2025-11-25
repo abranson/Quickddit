@@ -145,6 +145,7 @@
         <translation type="unfinished">
             <numerusform>%n subscriber</numerusform>
             <numerusform>%n subscribers</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -153,6 +154,7 @@
         <translation type="unfinished">
             <numerusform>%n active user</numerusform>
             <numerusform>%n active users</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -299,6 +301,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n pt</numerusform>
             <numerusform>%n pts</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -307,6 +310,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>Load %n hidden comment</numerusform>
             <numerusform>Load %n hidden comments</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -320,6 +324,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>Show %n collapsed comment</numerusform>
             <numerusform>Show %n collapsed comments</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message>
@@ -850,6 +855,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n crosspost</numerusform>
             <numerusform>%n crossposts</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -858,6 +864,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n point</numerusform>
             <numerusform>%n points</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -866,6 +873,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n comment</numerusform>
             <numerusform>%n comments</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -1314,6 +1322,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n subscriber</numerusform>
             <numerusform>%n subscribers</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -1693,6 +1702,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n min ago</numerusform>
             <numerusform>%n mins ago</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1701,6 +1711,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n hour ago</numerusform>
             <numerusform>%n hours ago</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1709,6 +1720,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n day ago</numerusform>
             <numerusform>%n days ago</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1717,6 +1729,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n month ago</numerusform>
             <numerusform>%n months ago</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -1725,6 +1738,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n year ago</numerusform>
             <numerusform>%n years ago</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
@@ -1840,6 +1854,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished">
             <numerusform>%n new message</numerusform>
             <numerusform>%n new messages</numerusform>
+            <numerusform></numerusform>
         </translation>
     </message>
 </context>
