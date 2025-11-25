@@ -744,22 +744,22 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="27"/>
         <source>Multireddits</source>
-        <translation type="unfinished">Multireddits</translation>
+        <translation>Multireddits</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="52"/>
         <source>Refresh</source>
-        <translation type="unfinished">Refresh</translation>
+        <translation>Refresh</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="67"/>
         <source>About</source>
-        <translation type="unfinished">About</translation>
+        <translation>About</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
-        <translation type="unfinished">Nothing here :(</translation>
+        <translation>Nothing here :(</translation>
     </message>
 </context>
 <context>
@@ -1451,17 +1451,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="28"/>
         <source>Quickddit</source>
-        <translation type="unfinished"></translation>
+        <translation>Quickddit</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="112"/>
         <source>Signed in as %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Signed in as %1</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="112"/>
         <source>Not signed in</source>
-        <translation type="unfinished"></translation>
+        <translation>Not signed in</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
