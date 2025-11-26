@@ -223,7 +223,7 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="226"/>
         <source>You have subscribed to %1</source>
-        <translation>Du hast %1 abonniert.</translation>
+        <translation>Du hast %1 abonniert</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="228"/>
@@ -241,7 +241,7 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign out</source>
-        <translation type="unfinished">Abmelden</translation>
+        <translation>Abmelden</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
