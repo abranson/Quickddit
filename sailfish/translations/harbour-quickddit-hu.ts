@@ -266,7 +266,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign in to Reddit</source>
-        <translation type="unfinished">Bejelentkezés a Reddit-be</translation>
+        <translation>Bejelentkezés a Reddit-be</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
@@ -640,12 +640,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MessageMenu.qml" line="36"/>
         <source>Reply</source>
-        <translation type="unfinished">Válasz</translation>
+        <translation>Válasz</translation>
     </message>
     <message>
         <location filename="../qml/MessageMenu.qml" line="43"/>
         <source>Delete</source>
-        <translation type="unfinished">Törlés</translation>
+        <translation>Törlés</translation>
     </message>
     <message>
         <location filename="../qml/MessageMenu.qml" line="49"/>
@@ -807,7 +807,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/PostInfoText.qml" line="43"/>
         <source>Sticky</source>
-        <translation type="unfinished">Ragadós</translation>
+        <translation>Ragadós</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="50"/>
@@ -822,7 +822,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/PostInfoText.qml" line="63"/>
         <source>Gilded</source>
-        <translation type="unfinished">Aranyozott</translation>
+        <translation>Aranyozott</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="71"/>
@@ -1037,7 +1037,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>Best</source>
-        <translation type="unfinished">Legjobb</translation>
+        <translation>Legjobb</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="44"/>
@@ -1281,7 +1281,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="16"/>
         <source>Settings</source>
-        <translation type="unfinished">Beállítások</translation>
+        <translation>Beállítások</translation>
     </message>
 </context>
 <context>
@@ -1323,7 +1323,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="88"/>
         <source>Contributor</source>
-        <translation type="unfinished">Közreműködő</translation>
+        <translation>Közreműködő</translation>
     </message>
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="93"/>
@@ -1333,7 +1333,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="99"/>
         <source>Mod</source>
-        <translation type="unfinished">Mod</translation>
+        <translation>Mod</translation>
     </message>
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="105"/>
@@ -1387,7 +1387,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="82"/>
         <source>About</source>
-        <translation type="unfinished">Súgó</translation>
+        <translation>Súgó</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="88"/>
@@ -1485,7 +1485,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="186"/>
         <source>About</source>
-        <translation type="unfinished">Súgó</translation>
+        <translation>Súgó</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="192"/>
@@ -1495,7 +1495,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="256"/>
         <source>You have unsubscribed from %1</source>
-        <translation type="unfinished">Leiratkoztál innen: %1</translation>
+        <translation>Leiratkoztál innen: %1</translation>
     </message>
 </context>
 <context>
@@ -1635,7 +1635,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPageCommentDelegate.qml" line="61"/>
         <source>Gilded</source>
-        <translation type="unfinished">Aranyozott</translation>
+        <translation>Aranyozott</translation>
     </message>
     <message>
         <location filename="../qml/UserPageCommentDelegate.qml" line="85"/>
@@ -1663,7 +1663,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPageLinkDelegate.qml" line="87"/>
         <source>Gilded</source>
-        <translation type="unfinished">Aranyozott</translation>
+        <translation>Aranyozott</translation>
     </message>
     <message>
         <location filename="../qml/UserPageLinkDelegate.qml" line="96"/>
