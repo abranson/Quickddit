@@ -544,7 +544,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../../src/linkmanager.cpp" line="133"/>
         <source>The link text has been changed</source>
-        <translation>Il testo del collegamento è stato cambiato </translation>
+        <translation>Il testo del collegamento è stato cambiato</translation>
     </message>
 </context>
 <context>
