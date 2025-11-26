@@ -241,17 +241,17 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign out</source>
-        <translation type="unfinished">Logga ut</translation>
+        <translation>Logga ut</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign in to Reddit</source>
-        <translation type="unfinished">Logga in på Reddit</translation>
+        <translation>Logga in på Reddit</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="40"/>
         <source>You have signed out from Reddit</source>
-        <translation type="unfinished">Du har loggat ut från Reddit</translation>
+        <translation>Du har loggat ut från Reddit</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="93"/>
@@ -749,22 +749,22 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="27"/>
         <source>Multireddits</source>
-        <translation type="unfinished">Multiredditar</translation>
+        <translation>Multiredditar</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="52"/>
         <source>Refresh</source>
-        <translation type="unfinished">Uppdatera</translation>
+        <translation>Uppdatera</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="67"/>
         <source>About</source>
-        <translation type="unfinished">Om</translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
-        <translation type="unfinished">Inget här :(</translation>
+        <translation>Inget här :(</translation>
     </message>
 </context>
 <context>
@@ -1176,122 +1176,122 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SettingsPage.qml" line="16"/>
         <source>Settings</source>
-        <translation type="unfinished">Inställningar</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="24"/>
         <source>Accounts</source>
-        <translation type="unfinished">Konton</translation>
+        <translation>Konton</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="35"/>
         <source>UX</source>
-        <translation type="unfinished">UX</translation>
+        <translation>UX</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="38"/>
         <source>Font Size</source>
-        <translation type="unfinished">Teckenstorlek</translation>
+        <translation>Teckenstorlek</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="48"/>
         <source>Tiny</source>
-        <translation type="unfinished">Mycket liten</translation>
+        <translation>Mycket liten</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="49"/>
         <source>Small</source>
-        <translation type="unfinished">Liten</translation>
+        <translation>Liten</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="50"/>
         <source>Medium</source>
-        <translation type="unfinished">Medium</translation>
+        <translation>Medium</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="51"/>
         <source>Large</source>
-        <translation type="unfinished">Stor</translation>
+        <translation>Stor</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="64"/>
         <source>Device Orientation</source>
-        <translation type="unfinished">Enhetsorientering</translation>
+        <translation>Enhetsorientering</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="73"/>
         <source>Automatic</source>
-        <translation type="unfinished">Auto</translation>
+        <translation>Auto</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="74"/>
         <source>Portrait only</source>
-        <translation type="unfinished">Endast stående</translation>
+        <translation>Endast stående</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="75"/>
         <source>Landscape only</source>
-        <translation type="unfinished">Endast liggande</translation>
+        <translation>Endast liggande</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="87"/>
         <source>Thumbnail Size</source>
-        <translation type="unfinished">Miniatyrstorlek</translation>
+        <translation>Miniatyrstorlek</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="100"/>
         <source>Auto</source>
-        <translation type="unfinished">Auto</translation>
+        <translation>Auto</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="122"/>
         <source>Thumbnail Link Type Indicator</source>
-        <translation type="unfinished">Länktypsindikator för miniatyrer</translation>
+        <translation>Länktypsindikator för miniatyrer</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="130"/>
         <source>Comments Tap To Hide</source>
-        <translation type="unfinished">Kommentarer. Tryck för att dölja.</translation>
+        <translation>Kommentarer. Tryck för att dölja</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="137"/>
         <source>Notifications</source>
-        <translation type="unfinished">Aviseringar</translation>
+        <translation>Aviseringar</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="140"/>
         <source>Check Messages</source>
-        <translation type="unfinished">Läs meddelanden</translation>
+        <translation>Läs meddelanden</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="148"/>
         <source>Media</source>
-        <translation type="unfinished">Media</translation>
+        <translation>Media</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="151"/>
         <source>Preferred Video Size</source>
-        <translation type="unfinished">Föredragen videostorlek</translation>
+        <translation>Föredragen videostorlek</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
         <source>Loop Videos</source>
-        <translation type="unfinished">Loopa videor</translation>
+        <translation>Loopa videor</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="178"/>
         <source>Connection</source>
-        <translation type="unfinished">Anslutning</translation>
+        <translation>Anslutning</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="181"/>
         <source>Use Tor</source>
-        <translation type="unfinished">Använd Tor</translation>
+        <translation>Använd Tor</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="182"/>
         <source>When enabled, please make sure Tor is installed and active.</source>
-        <translation type="unfinished">Tillse att Tor är installerad och startad, vid aktivering.</translation>
+        <translation>Tillse att Tor är installerad och startad, vid aktivering.</translation>
     </message>
 </context>
 <context>
@@ -1300,7 +1300,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <location filename="../qml/SignInPage.qml" line="20"/>
         <location filename="../qml/SignInPage.qml" line="32"/>
         <source>Sign in to Reddit</source>
-        <translation type="unfinished">Logga in på Reddit</translation>
+        <translation>Logga in på Reddit</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
