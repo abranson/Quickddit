@@ -205,6 +205,16 @@ void LinkModel::setMultireddit(const QString &multireddit)
     }
 }
 
+QDateTime LinkModel::lastRefreshedTime() const
+{
+    return m_lastRefreshedTime;
+}
+
+bool LinkModel::lastRefreshedValid() const
+{
+    return m_lastRefreshedTime.isValid();
+}
+
 QString LinkModel::searchQuery() const
 {
     return m_searchQuery;
@@ -321,6 +331,8 @@ void LinkModel::refresh(bool refreshOlder)
         } else {
             beginRemoveRows(QModelIndex(), 0, m_linkList.count() - 1);
             m_linkList.clear();
+            m_lastRefreshedTime = QDateTime();
+            emit lastRefreshedTimeChanged();
             endRemoveRows();
         }
     }
@@ -468,6 +480,10 @@ void LinkModel::onFinished(QNetworkReply *reply)
                                         ? Parser::parseDuplicates(reply->readAll())
                                         : Parser::parseLinkList(reply->readAll());
             if (!links.isEmpty()) {
+                if (m_linkList.isEmpty()) {
+                    m_lastRefreshedTime = QDateTime::currentDateTime();
+                    emit lastRefreshedTimeChanged();
+                }
                 // remove duplicate
                 if (!m_linkList.isEmpty()) {
                     QMutableListIterator<LinkObject> i(links);

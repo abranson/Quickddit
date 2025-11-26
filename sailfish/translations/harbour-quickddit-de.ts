@@ -599,17 +599,22 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
         <translation>Neu laden</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="153"/>
+        <location filename="../qml/MainPage.qml" line="136"/>
+        <source>Last refreshed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MainPage.qml" line="157"/>
         <source>Delete link</source>
         <translation>Link Löschen</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="158"/>
+        <location filename="../qml/MainPage.qml" line="162"/>
         <source>Hide link</source>
         <translation>Link ausblenden</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="178"/>
+        <location filename="../qml/MainPage.qml" line="182"/>
         <source>Nothing here</source>
         <translation type="unfinished"></translation>
     </message>

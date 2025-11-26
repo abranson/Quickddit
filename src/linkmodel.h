@@ -23,6 +23,8 @@
 #include "abstractlistmodelmanager.h"
 #include "linkobject.h"
 
+#include <QtCore/QDateTime>
+
 class LinkModel : public AbstractListModelManager
 {
     Q_OBJECT
@@ -37,6 +39,8 @@ class LinkModel : public AbstractListModelManager
     Q_PROPERTY(QString subreddit READ subreddit WRITE setSubreddit NOTIFY subredditChanged)
     Q_PROPERTY(QString multireddit READ multireddit WRITE setMultireddit NOTIFY multiredditChanged)
     Q_PROPERTY(TimeRange sectionTimeRange READ sectionTimeRange WRITE setSectionTimeRange NOTIFY sectionTimeRangeChanged)
+    Q_PROPERTY(QDateTime lastRefreshedTime READ lastRefreshedTime NOTIFY lastRefreshedTimeChanged)
+    Q_PROPERTY(bool lastRefreshedValid READ lastRefreshedValid NOTIFY lastRefreshedTimeChanged)
 
     // Only for Search
     Q_PROPERTY(QString searchQuery READ searchQuery WRITE setSearchQuery NOTIFY searchQueryChanged)
@@ -139,6 +143,9 @@ public:
     QString multireddit() const;
     void setMultireddit(const QString &multireddit);
 
+    QDateTime lastRefreshedTime() const;
+    bool lastRefreshedValid() const;
+
     QString searchQuery() const;
     void setSearchQuery(const QString &query);
 
@@ -166,6 +173,7 @@ signals:
     void sectionTimeRangeChanged();
     void subredditChanged();
     void multiredditChanged();
+    void lastRefreshedTimeChanged();
     void searchQueryChanged();
     void searchSortChanged();
     void searchTimeRangeChanged();
@@ -183,6 +191,7 @@ private:
     QString m_searchQuery;
     SearchSortType m_searchSort;
     TimeRange m_searchTimeRange;
+    QDateTime m_lastRefreshedTime;
 
     QList<LinkObject> m_linkList;
 

@@ -131,6 +131,10 @@ AbstractPage {
                 text: qsTr("Refresh")
                 onClicked: linkModel.refresh(false);
             }
+            MenuLabel {
+                visible: linkModel.lastRefreshedValid
+                text: qsTr("Last refreshed")+": "+Qt.formatDateTime(linkModel.lastRefreshedTime, Qt.SystemLocaleShortDate)
+            }
         }
 
         header: QuickdditPageHeader { title: mainPage.title }

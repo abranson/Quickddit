@@ -597,17 +597,22 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Ανανέωση</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="153"/>
+        <location filename="../qml/MainPage.qml" line="136"/>
+        <source>Last refreshed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MainPage.qml" line="157"/>
         <source>Delete link</source>
         <translation>Διαγραφή δεσμού</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="158"/>
+        <location filename="../qml/MainPage.qml" line="162"/>
         <source>Hide link</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="178"/>
+        <location filename="../qml/MainPage.qml" line="182"/>
         <source>Nothing here</source>
         <translation type="unfinished"></translation>
     </message>

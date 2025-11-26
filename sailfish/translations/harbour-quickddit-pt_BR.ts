@@ -599,17 +599,22 @@ Para adicionar uma conta faça um Login. Aqui estarão listadas todas as contas 
         <translation>Atualizar</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="153"/>
+        <location filename="../qml/MainPage.qml" line="136"/>
+        <source>Last refreshed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/MainPage.qml" line="157"/>
         <source>Delete link</source>
         <translation>Apagar link</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="158"/>
+        <location filename="../qml/MainPage.qml" line="162"/>
         <source>Hide link</source>
         <translation>Esconder link</translation>
     </message>
     <message>
-        <location filename="../qml/MainPage.qml" line="178"/>
+        <location filename="../qml/MainPage.qml" line="182"/>
         <source>Nothing here</source>
         <translation type="unfinished"></translation>
     </message>
