@@ -241,17 +241,17 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign out</source>
-        <translation>Αποσύνδεση</translation>
+        <translation type="unfinished">Αποσύνδεση</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign in to Reddit</source>
-        <translation>Συνδεθείτε στο Reddit</translation>
+        <translation type="unfinished">Συνδεθείτε στο Reddit</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="40"/>
         <source>You have signed out from Reddit</source>
-        <translation>Έχετε αποσυνδεθεί από το Reddit</translation>
+        <translation type="unfinished">Έχετε αποσυνδεθεί από το Reddit</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="93"/>
@@ -640,12 +640,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MessageMenu.qml" line="36"/>
         <source>Reply</source>
-        <translation>Απάντηση</translation>
+        <translation type="unfinished">Απάντηση</translation>
     </message>
     <message>
         <location filename="../qml/MessageMenu.qml" line="43"/>
         <source>Delete</source>
-        <translation>Διαγραφή</translation>
+        <translation type="unfinished">Διαγραφή</translation>
     </message>
     <message>
         <location filename="../qml/MessageMenu.qml" line="49"/>
@@ -742,12 +742,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="27"/>
         <source>Multireddits</source>
-        <translation>Πολλαπλά reddit</translation>
+        <translation type="unfinished">Πολλαπλά reddit</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="52"/>
         <source>Refresh</source>
-        <translation>Ανανέωση</translation>
+        <translation type="unfinished">Ανανέωση</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="67"/>
@@ -757,7 +757,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
-        <translation>Δεν υπάρχει τίποτα εδώ :(</translation>
+        <translation type="unfinished">Δεν υπάρχει τίποτα εδώ :(</translation>
     </message>
 </context>
 <context>
@@ -1040,7 +1040,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>Best</source>
-        <translation>Άριστο</translation>
+        <translation type="unfinished">Άριστο</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="44"/>
@@ -1169,7 +1169,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="16"/>
         <source>Settings</source>
-        <translation>Ρυθμίσεις</translation>
+        <translation type="unfinished">Ρυθμίσεις</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="24"/>
@@ -1184,57 +1184,57 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="38"/>
         <source>Font Size</source>
-        <translation>Μέγεθος γραμματοσειράς</translation>
+        <translation type="unfinished">Μέγεθος γραμματοσειράς</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="48"/>
         <source>Tiny</source>
-        <translation>Μικροσκοπική</translation>
+        <translation type="unfinished">Μικροσκοπική</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="49"/>
         <source>Small</source>
-        <translation>Μικρή</translation>
+        <translation type="unfinished">Μικρή</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="50"/>
         <source>Medium</source>
-        <translation>Μεσαία</translation>
+        <translation type="unfinished">Μεσαία</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="51"/>
         <source>Large</source>
-        <translation>Μεγάλη</translation>
+        <translation type="unfinished">Μεγάλη</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="64"/>
         <source>Device Orientation</source>
-        <translation>Προσανατολισμός της συσκευής</translation>
+        <translation type="unfinished">Προσανατολισμός της συσκευής</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="73"/>
         <source>Automatic</source>
-        <translation>Αυτόματο</translation>
+        <translation type="unfinished">Αυτόματο</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="74"/>
         <source>Portrait only</source>
-        <translation>Μόνο πορτραίτο</translation>
+        <translation type="unfinished">Μόνο πορτραίτο</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="75"/>
         <source>Landscape only</source>
-        <translation>Μόνο τοπίο</translation>
+        <translation type="unfinished">Μόνο τοπίο</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="87"/>
         <source>Thumbnail Size</source>
-        <translation>Μέγεθος εικόνων επισκόπησης</translation>
+        <translation type="unfinished">Μέγεθος εικόνων επισκόπησης</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="100"/>
         <source>Auto</source>
-        <translation>Αυτόματο</translation>
+        <translation type="unfinished">Αυτόματο</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="122"/>
@@ -1249,42 +1249,42 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="137"/>
         <source>Notifications</source>
-        <translation>Ειδοποιήσεις</translation>
+        <translation type="unfinished">Ειδοποιήσεις</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="140"/>
         <source>Check Messages</source>
-        <translation>Έλεγχος μηνυμάτων</translation>
+        <translation type="unfinished">Έλεγχος μηνυμάτων</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="148"/>
         <source>Media</source>
-        <translation>Πολυμέσα</translation>
+        <translation type="unfinished">Πολυμέσα</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="151"/>
         <source>Preferred Video Size</source>
-        <translation>Προτιμώμενο μέγεθος βίντεο</translation>
+        <translation type="unfinished">Προτιμώμενο μέγεθος βίντεο</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
         <source>Loop Videos</source>
-        <translation>Αναπαραγωγή βίντεο σε βρόχο</translation>
+        <translation type="unfinished">Αναπαραγωγή βίντεο σε βρόχο</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="178"/>
         <source>Connection</source>
-        <translation>Σύνδεση</translation>
+        <translation type="unfinished">Σύνδεση</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="181"/>
         <source>Use Tor</source>
-        <translation>Χρήση του Tor</translation>
+        <translation type="unfinished">Χρήση του Tor</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="182"/>
         <source>When enabled, please make sure Tor is installed and active.</source>
-        <translation>Όντας ενεργοποιημένο, σιγουρευτείτε ότι το Tor είναι εγκατεστημένο και ενεργό.</translation>
+        <translation type="unfinished">Όντας ενεργοποιημένο, σιγουρευτείτε ότι το Tor είναι εγκατεστημένο και ενεργό.</translation>
     </message>
 </context>
 <context>
@@ -1293,7 +1293,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/SignInPage.qml" line="20"/>
         <location filename="../qml/SignInPage.qml" line="32"/>
         <source>Sign in to Reddit</source>
-        <translation>Συνδεθείτε στο Reddit</translation>
+        <translation type="unfinished">Συνδεθείτε στο Reddit</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
