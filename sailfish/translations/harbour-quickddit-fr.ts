@@ -241,17 +241,17 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign out</source>
-        <translation type="unfinished">Déconnexion</translation>
+        <translation>Déconnexion</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
         <source>Sign in to Reddit</source>
-        <translation type="unfinished">Connexion à Reddit</translation>
+        <translation>Connexion à Reddit</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="40"/>
         <source>You have signed out from Reddit</source>
-        <translation type="unfinished">Vous vous êtes déconnecté de Reddit</translation>
+        <translation>Vous vous êtes déconnecté de Reddit</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="93"/>
@@ -747,22 +747,22 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="27"/>
         <source>Multireddits</source>
-        <translation type="unfinished">Multireddits</translation>
+        <translation>Multireddits</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="52"/>
         <source>Refresh</source>
-        <translation type="unfinished">Rafraîchir</translation>
+        <translation>Rafraîchir</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="67"/>
         <source>About</source>
-        <translation type="unfinished">À propos</translation>
+        <translation>À propos</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
-        <translation type="unfinished">Il n&apos;y a rien ici :(</translation>
+        <translation>Il n&apos;y a rien ici&#xa0;:(</translation>
     </message>
 </context>
 <context>
@@ -1045,7 +1045,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>Best</source>
-        <translation type="unfinished">Meilleur</translation>
+        <translation>Meilleur</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="44"/>
@@ -1174,7 +1174,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="16"/>
         <source>Settings</source>
-        <translation type="unfinished">Paramètres</translation>
+        <translation>Paramètres</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="24"/>
@@ -1189,62 +1189,62 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="38"/>
         <source>Font Size</source>
-        <translation type="unfinished">Taille de la police</translation>
+        <translation>Taille de la police</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="48"/>
         <source>Tiny</source>
-        <translation type="unfinished">Minuscule</translation>
+        <translation>Minuscule</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="49"/>
         <source>Small</source>
-        <translation type="unfinished">Petit</translation>
+        <translation>Petit</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="50"/>
         <source>Medium</source>
-        <translation type="unfinished">Moyen</translation>
+        <translation>Moyen</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="51"/>
         <source>Large</source>
-        <translation type="unfinished">Grand</translation>
+        <translation>Grand</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="64"/>
         <source>Device Orientation</source>
-        <translation type="unfinished">Orientation de l&apos;appareil</translation>
+        <translation>Orientation de l&apos;appareil</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="73"/>
         <source>Automatic</source>
-        <translation type="unfinished">Automatique</translation>
+        <translation>Automatique</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="74"/>
         <source>Portrait only</source>
-        <translation type="unfinished">Portrait uniquement</translation>
+        <translation>Portrait uniquement</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="75"/>
         <source>Landscape only</source>
-        <translation type="unfinished">Paysage uniquement</translation>
+        <translation>Paysage uniquement</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="87"/>
         <source>Thumbnail Size</source>
-        <translation type="unfinished">Taille de la vignette</translation>
+        <translation>Taille de la vignette</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="100"/>
         <source>Auto</source>
-        <translation type="unfinished">Auto</translation>
+        <translation>Auto</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="122"/>
         <source>Thumbnail Link Type Indicator</source>
-        <translation type="unfinished">Indicateur</translation>
+        <translation>Indicateur</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="130"/>
@@ -1254,42 +1254,42 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="137"/>
         <source>Notifications</source>
-        <translation type="unfinished">Notifications</translation>
+        <translation>Notifications</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="140"/>
         <source>Check Messages</source>
-        <translation type="unfinished">Vérifier les messages</translation>
+        <translation>Vérifier les messages</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="148"/>
         <source>Media</source>
-        <translation type="unfinished">Média</translation>
+        <translation>Média</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="151"/>
         <source>Preferred Video Size</source>
-        <translation type="unfinished">Qualité vidéo souhaitée</translation>
+        <translation>Qualité vidéo souhaitée</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
         <source>Loop Videos</source>
-        <translation type="unfinished">Vidéos en boucle</translation>
+        <translation>Vidéos en boucle</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="178"/>
         <source>Connection</source>
-        <translation type="unfinished">Connexion</translation>
+        <translation>Connexion</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="181"/>
         <source>Use Tor</source>
-        <translation type="unfinished">Utiliser Tor</translation>
+        <translation>Utiliser Tor</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="182"/>
         <source>When enabled, please make sure Tor is installed and active.</source>
-        <translation type="unfinished">Si sélectionné, assurez-vous que l&apos;application Tor soit installée et bien active.</translation>
+        <translation>Si sélectionné, assurez-vous que l&apos;application Tor soit installée et bien active.</translation>
     </message>
 </context>
 <context>
@@ -1298,7 +1298,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/SignInPage.qml" line="20"/>
         <location filename="../qml/SignInPage.qml" line="32"/>
         <source>Sign in to Reddit</source>
-        <translation type="unfinished">Connexion à Reddit</translation>
+        <translation>Connexion à Reddit</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
