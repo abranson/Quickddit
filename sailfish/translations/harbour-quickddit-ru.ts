@@ -1405,17 +1405,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="88"/>
         <source>Subscribe</source>
-        <translation type="unfinished"></translation>
+        <translation>Подписаться</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="97"/>
         <source>Unsubscribe</source>
-        <translation type="unfinished"></translation>
+        <translation>Отписаться от рассылки</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="118"/>
         <source>Nothing here :(</source>
-        <translation type="unfinished"></translation>
+        <translation>Здесь ничего нет :(</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsBrowsePage.qml" line="135"/>
@@ -1433,7 +1433,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="83"/>
         <source>Settings</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Настройки</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="89"/>
@@ -1443,7 +1443,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="95"/>
         <source>Messages</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Сообщения</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
@@ -1483,12 +1483,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Все сообщения</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Multireddits</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Подборки сабреддитов</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="164"/>
@@ -1503,12 +1503,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="192"/>
         <source>Unsubscribe</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">О странице сабреддита Отписаться от рассылки</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="256"/>
         <source>You have unsubscribed from %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Вы отписались от %1</translation>
     </message>
 </context>
 <context>
@@ -1528,7 +1528,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/UserPage.qml" line="31"/>
         <location filename="../qml/UserPage.qml" line="32"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Комментарии</translation>
     </message>
     <message>
         <location filename="../qml/UserPage.qml" line="31"/>
@@ -1565,7 +1565,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPage.qml" line="60"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Обновить</translation>
     </message>
     <message>
         <location filename="../qml/UserPage.qml" line="72"/>
@@ -1595,7 +1595,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPage.qml" line="116"/>
         <source>Mod</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Модератор</translation>
     </message>
     <message>
         <location filename="../qml/UserPage.qml" line="120"/>
@@ -1625,17 +1625,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPage.qml" line="226"/>
         <source>Delete link</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Удалить ссылку</translation>
     </message>
     <message>
         <location filename="../qml/UserPage.qml" line="247"/>
         <source>Nothing here :(</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Здесь ничего нет :(</translation>
     </message>
     <message>
         <location filename="../qml/UserPage.qml" line="283"/>
         <source>Message sent</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Сообщение отправлено</translation>
     </message>
 </context>
 <context>
@@ -1671,7 +1671,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPageLinkDelegate.qml" line="80"/>
         <source>Promoted</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Рекламный пост</translation>
     </message>
     <message>
         <location filename="../qml/UserPageLinkDelegate.qml" line="87"/>
@@ -1681,7 +1681,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPageLinkDelegate.qml" line="96"/>
         <source>Locked</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Комментарии закрыты</translation>
     </message>
 </context>
 <context>
@@ -1752,7 +1752,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/VideoViewPage.qml" line="39"/>
         <source>URL</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ссылка на изображение</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="115"/>
@@ -1780,12 +1780,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/WebViewer.qml" line="87"/>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Скопировать ссылку</translation>
     </message>
     <message>
         <location filename="../qml/WebViewer.qml" line="90"/>
         <source>URL copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ссылка скопирована в буфер обмена</translation>
     </message>
     <message>
         <location filename="../qml/WebViewer.qml" line="94"/>
