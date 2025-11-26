@@ -339,13 +339,13 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
-        <source>Enter your reply here...</source>
-        <translation>Entrez votre réponse ici...</translation>
+        <source>Enter your reply here</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
-        <source>Enter your new comment here...</source>
-        <translation>Entrez votre commentaire ici...</translation>
+        <source>Enter your new comment here</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="456"/>
@@ -564,8 +564,8 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <name>LoadingFooter</name>
     <message>
         <location filename="../qml/LoadingFooter.qml" line="61"/>
-        <source>Load More...</source>
-        <translation>Charger plus...</translation>
+        <source>Load More…</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -608,8 +608,8 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="178"/>
-        <source>Nothing here :(</source>
-        <translation>Il n&apos;y a rien ici :(</translation>
+        <source>Nothing here</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -770,14 +770,14 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="74"/>
         <location filename="../qml/OpenLinkDialog.qml" line="153"/>
-        <source>Open in browser</source>
-        <translation>Ouvrir dans le navigateur</translation>
+        <source>Open in…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="78"/>
         <location filename="../qml/OpenLinkDialog.qml" line="157"/>
-        <source>Launching web browser...</source>
-        <translation>Ouverture du navigateur...</translation>
+        <source>Launching…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="84"/>
@@ -1437,6 +1437,11 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Messages</translation>
     </message>
     <message>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <source>Browse Subreddits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/SubredditsPage.qml" line="150"/>
         <source>Go to a specific subreddit</source>
         <translation>Aller vers un Subreddit spécifique</translation>
@@ -1470,11 +1475,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
         <translation>Tous</translation>
-    </message>
-    <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
-        <source>Browse for Subreddits...</source>
-        <translation>Parcourir les Subreddits...</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
@@ -1818,9 +1818,14 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Merci de vous connecter à nouveau</translation>
     </message>
     <message>
+        <location filename="../qml/main.qml" line="458"/>
+        <source>in /r/%1 by %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/main.qml" line="459"/>
-        <source> and %1 other</source>
-        <translation>et %1 autres</translation>
+        <source>and %1 other</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="468"/>

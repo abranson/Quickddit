@@ -341,13 +341,13 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
-        <source>Enter your reply here...</source>
-        <translation>Ange ditt svar här...</translation>
+        <source>Enter your reply here</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
-        <source>Enter your new comment here...</source>
-        <translation>Ange din nya kommentar här...</translation>
+        <source>Enter your new comment here</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="456"/>
@@ -566,8 +566,8 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <name>LoadingFooter</name>
     <message>
         <location filename="../qml/LoadingFooter.qml" line="61"/>
-        <source>Load More...</source>
-        <translation>Läs in mer...</translation>
+        <source>Load More…</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -610,8 +610,8 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="178"/>
-        <source>Nothing here :(</source>
-        <translation>Inget här :(</translation>
+        <source>Nothing here</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -772,14 +772,14 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="74"/>
         <location filename="../qml/OpenLinkDialog.qml" line="153"/>
-        <source>Open in browser</source>
-        <translation>Öppna i webbläsare</translation>
+        <source>Open in…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="78"/>
         <location filename="../qml/OpenLinkDialog.qml" line="157"/>
-        <source>Launching web browser...</source>
-        <translation>Startar webbläsaren...</translation>
+        <source>Launching…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="84"/>
@@ -1439,6 +1439,11 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <translation>Meddelanden</translation>
     </message>
     <message>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <source>Browse Subreddits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/SubredditsPage.qml" line="150"/>
         <source>Go to a specific subreddit</source>
         <translation>Gå till en specifik underreddit</translation>
@@ -1472,11 +1477,6 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
         <translation>Alla</translation>
-    </message>
-    <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
-        <source>Browse for Subreddits...</source>
-        <translation>Bläddra efter underredditar...</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
@@ -1820,9 +1820,14 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <translation>Logga in igen</translation>
     </message>
     <message>
+        <location filename="../qml/main.qml" line="458"/>
+        <source>in /r/%1 by %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/main.qml" line="459"/>
-        <source> and %1 other</source>
-        <translation> och %1 andra</translation>
+        <source>and %1 other</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="468"/>

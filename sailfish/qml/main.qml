@@ -455,8 +455,8 @@ ApplicationWindow {
             if (result.length > 0)
                 QMLUtils.publishNotification(
                         result[0].subject,
-                        "in /r/" + result[0].subreddit + " by " + result[0].author
-                            + (result.length === 1 ? "" : qsTr(" and %1 other").arg(result.length-1)),
+                        qsTr("in /r/%1 by %2").arg(result[0].subreddit).arg(result[0].author)
+                            + (result.length === 1 ? "" : " " + qsTr("and %1 other").arg(result.length-1)),
                         result.length);
         }
 
@@ -466,7 +466,7 @@ ApplicationWindow {
                     QMLUtils.publishNotification(
                             messages[i].author !== ""
                                 ? qsTr("Message from %1").arg(messages[i].author)
-                                : qsTr("Message from %1").arg("r/" + messages[i].subreddit),
+                                : qsTr("Message from %1").arg("/r/" + messages[i].subreddit),
                             messages[i].rawBody,
                             1);
                 }

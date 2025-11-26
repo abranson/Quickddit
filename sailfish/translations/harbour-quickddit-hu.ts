@@ -334,13 +334,13 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
-        <source>Enter your reply here...</source>
-        <translation>Írd ide a válaszodat...</translation>
+        <source>Enter your reply here</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
-        <source>Enter your new comment here...</source>
-        <translation>Írd ide az új hozzászólásodat...</translation>
+        <source>Enter your new comment here</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="456"/>
@@ -559,8 +559,8 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <name>LoadingFooter</name>
     <message>
         <location filename="../qml/LoadingFooter.qml" line="61"/>
-        <source>Load More...</source>
-        <translation>Több betöltése...</translation>
+        <source>Load More…</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -603,8 +603,8 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="178"/>
-        <source>Nothing here :(</source>
-        <translation>Semmi újság :(</translation>
+        <source>Nothing here</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -765,14 +765,14 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="74"/>
         <location filename="../qml/OpenLinkDialog.qml" line="153"/>
-        <source>Open in browser</source>
-        <translation>Megnyitás böngészőben</translation>
+        <source>Open in…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="78"/>
         <location filename="../qml/OpenLinkDialog.qml" line="157"/>
-        <source>Launching web browser...</source>
-        <translation>Böngésző indítása...</translation>
+        <source>Launching…</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="84"/>
@@ -1428,6 +1428,11 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Üzenetek</translation>
     </message>
     <message>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <source>Browse Subreddits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/SubredditsPage.qml" line="150"/>
         <source>Go to a specific subreddit</source>
         <translation>Ugrás egy adott alreddithez</translation>
@@ -1461,11 +1466,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
         <translation>Mind</translation>
-    </message>
-    <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
-        <source>Browse for Subreddits...</source>
-        <translation>Alredditek böngészése...</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
@@ -1798,9 +1798,14 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Kérlek lépj be újra</translation>
     </message>
     <message>
+        <location filename="../qml/main.qml" line="458"/>
+        <source>in /r/%1 by %2</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../qml/main.qml" line="459"/>
-        <source> and %1 other</source>
-        <translation> és %1 más</translation>
+        <source>and %1 other</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="468"/>

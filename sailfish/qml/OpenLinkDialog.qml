@@ -71,11 +71,11 @@ AbstractDialog {
                 spacing: constant.paddingMedium
 
                 Button {
-                    text: qsTr("Open in browser")
+                    text: qsTr("Open in…")
                     visible: url != ""
                     onClicked: {
                         Qt.openUrlExternally(url);
-                        infoBanner.alert(qsTr("Launching web browser..."));
+                        infoBanner.alert(qsTr("Launching…"));
                         openLinkDialog.reject();
                     }
                 }
@@ -150,11 +150,11 @@ AbstractDialog {
                 spacing: constant.paddingMedium
 
                 Button {
-                    text: qsTr("Open in browser")
+                    text: qsTr("Open in…")
                     visible: source != ""
                     onClicked: {
                         Qt.openUrlExternally(source);
-                        infoBanner.alert(qsTr("Launching web browser..."));
+                        infoBanner.alert(qsTr("Launching…"));
                         openLinkDialog.reject();
                     }
                 }

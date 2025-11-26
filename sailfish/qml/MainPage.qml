@@ -175,7 +175,7 @@ AbstractPage {
                 linkModel.refresh(true);
         }
 
-        ViewPlaceholder { enabled: linkListView.count == 0 && !linkModel.busy && _isComplete; text: qsTr("Nothing here :(") }
+        ViewPlaceholder { enabled: linkListView.count == 0 && !linkModel.busy && _isComplete; text: qsTr("Nothing here") + ":(" }
 
         VerticalScrollDecorator {}
     }

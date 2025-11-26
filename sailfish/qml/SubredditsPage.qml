@@ -120,7 +120,7 @@ AbstractPage {
             Repeater {
                 id: mainOptionRepeater
                 anchors { left: parent.left; right: parent.right }
-                model: [qsTr("Front Page"), qsTr("Popular"), qsTr("All"), qsTr("Browse for Subreddits..."), qsTr("Multireddits")]
+                model: [qsTr("Front Page"), qsTr("Popular"), qsTr("All"), qsTr("Browse Subreddits"), qsTr("Multireddits")]
 
                 SimpleListItem {
                     width: mainOptionRepeater.width

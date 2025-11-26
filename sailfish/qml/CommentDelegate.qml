@@ -435,7 +435,7 @@ Item {
                     textMargin: model.view === "reply" ? constant.paddingMedium : 0
 
                     height: Math.max(implicitHeight, Theme.itemSizeLarge * 2)
-                    placeholderText: model.view === "reply" ? qsTr("Enter your reply here...") : qsTr("Enter your new comment here...")
+                    placeholderText: model.view === "reply" ? qsTr("Enter your reply here") : qsTr("Enter your new comment here")
                     focus: true
 
                     Rectangle {
