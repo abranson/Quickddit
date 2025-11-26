@@ -342,12 +342,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
         <source>Enter your reply here</source>
-        <translation type="unfinished"></translation>
+        <translation>Enter your reply here</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
         <source>Enter your new comment here</source>
-        <translation type="unfinished"></translation>
+        <translation>Enter your new comment here</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="456"/>
@@ -567,7 +567,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/LoadingFooter.qml" line="61"/>
         <source>Load More…</source>
-        <translation type="unfinished"></translation>
+        <translation>Load More…</translation>
     </message>
 </context>
 <context>
@@ -611,7 +611,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MainPage.qml" line="178"/>
         <source>Nothing here</source>
-        <translation type="unfinished"></translation>
+        <translation>Nothing here</translation>
     </message>
 </context>
 <context>
@@ -773,13 +773,13 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/OpenLinkDialog.qml" line="74"/>
         <location filename="../qml/OpenLinkDialog.qml" line="153"/>
         <source>Open in…</source>
-        <translation type="unfinished"></translation>
+        <translation>Open in…</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="78"/>
         <location filename="../qml/OpenLinkDialog.qml" line="157"/>
         <source>Launching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Launching…</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="84"/>
@@ -1441,7 +1441,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Browse Subreddits</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="150"/>
@@ -1822,12 +1822,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/main.qml" line="458"/>
         <source>in /r/%1 by %2</source>
-        <translation type="unfinished"></translation>
+        <translation>in /r/%1 by %2</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="459"/>
         <source>and %1 other</source>
-        <translation type="unfinished"></translation>
+        <translation>and %1 other</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="468"/>
