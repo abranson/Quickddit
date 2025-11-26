@@ -266,7 +266,7 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="114"/>
         <source>Remove</source>
-        <translation type="unfinished">Rimuovere</translation>
+        <translation>Rimuovere</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="123"/>
@@ -837,7 +837,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/PostInfoText.qml" line="111"/>
         <source>submitted %1 by %2</source>
-        <translation> inviato %1 da %2</translation>
+        <translation>inviato %1 da %2</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="114"/>
