@@ -19,7 +19,7 @@
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="26"/>
         <source>About %1</source>
-        <translation>О странице Multireddit О сайте  %1</translation>
+        <translation>О странице Multireddit О сайте %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="39"/>
