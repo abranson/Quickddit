@@ -268,7 +268,7 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="114"/>
         <source>Remove</source>
-        <translation type="unfinished">Usuń</translation>
+        <translation>Usuń</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="123"/>
