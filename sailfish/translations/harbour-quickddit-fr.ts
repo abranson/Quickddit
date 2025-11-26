@@ -68,7 +68,7 @@
     <message>
         <location filename="../qml/AboutPage.qml" line="101"/>
         <source>Quickddit - A free and open source Reddit client for mobile phones</source>
-        <translation>Un client Reddit pour Sailfish OS.</translation>
+        <translation>Un client Reddit pour Sailfish OS</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="114"/>
@@ -266,7 +266,7 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="114"/>
         <source>Remove</source>
-        <translation type="unfinished">Retirer</translation>
+        <translation>Retirer</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="123"/>
