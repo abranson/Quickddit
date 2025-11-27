@@ -1513,7 +1513,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="256"/>
         <source>You have unsubscribed from %1</source>
-        <translation>Anulowano subskrypcję&#xa0;%1</translation>
+        <translation>Anulowano subskrypcję %1</translation>
     </message>
 </context>
 <context>
@@ -1659,6 +1659,20 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/UserPageCommentDelegate.qml" line="85"/>
         <source>Comment in %1</source>
         <translation>Komentarz w %1</translation>
+    </message>
+    <message>
+        <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
+        <source>[score hidden]</source>
+        <translation type="unfinished">[wynik ukryty]</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
+        <source>%n pts</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 <context>

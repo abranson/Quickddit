@@ -762,7 +762,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
-        <translation>Il n&apos;y a rien ici&#xa0;:(</translation>
+        <translation>Il n&apos;y a rien ici :(</translation>
     </message>
 </context>
 <context>
@@ -1650,6 +1650,19 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/UserPageCommentDelegate.qml" line="85"/>
         <source>Comment in %1</source>
         <translation>Commentaire dans %1</translation>
+    </message>
+    <message>
+        <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
+        <source>[score hidden]</source>
+        <translation type="unfinished">[score masqué]</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
+        <source>%n pts</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
     </message>
 </context>
 <context>

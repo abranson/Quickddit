@@ -1653,6 +1653,19 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
         <source>Comment in %1</source>
         <translation>Kommentiere in %1</translation>
     </message>
+    <message>
+        <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
+        <source>[score hidden]</source>
+        <translation type="unfinished">[Score verstecken]</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
+        <source>%n pts</source>
+        <translation type="unfinished">
+            <numerusform>%n Punkt</numerusform>
+            <numerusform>%n Punkte</numerusform>
+        </translation>
+    </message>
 </context>
 <context>
     <name>UserPageLinkDelegate</name>

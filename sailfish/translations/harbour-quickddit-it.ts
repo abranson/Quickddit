@@ -1651,6 +1651,19 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>Comment in %1</source>
         <translation>Commento in %1</translation>
     </message>
+    <message>
+        <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
+        <source>[score hidden]</source>
+        <translation type="unfinished">[punteggio nascosto]</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
+        <source>%n pts</source>
+        <translation type="unfinished">
+            <numerusform></numerusform>
+            <numerusform></numerusform>
+        </translation>
+    </message>
 </context>
 <context>
     <name>UserPageLinkDelegate</name>

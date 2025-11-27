@@ -1653,6 +1653,19 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <source>Comment in %1</source>
         <translation>Kommentar i %1</translation>
     </message>
+    <message>
+        <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
+        <source>[score hidden]</source>
+        <translation type="unfinished">[poäng dolda]</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
+        <source>%n pts</source>
+        <translation type="unfinished">
+            <numerusform>%n p</numerusform>
+            <numerusform>%n p</numerusform>
+        </translation>
+    </message>
 </context>
 <context>
     <name>UserPageLinkDelegate</name>

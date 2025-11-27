@@ -1653,6 +1653,19 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
         <source>Comment in %1</source>
         <translation>Commentaar in %1</translation>
     </message>
+    <message>
+        <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
+        <source>[score hidden]</source>
+        <translation type="unfinished">[score verborgen]</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
+        <source>%n pts</source>
+        <translation type="unfinished">
+            <numerusform>%n pt</numerusform>
+            <numerusform>%n ptn</numerusform>
+        </translation>
+    </message>
 </context>
 <context>
     <name>UserPageLinkDelegate</name>

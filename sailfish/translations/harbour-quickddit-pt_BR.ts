@@ -1653,6 +1653,19 @@ Para adicionar uma conta faça um Login. Aqui estarão listadas todas as contas 
         <source>Comment in %1</source>
         <translation>Comentário em %1</translation>
     </message>
+    <message>
+        <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
+        <source>[score hidden]</source>
+        <translation type="unfinished">[pontuação oculta]</translation>
+    </message>
+    <message numerus="yes">
+        <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
+        <source>%n pts</source>
+        <translation type="unfinished">
+            <numerusform>%n pontos</numerusform>
+            <numerusform>%n pontos</numerusform>
+        </translation>
+    </message>
 </context>
 <context>
     <name>UserPageLinkDelegate</name>
