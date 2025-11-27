@@ -84,13 +84,6 @@ Item {
                     font.bold: true
                     text: qsTr("Comment in %1").arg("/r/" + model.subreddit)
                 }
-                Text {
-                    font.pixelSize: constant.fontSizeDefault
-                    color: mainItem.enabled ? (mainItem.highlighted ? Theme.secondaryHighlightColor : constant.colorMid)
-                                            : constant.colorDisabled
-                    elide: Text.ElideRight
-                    text: " · " + model.created
-                }
             }
 
             Text {
@@ -139,7 +132,21 @@ Item {
                     color: Theme.secondaryHighlightColor
                 }
             }
-
+            Row {
+               Text {
+                    font.pixelSize: constant.fontSizeSmall
+                    color: mainItem.enabled ? (mainItem.highlighted ? Theme.secondaryHighlightColor : constant.colorMid)
+                                            : constant.colorDisabled
+                    text: model.isScoreHidden ? qsTr("[score hidden]")
+                                              : (model.score < 0 ? "-" : "") + qsTr("%n pts", "", Math.abs(model.score))
+                }
+                Text {
+                    font.pixelSize: constant.fontSizeSmall
+                    color: mainItem.enabled ? (mainItem.highlighted ? Theme.secondaryHighlightColor : constant.colorMid)
+                                            : constant.colorDisabled
+                    text: " · " + model.created
+                }
+            }
         }
 
         Image {
