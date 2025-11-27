@@ -40,14 +40,20 @@ CoverBackground {
         opacity: 0.2
     }
 
-    CoverPlaceholder {
-        text: truncate(pageStack.currentPage.summary || pageStack.currentPage.title || "", 50)
-        function truncate(text, maxLength) {
-            if (text.length > maxLength) {
-                return text.substring(0, maxLength) + "..."; // Append ellipsis if truncated
-            } else {
-                return text;
-            }
+    Text {
+        id: coverTitle
+        anchors {
+            horizontalCenter: parent.horizontalCenter
+            verticalCenter: parent.verticalCenter
         }
+        width: parent.width - (Theme.paddingLarge * 2)
+        height: parent.height - (Theme.paddingLarge * 2)
+        text: pageStack.currentPage.summary || pageStack.currentPage.title || ""
+        wrapMode: Text.WordWrap
+        elide: Text.ElideRight
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        color: Theme.primaryColor
+        font.pixelSize: Theme.fontSizeLarge
     }
 }
