@@ -2,7 +2,7 @@
 Type=Application
 X-Nemo-Application-Type=silica-qt5
 Name=Quickddit
-DBusActivatable=true
+X-DBusActivatable=true
 Icon=harbour-quickddit
 Exec=harbour-quickddit %U
 MimeType=x-url-handler/reddit.com;x-url-handler/www.reddit.com;x-url-handler/old.reddit.com
