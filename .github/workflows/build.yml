@@ -22,7 +22,7 @@ jobs:
       REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
       REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
       REDDIT_REDIRECT_URL: ${{ secrets.REDDIT_REDIRECT_URL }}
-      RELEASE: 4.4.0.68
+      RELEASE: 3.4.0.24
       ARCHITECTURES: |
         armv7hl
         aarch64
