@@ -14,11 +14,7 @@ DEFINES += APP_VERSION=\\\"$$VERSION\\\" Q_OS_SAILFISH
 
 QT *= network dbus
 
-# sailfishapp.prf auto-installs icons, desktop file, qml/*
-# (but IDE don't show these when not in OTHER_FILES, so we still need to list them :( )
 CONFIG += sailfishapp link_pkgconfig
-
-SAILFISHAPP_ICONS = 86x86 108x108 128x128 256x256
 
 PKGCONFIG += sailfishapp nemonotifications-qt5 keepalive
 
@@ -43,7 +39,7 @@ OTHER_FILES += \
     rpm/$${TARGET}.spec \
     rpm/$${TARGET}.changes \
     $${TARGET}.desktop \
-    $${TARGET}.png \
+    $${TARGET}.svg \
     iface/org.quickddit.xml \
     qml/ytdl_wrapper.py \
     qml/cover/CoverPage.qml \

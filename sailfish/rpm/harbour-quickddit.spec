@@ -25,6 +25,7 @@ BuildRequires:  pkgconfig(nemonotifications-qt5)
 BuildRequires:  pkgconfig(keepalive)
 BuildRequires:  pkgconfig(qt5embedwidget)
 BuildRequires:  qt5-qttools-linguist
+BuildRequires:  librsvg-tools
 
 %description
 Quickddit is a free and open source Reddit client for mobile phones.
@@ -46,13 +47,21 @@ Quickddit is a free and open source Reddit client for mobile phones.
 %install
 %qmake5_install
 
+for size in 86 108 128 172; do
+    icon_dir="%{buildroot}%{_datadir}/icons/hicolor/${size}x${size}/apps";
+    mkdir -p "${icon_dir}";
+    rsvg-convert -w ${size} -h ${size} -o "${icon_dir}/%{name}.png" %{name}.svg;
+done
+
 %files
 %defattr(-,root,root,-)
 %{_bindir}/%{name}
+# Make sure python files aren't executable or they'll fail harbour validation
+%defattr(0644,root,root,-)
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/%{name}
 %{_datadir}/icons/hicolor/86x86/apps/%{name}.png
 %{_datadir}/icons/hicolor/108x108/apps/%{name}.png
 %{_datadir}/icons/hicolor/128x128/apps/%{name}.png
-%{_datadir}/icons/hicolor/256x256/apps/%{name}.png
+%{_datadir}/icons/hicolor/172x172/apps/%{name}.png
 
