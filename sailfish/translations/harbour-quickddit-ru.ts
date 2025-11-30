@@ -19,7 +19,7 @@
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="26"/>
         <source>About %1</source>
-        <translation>О странице Multireddit О сайте %1</translation>
+        <translation>O Quickddit %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="39"/>
@@ -63,17 +63,17 @@
     <message>
         <location filename="../qml/AboutPage.qml" line="25"/>
         <source>About</source>
-        <translation>О странице О сайте</translation>
+        <translation>About</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="101"/>
         <source>Quickddit - A free and open source Reddit client for mobile phones</source>
-        <translation>О странице Quickddit - бесплатный клиент Reddit с открытым исходным кодом для мобильных телефонов</translation>
+        <translation>Quickddit - бесплатный клиент Reddit с открытым исходным кодом для мобильных телефонов</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="114"/>
         <source>App icon by Andrew Zhilin</source>
-        <translation>О сайте Иконка PageApp от Андрея Жилина</translation>
+        <translation>Иконка PageApp от Андрея Жилина</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="116"/>
@@ -84,27 +84,27 @@
     <message>
         <location filename="../qml/AboutPage.qml" line="116"/>
         <source>Current language translation by %1</source>
-        <translation>О странице Текущий перевод на язык %1</translation>
+        <translation>Текущий перевод на язык %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="117"/>
         <source>Licensed under GNU GPLv3+</source>
-        <translation>О странице Лицензия GNU GPLv3+</translation>
+        <translation>Лицензия GNU GPLv3+</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="125"/>
         <source>Source</source>
-        <translation>О странице Источник</translation>
+        <translation>Источник</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="130"/>
         <source>License</source>
-        <translation>О странице Лицензия</translation>
+        <translation>Лицензия</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="140"/>
         <source>Translations</source>
-        <translation>О странице Переводы</translation>
+        <translation>Переводы</translation>
     </message>
 </context>
 <context>
@@ -112,32 +112,32 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="27"/>
         <source>About %1</source>
-        <translation>О странице сабреддита О %1</translation>
+        <translation type="unfinished">About %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="40"/>
         <source>Moderators</source>
-        <translation>Страница о субреддите Модераторы</translation>
+        <translation>Модераторы</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="47"/>
         <source>Message Moderators</source>
-        <translation>О модераторах сообщений страницы Subreddit</translation>
+        <translation>Модераторы сообщений</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="55"/>
         <source>Unsubscribe</source>
-        <translation>О странице сабреддита Отписаться от рассылки</translation>
+        <translation>Отписаться</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="55"/>
         <source>Subscribe</source>
-        <translation>О странице сабреддита Подписаться</translation>
+        <translation>Подписаться</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="127"/>
         <source>This subreddit is Not Safe For Work</source>
-        <translation>О сабреддите Страница Этот сабреддит не является безопасным для работы</translation>
+        <translation>Этот сабреддит небезопасен для работы</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/AboutSubredditPage.qml" line="143"/>
@@ -589,7 +589,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/MainPage.qml" line="115"/>
         <location filename="../qml/MainPage.qml" line="117"/>
         <source>Section</source>
-        <translation>Раздел главной страницы</translation>
+        <translation>Раздел</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="127"/>
@@ -762,7 +762,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="67"/>
         <source>About</source>
-        <translation>О подборке</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
@@ -1433,7 +1433,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="78"/>
         <source>About Quickddit</source>
-        <translation type="unfinished">О Quickddit</translation>
+        <translation>Quickddit</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="83"/>
@@ -1443,7 +1443,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="89"/>
         <source>My Profile</source>
-        <translation type="unfinished">Мой профиль</translation>
+        <translation>Профиль</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="95"/>
@@ -1453,7 +1453,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Просмотреть популярные сабреддиты</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="150"/>
@@ -1463,12 +1463,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Front Page</source>
-        <translation type="unfinished">Первая страница</translation>
+        <translation>Главная страница</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="28"/>
         <source>Quickddit</source>
-        <translation type="unfinished">Сабреддиты — Quickddit</translation>
+        <translation>Quickddit</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="112"/>
@@ -1483,12 +1483,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Popular</source>
-        <translation type="unfinished">Популярные сабреддиты</translation>
+        <translation>Популярное</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>All</source>
-        <translation>Все сообщения</translation>
+        <translation>Все</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
@@ -1508,7 +1508,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="192"/>
         <source>Unsubscribe</source>
-        <translation>О странице сабреддита Отписаться от рассылки</translation>
+        <translation>Отписаться</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="256"/>
@@ -1575,7 +1575,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPage.qml" line="72"/>
         <source>My Profile</source>
-        <translation type="unfinished">Мой профиль</translation>
+        <translation>Профиль</translation>
     </message>
     <message>
         <location filename="../qml/UserPage.qml" line="72"/>
