@@ -342,12 +342,12 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
         <source>Enter your reply here</source>
-        <translation type="unfinished"></translation>
+        <translation>Schrijf hier je reactie</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
         <source>Enter your new comment here</source>
-        <translation type="unfinished"></translation>
+        <translation>Schrijf hier je nieuwe reactie</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="456"/>
@@ -462,7 +462,7 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/CommentPage.qml" line="99"/>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Delen</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="109"/>
@@ -500,7 +500,7 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/ImageViewPage.qml" line="64"/>
         <source>Share Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Afbeelding delen</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="76"/>
@@ -567,7 +567,7 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/LoadingFooter.qml" line="61"/>
         <source>Load More…</source>
-        <translation type="unfinished"></translation>
+        <translation>Meer laden…</translation>
     </message>
 </context>
 <context>
@@ -601,7 +601,7 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/MainPage.qml" line="136"/>
         <source>Last refreshed</source>
-        <translation type="unfinished"></translation>
+        <translation>Laatst vernieuwd</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="157"/>
@@ -616,7 +616,7 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/MainPage.qml" line="182"/>
         <source>Nothing here</source>
-        <translation type="unfinished"></translation>
+        <translation>Niets te zien</translation>
     </message>
 </context>
 <context>
@@ -778,13 +778,13 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
         <location filename="../qml/OpenLinkDialog.qml" line="74"/>
         <location filename="../qml/OpenLinkDialog.qml" line="153"/>
         <source>Open in…</source>
-        <translation type="unfinished"></translation>
+        <translation>Openen met…</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="78"/>
         <location filename="../qml/OpenLinkDialog.qml" line="157"/>
         <source>Launching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Starten…</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="84"/>
@@ -881,12 +881,12 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../../src/qmlutils.cpp" line="188"/>
         <source>Invalid share URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Ongeldige deel-URL</translation>
     </message>
     <message>
         <location filename="../../src/qmlutils.cpp" line="202"/>
         <source>Unable to resolve share URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kon de deel-URL niet vinden</translation>
     </message>
 </context>
 <context>
@@ -1305,12 +1305,12 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuleren</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="76"/>
         <source>Sign in successful! Welcome! :)</source>
-        <translation type="unfinished"></translation>
+        <translation>Je bent ingelogd! Welkom! :)</translation>
     </message>
 </context>
 <context>
@@ -1446,7 +1446,7 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladeren door subreddits</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="150"/>
@@ -1461,17 +1461,17 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/SubredditsPage.qml" line="28"/>
         <source>Quickddit</source>
-        <translation type="unfinished"></translation>
+        <translation>Quickddit</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="112"/>
         <source>Signed in as %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ingelogd als %1</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="112"/>
         <source>Not signed in</source>
-        <translation type="unfinished"></translation>
+        <translation>Niet ingelogd</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
@@ -1656,13 +1656,13 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
         <source>[score hidden]</source>
-        <translation type="unfinished">[score verborgen]</translation>
+        <translation>[score verborgen]</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
         <source>%n pts</source>
-        <translation type="unfinished">
-            <numerusform>% pt</numerusform>
+        <translation>
+            <numerusform>%n pt</numerusform>
             <numerusform>%n ptn</numerusform>
         </translation>
     </message>
@@ -1815,7 +1815,7 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
         <location filename="../qml/main.qml" line="275"/>
         <location filename="../qml/main.qml" line="521"/>
         <source>Unable to resolve reddit share link</source>
-        <translation type="unfinished"></translation>
+        <translation>Kon de reddit-deelkoppeling niet vinden</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="297"/>
@@ -1840,12 +1840,12 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/main.qml" line="458"/>
         <source>in /r/%1 by %2</source>
-        <translation type="unfinished"></translation>
+        <translation>in /r/%1 door %2</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="459"/>
         <source>and %1 other</source>
-        <translation type="unfinished"></translation>
+        <translation>en nog %1 meer</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="468"/>
