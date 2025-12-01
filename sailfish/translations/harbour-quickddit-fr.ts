@@ -1273,21 +1273,31 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
+        <source>Prefer HLS streams</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="172"/>
+        <source>HLS adaptive video is more likely to have sound, but may be less stable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="178"/>
         <source>Loop Videos</source>
         <translation>Vidéos en boucle</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="178"/>
+        <location filename="../qml/SettingsPage.qml" line="185"/>
         <source>Connection</source>
         <translation>Connexion</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="181"/>
+        <location filename="../qml/SettingsPage.qml" line="188"/>
         <source>Use Tor</source>
         <translation>Utiliser Tor</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="182"/>
+        <location filename="../qml/SettingsPage.qml" line="189"/>
         <source>When enabled, please make sure Tor is installed and active.</source>
         <translation>Si sélectionné, assurez-vous que l&apos;application Tor soit installée et bien active.</translation>
     </message>
@@ -1751,27 +1761,27 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/VideoViewPage.qml" line="26"/>
         <source>Video</source>
-        <translation>Vidéo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="39"/>
         <source>URL</source>
-        <translation>URL</translation>
+        <translation type="unfinished">URL</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="115"/>
         <source>Error loading video</source>
-        <translation>Erreur lors du chargement de la vidéo</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="278"/>
+        <location filename="../qml/VideoViewPage.qml" line="318"/>
         <source>Problem finding stream URL</source>
-        <translation>Problème pour trouver l&apos;URL de flux</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="283"/>
+        <location filename="../qml/VideoViewPage.qml" line="323"/>
         <source>youtube-dl error: %1</source>
-        <translation>Erreur YouTube-DL : %1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

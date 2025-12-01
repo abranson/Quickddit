@@ -1275,21 +1275,31 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
+        <source>Prefer HLS streams</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="172"/>
+        <source>HLS adaptive video is more likely to have sound, but may be less stable</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="178"/>
         <source>Loop Videos</source>
         <translation>Video’s herhalend afspelen</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="178"/>
+        <location filename="../qml/SettingsPage.qml" line="185"/>
         <source>Connection</source>
         <translation>Verbinding</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="181"/>
+        <location filename="../qml/SettingsPage.qml" line="188"/>
         <source>Use Tor</source>
         <translation>Tor gebruiken</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="182"/>
+        <location filename="../qml/SettingsPage.qml" line="189"/>
         <source>When enabled, please make sure Tor is installed and active.</source>
         <translation>Hiervoor dient Tor geïnstalleerd en actief te zijn.</translation>
     </message>
@@ -1753,27 +1763,27 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/VideoViewPage.qml" line="26"/>
         <source>Video</source>
-        <translation>Video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="39"/>
         <source>URL</source>
-        <translation>URL</translation>
+        <translation type="unfinished">URL</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="115"/>
         <source>Error loading video</source>
-        <translation>Fout bij laden van video</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="278"/>
+        <location filename="../qml/VideoViewPage.qml" line="318"/>
         <source>Problem finding stream URL</source>
-        <translation>Kon stream-URL niet vinden</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="283"/>
+        <location filename="../qml/VideoViewPage.qml" line="323"/>
         <source>youtube-dl error: %1</source>
-        <translation>youtube-dl-fout: %1</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

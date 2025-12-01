@@ -1275,21 +1275,31 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
+        <source>Prefer HLS streams</source>
+        <translation>Prefer HLS streams</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="172"/>
+        <source>HLS adaptive video is more likely to have sound, but may be less stable</source>
+        <translation>HLS adaptive video is more likely to have sound, but may be less stable</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="178"/>
         <source>Loop Videos</source>
         <translation>Loop Videos</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="178"/>
+        <location filename="../qml/SettingsPage.qml" line="185"/>
         <source>Connection</source>
         <translation>Connection</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="181"/>
+        <location filename="../qml/SettingsPage.qml" line="188"/>
         <source>Use Tor</source>
         <translation>Use Tor</translation>
     </message>
     <message>
-        <location filename="../qml/SettingsPage.qml" line="182"/>
+        <location filename="../qml/SettingsPage.qml" line="189"/>
         <source>When enabled, please make sure Tor is installed and active.</source>
         <translation>When enabled, please make sure Tor is installed and active.</translation>
     </message>
@@ -1766,12 +1776,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Error loading video</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="278"/>
+        <location filename="../qml/VideoViewPage.qml" line="318"/>
         <source>Problem finding stream URL</source>
         <translation>Problem finding stream URL</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="283"/>
+        <location filename="../qml/VideoViewPage.qml" line="323"/>
         <source>youtube-dl error: %1</source>
         <translation>youtube-dl error: %1</translation>
     </message>

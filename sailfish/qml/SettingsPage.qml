@@ -168,6 +168,13 @@ AbstractPage {
             }
 
             TextSwitch {
+                text: qsTr("Prefer HLS streams")
+                description: qsTr("HLS adaptive video is more likely to have sound, but may be less stable")
+                checked: settings.preferHls
+                onCheckedChanged: settings.preferHls = checked
+            }
+
+            TextSwitch {
                 text: qsTr("Loop Videos")
                 checked: settings.loopVideos;
                 onCheckedChanged: {

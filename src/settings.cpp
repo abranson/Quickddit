@@ -58,6 +58,7 @@ Settings::Settings(QObject *parent) :
     m_thumbnailScale = static_cast<ThumbnailScale>(m_settings->value("thumbnailScale", Settings::ScaleAuto).toInt());
     m_showLinkType = m_settings->value("showLinkType", false).toBool();
     m_loopVideos = m_settings->value("loopVideos", false).toBool();
+    m_preferHls = m_settings->value("preferHls", true).toBool();
     m_subredditSection = m_settings->value("subredditSection", 0).toInt();
     m_messageSection = m_settings->value("messageSection", 0).toInt();
     m_commentSort = m_settings->value("commentSort", 0).toInt();
@@ -250,6 +251,20 @@ void Settings::setLoopVideos(const bool loopVideos)
         m_loopVideos = loopVideos;
         m_settings->setValue("loopVideos", m_loopVideos);
         emit loopVideosChanged();
+    }
+}
+
+bool Settings::preferHls() const
+{
+    return m_preferHls;
+}
+
+void Settings::setPreferHls(const bool preferHls)
+{
+    if (m_preferHls != preferHls) {
+        m_preferHls = preferHls;
+        m_settings->setValue("preferHls", m_preferHls);
+        emit preferHlsChanged();
     }
 }
 

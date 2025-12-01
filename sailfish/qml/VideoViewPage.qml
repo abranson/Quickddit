@@ -197,44 +197,78 @@ AbstractPage {
     Connections {
         target: python
         onVideoInfo: {
-            var urls = {}
-            var format
             var i
+            var preferLoDef = settings.preferredVideoSize === Settings.VS360
+            var preferredHlsUrl
+            var fallbackHlsUrl
+            var preferredUrl
+            var fallbackUrl
+            var format
             var formats = python.info["_type"] === "playlist" ? python.info["entries"][0]["formats"] : python.info["formats"]
+
+            function stowMp4Url(url, height) {
+                if (height === undefined) return
+
+                if (preferLoDef) {
+                    if (height <= 480 && preferredUrl === undefined)
+                        preferredUrl = url
+                    else if (height > 480 && fallbackUrl === undefined)
+                        fallbackUrl = url
+                } else {
+                    if (height > 480 && preferredUrl === undefined)
+                        preferredUrl = url
+                    else if (height <= 480 && fallbackUrl === undefined)
+                        fallbackUrl = url
+                }
+            }
+
+            function isHlsManifest(f) {
+                var manifest = f["manifest_url"] || ""
+                var url = f["url"] || ""
+                var protocol = f["protocol"] || ""
+                var isDash = manifest.indexOf(".mpd") > -1 || url.indexOf(".mpd") > -1 || protocol.indexOf("dash") === 0
+                var isHls = manifest.indexOf(".m3u8") > -1 || url.indexOf(".m3u8") > -1 || protocol.indexOf("m3u8") === 0 || protocol.indexOf("hls") === 0
+                return isHls && !isDash
+            }
+
             if (formats === undefined)
                 formats = [ python.info ]
+
             for (i = 0; i < formats.length; i++) {
                 format = formats[i]
-                if (~["mp4"].indexOf(format["ext"]) && ~[360,480].indexOf(format["height"])) {
-                    console.log("format selected by ext " + format["ext"] + " and height " + format["height"])
-                    urls["360"] = format["url"]
+
+                if (isHlsManifest(format)) {
+                    var manifestUrl = format["manifest_url"] || format["url"]
+                    var height = format["height"]
+                    if (preferredHlsUrl === undefined && height !== undefined) {
+                        if (preferLoDef && height <= 480)
+                            preferredHlsUrl = manifestUrl
+                        else if (!preferLoDef && height > 480)
+                            preferredHlsUrl = manifestUrl
+                        console.log("HLS selected by id " + format["format_id"])
+                    }
+                    if (fallbackHlsUrl === undefined)
+                        fallbackHlsUrl = manifestUrl
                 }
-            }
-            for (i = 0; i < formats.length; i++) {
-                format = formats[i]
-                if (~["mp4"].indexOf(format["ext"]) && ~[720].indexOf(format["height"])) {
-                    console.log("format selected by ext " + format["ext"] + " and height " + format["height"])
-                    urls["720"] = format["url"]
-                }
-            }
-            for (i = 0; i < formats.length; i++) {
-                format = formats[i]
+
                 // selection by format_id for youtube, vimeo, streamable
                 // mp4-mobile: 360p (streamable.com)
                 // 18: 360p,mp4,acodec mp4a.40.2,vcodec avc1.42001E (youtube)
                 // 22: 720p,mp4,acodec mp4a.40.2,vcodec avc1.64001F (youtube)
                 // http-360p: 360p (vimeo)
                 // http-720p, 720p (vimeo)
-                if (~["mp4-mobile","18","http-360p"].indexOf(format["format_id"])) {
+                if (~["mp4-mobile","18","http-360p","22","http-720p"].indexOf(format["format_id"])) {
+                    var idHeight = ~["22","http-720p"].indexOf(format["format_id"]) ? 720 : 360
                     console.log("format selected by id " + format["format_id"])
-                    urls["360"] = format["url"]
-                }
-                if (~["22","http-720p"].indexOf(format["format_id"])) {
-                    console.log("format selected by id " + format["format_id"])
-                    urls["720"] = format["url"]
+                    stowMp4Url(format["url"], idHeight)
+                } else if (~["mp4","webm"].indexOf(format["ext"]) && ~[360,480,720].indexOf(format["height"])) {
+                    console.log("format selected by ext " + format["ext"] + " and height " + format["height"])
+                    stowMp4Url(format["url"], format["height"])
                 }
             }
-            if (python.info["extractor"].indexOf("Reddit") === 0)
+
+            // Special Reddit video hack
+            if (python.info["extractor"].indexOf("Reddit") === 0) {
                 for (i = 0; i < formats.length; i++) {
                     format = formats[i]
                     // selection by height if format_id is like hls-*, for v.redd.it (with 'deref' HLS stream by string replace, so only works for v.redd.it)
@@ -244,38 +278,44 @@ AbstractPage {
                         continue
                     // acodec none,vcodec one of avc1.4d001f,avc1.4d001e,avc1.42001e
                     if (format["height"] <= 480) {
-                        console.log("format selected by id " + format["format_id"] + " and height <= 480")
-                        urls["360"] = format["url"].replace("_v4.m3u8",".ts")  // 'deref' by string replace
+                        console.log("Reddit video format selected by id " + format["format_id"] + " and height <= 480")
+                        stowMp4Url(format["url"].replace("_v4.m3u8",".ts"), format["height"])  // 'deref' by string replace
                     } else {
-                        console.log("format selected by id " + format["format_id"] + " and height > 480")
-                        urls["720"] = format["url"].replace("_v4.m3u8",".ts")  // 'deref' by string replace
+                        console.log("Reddit video format selected by id " + format["format_id"] + " and height > 480")
+                        stowMp4Url(format["url"].replace("_v4.m3u8",".ts"), format["height"])  // 'deref' by string replace
                     }
                 }
-            if (urls["360"] === undefined && urls["720"] === undefined) {
-                console.log("fallback, checking on ext=mp4")
-                for (i = 0; i < formats.length; i++) {
-                    format = formats[i]
-                    if (~["mp4"].indexOf(format["ext"])) {
-                        console.log("format selected: " + format["format_id"])
-                        urls["other"] = format["url"]
-                    }
+            }
+
+            // Return most preferred URL
+            if (settings.preferHls) {
+                if (preferredHlsUrl !== undefined) {
+                    mediaPlayer.source = preferredHlsUrl
+                    return
+                } else if (fallbackHlsUrl !== undefined) {
+                    mediaPlayer.source = fallbackHlsUrl
+                    return
                 }
-                if (urls["other"] === undefined)
-                    urls["other"] = formats[0]["url"]
+            }
+            if (preferredUrl !== undefined) {
+                mediaPlayer.source = preferredUrl
+                return
+            } else if (fallbackUrl !== undefined) {
+                mediaPlayer.source = fallbackUrl
+                return
             }
 
-            if (settings.preferredVideoSize === Settings.VS360) {
-                if (urls["360"] === undefined)
-                    console.log("360p selected but fallback to 720p")
-                mediaPlayer.source = urls["360"] !== undefined ? urls["360"] : urls["720"] !== undefined ? urls["720"] : urls["other"]
-            } else {
-                if (urls["720"] === undefined)
-                    console.log("720p selected but fallback to 360p")
-                mediaPlayer.source = urls["720"] !== undefined ? urls["720"] : urls["360"] !== undefined ? urls["360"] : urls["other"]
+            // Else find any mp4 or webm URL and try that
+            for (i = 0; i < formats.length; i++) {
+                format = formats[i]
+                if (~["mp4","webm"].indexOf(format["ext"])) {
+                    console.log("Fallback format selected: " + format["format_id"])
+                    mediaPlayer.source = format["url"]
+                    return;
+                }
             }
-
-            if (mediaPlayer.source === undefined)
-                fail(qsTr("Problem finding stream URL"))
+            // Run out of options. Fail.
+            fail(qsTr("Problem finding stream URL"))
         }
 
         onError: {
