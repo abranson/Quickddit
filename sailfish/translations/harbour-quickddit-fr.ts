@@ -762,7 +762,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
-        <translation>Il n&apos;y a rien ici :(</translation>
+        <translation>Il n&apos;y a rien ici&#xa0;:(</translation>
     </message>
 </context>
 <context>
