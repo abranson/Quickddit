@@ -1301,6 +1301,11 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>When enabled, please make sure Tor is installed and active.</source>
         <translation>Після ввімкнення переконайтеся, що Tor встановлено та активовано.</translation>
     </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="171"/>
+        <source>Prefer HLS streams</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SignInPage</name>
