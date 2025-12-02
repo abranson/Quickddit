@@ -764,7 +764,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="67"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Про мульти‑реддіти</translation>
     </message>
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
@@ -806,7 +806,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="123"/>
         <source>Open in Kodi</source>
-        <translation type="unfinished"></translation>
+        <translation>Відкрити в Kodi</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="131"/>
@@ -819,7 +819,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/PostInfoText.qml" line="43"/>
         <source>Sticky</source>
-        <translation type="unfinished"></translation>
+        <translation>Закріплений допис</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="50"/>
@@ -834,7 +834,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/PostInfoText.qml" line="63"/>
         <source>Gilded</source>
-        <translation type="unfinished"></translation>
+        <translation>Нагороджений допис</translation>
     </message>
     <message>
         <location filename="../qml/PostInfoText.qml" line="71"/>
@@ -1194,7 +1194,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="35"/>
         <source>UX</source>
-        <translation type="unfinished"></translation>
+        <translation>Налаштування UX</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="38"/>
@@ -1304,7 +1304,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
         <source>Prefer HLS streams</source>
-        <translation type="unfinished"></translation>
+        <translation>Надавати перевагу потокам HLS</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="172"/>
+        <source>HLS adaptive video is more likely to have sound, but may be less stable</source>
+        <translation>Адаптивне відео HLS частіше має звук, але може бути менш стабільним</translation>
     </message>
 </context>
 <context>
@@ -1358,7 +1363,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="99"/>
         <source>Mod</source>
-        <translation type="unfinished"></translation>
+        <translation>Модератор</translation>
     </message>
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="105"/>
