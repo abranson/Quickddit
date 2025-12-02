@@ -445,13 +445,14 @@ Item {
                     }
                 }
 
-                Row {
-                    anchors.horizontalCenter: parent.horizontalCenter
+                Item {
+                    anchors { left: parent.left; right: parent.right }
+                    height: acceptButton.height
                     scale: editColumn.buttonScale; transformOrigin: Item.Top
 
                     Button {
                         id: acceptButton
-                        anchors.leftMargin: constant.paddingLarge
+                        anchors.horizontalCenter: parent.horizontalCenter
 
                         text: model.view === "edit" ? qsTr("Save") : qsTr("Add")
                         enabled: !commentManager.busy
@@ -463,6 +464,28 @@ Item {
                                 commentManager.addComment(model.fullname, editTextArea.text);
                             } else if (model.view === "new") {
                                 commentManager.addComment(link.fullname, editTextArea.text);
+                            }
+                        }
+                    }
+                    IconButton {
+                        id: cancelButton
+                        anchors {
+                            right: parent.right
+                            rightMargin: constant.paddingSmall
+                            verticalCenter: acceptButton.verticalCenter
+                        }
+
+                        icon.source: "image://theme/icon-m-close"
+                        icon.width: Theme.iconSizeMedium
+                        icon.height: Theme.iconSizeMedium
+                        enabled: !commentManager.busy
+
+                        onClicked: {
+                            if (model.view === "new") {
+                                commentModel.removeNewComment()
+                            } else {
+                                commentModel.setLocalData(model.fullname, undefined)
+                                commentModel.setView(model.fullname, "")
                             }
                         }
                     }

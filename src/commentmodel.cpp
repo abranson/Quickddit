@@ -505,6 +505,18 @@ void CommentModel::showNewComment()
     endInsertRows();
 }
 
+void CommentModel::removeNewComment()
+{
+    for (int i = 0; i < m_commentList.count(); ++i) {
+        if (m_commentList.at(i).viewId() == "new") {
+            beginRemoveRows(QModelIndex(), i, i);
+            m_commentList.removeAt(i);
+            endRemoveRows();
+            break;
+        }
+    }
+}
+
 // network methods
 
 void CommentModel::refresh(bool refreshOlder)

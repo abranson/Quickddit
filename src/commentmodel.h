@@ -115,6 +115,7 @@ public:
     Q_INVOKABLE void expand(const QString &fullname);
     Q_INVOKABLE void setView(const QString &fullname, const QString &view);
     Q_INVOKABLE void showNewComment();
+    Q_INVOKABLE void removeNewComment();
     Q_INVOKABLE void setLocalData(const QString &fullname, const QVariant &data);
 
 protected:
