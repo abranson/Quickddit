@@ -869,7 +869,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>
             <numerusform>%n балл</numerusform>
             <numerusform>%n балла</numerusform>
-            <numerusform>%0n баллов</numerusform>
+            <numerusform>%n баллов</numerusform>
         </translation>
     </message>
     <message numerus="yes">
