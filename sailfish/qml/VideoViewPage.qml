@@ -199,36 +199,36 @@ AbstractPage {
         onVideoInfo: {
             var i
             var preferLoDef = settings.preferredVideoSize === Settings.VS360
-            var preferredHlsUrl
-            var fallbackHlsUrl
-            var preferredUrl
-            var fallbackUrl
+            var currUrl
+            var currHeight = 0
+            var adaptiveUrl
+            var adaptiveCurrHeight = 0
             var format
             var formats = python.info["_type"] === "playlist" ? python.info["entries"][0]["formats"] : python.info["formats"]
 
-            function stowMp4Url(url, height) {
+            function checkUrl(url, height, adaptive, msg) {
                 if (height === undefined) return
-
-                if (preferLoDef) {
-                    if (height <= 480 && preferredUrl === undefined)
-                        preferredUrl = url
-                    else if (height > 480 && fallbackUrl === undefined)
-                        fallbackUrl = url
+                var desiredHeight = preferLoDef?360:720
+                if (Math.abs(desiredHeight - height) >= 
+                        Math.abs(desiredHeight - (adaptive ? adaptiveCurrHeight : currHeight))) return;
+                // better match
+                if (adaptive) {
+                    adaptiveCurrHeight = height
+                    adaptiveUrl = url;
                 } else {
-                    if (height > 480 && preferredUrl === undefined)
-                        preferredUrl = url
-                    else if (height <= 480 && fallbackUrl === undefined)
-                        fallbackUrl = url
+                    currHeight = height
+                    currUrl = url;
                 }
+                console.log(msg);
             }
 
             function isHlsManifest(f) {
                 var manifest = f["manifest_url"] || ""
                 var url = f["url"] || ""
                 var protocol = f["protocol"] || ""
-                var isDash = manifest.indexOf(".mpd") > -1 || url.indexOf(".mpd") > -1 || protocol.indexOf("dash") === 0
+                var isDash = manifest.indexOf(".mpd") > -1 || url.indexOf(".mpd") > -1 || protocol.indexOf("dash") > -1
                 var isHls = manifest.indexOf(".m3u8") > -1 || url.indexOf(".m3u8") > -1 || protocol.indexOf("m3u8") === 0 || protocol.indexOf("hls") === 0
-                return isHls && !isDash
+                return isHls || isDash
             }
 
             if (formats === undefined)
@@ -240,15 +240,7 @@ AbstractPage {
                 if (isHlsManifest(format)) {
                     var manifestUrl = format["manifest_url"] || format["url"]
                     var height = format["height"]
-                    if (preferredHlsUrl === undefined && height !== undefined) {
-                        if (preferLoDef && height <= 480)
-                            preferredHlsUrl = manifestUrl
-                        else if (!preferLoDef && height > 480)
-                            preferredHlsUrl = manifestUrl
-                        console.log("HLS selected by id " + format["format_id"])
-                    }
-                    if (fallbackHlsUrl === undefined)
-                        fallbackHlsUrl = manifestUrl
+                    checkUrl(manifestUrl, height, true, "Adaptive stream selected: " + format["format_id"] + ". Height:"+height)
                 }
 
                 // selection by format_id for youtube, vimeo, streamable
@@ -258,12 +250,12 @@ AbstractPage {
                 // http-360p: 360p (vimeo)
                 // http-720p, 720p (vimeo)
                 if (~["mp4-mobile","18","http-360p","22","http-720p"].indexOf(format["format_id"])) {
+                    if (format["format_id"] !== undefined && format["format_id"].indexOf("av01") > -1) continue; // poorly supported
                     var idHeight = ~["22","http-720p"].indexOf(format["format_id"]) ? 720 : 360
-                    console.log("format selected by id " + format["format_id"])
-                    stowMp4Url(format["url"], idHeight)
+                    checkUrl(format["url"], idHeight, false, "format selected by id " + format["format_id"])
                 } else if (~["mp4","webm"].indexOf(format["ext"]) && ~[360,480,720].indexOf(format["height"])) {
-                    console.log("format selected by ext " + format["ext"] + " and height " + format["height"])
-                    stowMp4Url(format["url"], format["height"])
+                    if (format["format_id"] !== undefined && format["format_id"].indexOf("av01") > -1) continue; // poorly supported
+                    checkUrl(format["url"], format["height"], false, "format selected by ext " + format["ext"] + " and height " + format["height"])
                 }
             }
 
@@ -278,30 +270,23 @@ AbstractPage {
                         continue
                     // acodec none,vcodec one of avc1.4d001f,avc1.4d001e,avc1.42001e
                     if (format["height"] <= 480) {
-                        console.log("Reddit video format selected by id " + format["format_id"] + " and height <= 480")
-                        stowMp4Url(format["url"].replace("_v4.m3u8",".ts"), format["height"])  // 'deref' by string replace
+                        checkUrl(format["url"].replace("_v4.m3u8",".ts"), format["height"], 
+                            false, "Reddit video format selected by id " + format["format_id"] + " and height <= 480")  // 'deref' by string replace
                     } else {
-                        console.log("Reddit video format selected by id " + format["format_id"] + " and height > 480")
-                        stowMp4Url(format["url"].replace("_v4.m3u8",".ts"), format["height"])  // 'deref' by string replace
+                        console.log()
+                        checkUrl(format["url"].replace("_v4.m3u8",".ts"), format["height"], 
+                            false, "Reddit video format selected by id " + format["format_id"] + " and height > 480")  // 'deref' by string replace
                     }
                 }
             }
 
             // Return most preferred URL
-            if (settings.preferHls) {
-                if (preferredHlsUrl !== undefined) {
-                    mediaPlayer.source = preferredHlsUrl
-                    return
-                } else if (fallbackHlsUrl !== undefined) {
-                    mediaPlayer.source = fallbackHlsUrl
-                    return
-                }
-            }
-            if (preferredUrl !== undefined) {
-                mediaPlayer.source = preferredUrl
+            if (settings.preferHls && adaptiveUrl !== undefined) {
+                mediaPlayer.source = adaptiveUrl
                 return
-            } else if (fallbackUrl !== undefined) {
-                mediaPlayer.source = fallbackUrl
+            }
+            if (currUrl !== undefined) {
+                mediaPlayer.source = currUrl
                 return
             }
 
