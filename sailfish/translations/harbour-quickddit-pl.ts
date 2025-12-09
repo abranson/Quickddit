@@ -353,12 +353,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/CommentDelegate.qml" line="456"/>
+        <location filename="../qml/CommentDelegate.qml" line="457"/>
         <source>Save</source>
         <translation>Zapisz</translation>
     </message>
     <message>
-        <location filename="../qml/CommentDelegate.qml" line="456"/>
+        <location filename="../qml/CommentDelegate.qml" line="457"/>
         <source>Add</source>
         <translation>Dodaj</translation>
     </message>
@@ -1461,12 +1461,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Wiadomości</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
-        <source>Browse Subreddits</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../qml/SubredditsPage.qml" line="150"/>
+        <location filename="../qml/SubredditsPage.qml" line="151"/>
         <source>Go to a specific subreddit</source>
         <translation>Przejdź do określonego subreddita</translation>
     </message>
@@ -1506,22 +1501,32 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Multireddity</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="164"/>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <source>My Saved Things</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <source>Browse all Subreddits</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="165"/>
         <source>Subscribed Subreddits</source>
         <translation>Subskrybowane Subreddity</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="186"/>
+        <location filename="../qml/SubredditsPage.qml" line="187"/>
         <source>About</source>
         <translation>O</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="192"/>
+        <location filename="../qml/SubredditsPage.qml" line="193"/>
         <source>Unsubscribe</source>
         <translation>Wypisz</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="256"/>
+        <location filename="../qml/SubredditsPage.qml" line="257"/>
         <source>You have unsubscribed from %1</source>
         <translation>Anulowano subskrypcję %1</translation>
     </message>
@@ -1534,121 +1539,121 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Użytkownik %1</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="31"/>
-        <location filename="../qml/UserPage.qml" line="32"/>
+        <location filename="../qml/UserPage.qml" line="33"/>
+        <location filename="../qml/UserPage.qml" line="34"/>
         <source>Overview</source>
         <translation>Przegląd</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="31"/>
-        <location filename="../qml/UserPage.qml" line="32"/>
+        <location filename="../qml/UserPage.qml" line="33"/>
+        <location filename="../qml/UserPage.qml" line="34"/>
         <source>Comments</source>
         <translation>Komentarze</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="31"/>
-        <location filename="../qml/UserPage.qml" line="32"/>
+        <location filename="../qml/UserPage.qml" line="33"/>
+        <location filename="../qml/UserPage.qml" line="34"/>
         <source>Submitted</source>
         <translation>Wysłane</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="32"/>
+        <location filename="../qml/UserPage.qml" line="34"/>
         <source>Upvoted</source>
         <translation>Podbite</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="32"/>
+        <location filename="../qml/UserPage.qml" line="34"/>
         <source>Downvoted</source>
         <translation>Obniżone</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="32"/>
+        <location filename="../qml/UserPage.qml" line="34"/>
         <source>Saved Things</source>
         <translation>Zapisane</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="41"/>
         <location filename="../qml/UserPage.qml" line="43"/>
+        <location filename="../qml/UserPage.qml" line="45"/>
         <source>Section</source>
         <translation>Sekcja</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="51"/>
+        <location filename="../qml/UserPage.qml" line="53"/>
         <source>Send Message</source>
         <translation>Wyślij Wiadomość</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="60"/>
+        <location filename="../qml/UserPage.qml" line="62"/>
         <source>Refresh</source>
         <translation>Odśwież</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="72"/>
+        <location filename="../qml/UserPage.qml" line="74"/>
         <source>My Profile</source>
         <translation>Mój Profil</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="72"/>
+        <location filename="../qml/UserPage.qml" line="74"/>
         <source>User Profile</source>
         <translation>Profil Użytkownika</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="104"/>
+        <location filename="../qml/UserPage.qml" line="106"/>
         <source>Friend</source>
         <translation>Przyjaciel</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="108"/>
+        <location filename="../qml/UserPage.qml" line="110"/>
         <source>Gold</source>
         <translation>Złoto</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="112"/>
+        <location filename="../qml/UserPage.qml" line="114"/>
         <source>Email Verified</source>
         <translation>Email Zweryfikowany</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="116"/>
+        <location filename="../qml/UserPage.qml" line="118"/>
         <source>Mod</source>
         <translation>Moderator</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="120"/>
+        <location filename="../qml/UserPage.qml" line="122"/>
         <source>No Robots</source>
         <translation>Brak Robotów</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="139"/>
+        <location filename="../qml/UserPage.qml" line="141"/>
         <source>%1 link karma</source>
         <translation>%1 karma linków</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="145"/>
+        <location filename="../qml/UserPage.qml" line="147"/>
         <source>%1 comment karma</source>
         <translation>%1 karma komentarzy</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="151"/>
+        <location filename="../qml/UserPage.qml" line="153"/>
         <source>created %1</source>
         <translation>stworzono %1</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="209"/>
+        <location filename="../qml/UserPage.qml" line="211"/>
         <source>Delete</source>
         <translation>Usuń</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="226"/>
+        <location filename="../qml/UserPage.qml" line="228"/>
         <source>Delete link</source>
         <translation>Usuń link</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="247"/>
+        <location filename="../qml/UserPage.qml" line="249"/>
         <source>Nothing here :(</source>
         <translation>Nic tutaj nie ma :(</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="283"/>
+        <location filename="../qml/UserPage.qml" line="285"/>
         <source>Message sent</source>
         <translation>Wiadomość wysłana</translation>
     </message>
@@ -1789,12 +1794,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="318"/>
+        <location filename="../qml/VideoViewPage.qml" line="335"/>
         <source>Problem finding stream URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="323"/>
+        <location filename="../qml/VideoViewPage.qml" line="340"/>
         <source>youtube-dl error: %1</source>
         <translation type="unfinished"></translation>
     </message>
