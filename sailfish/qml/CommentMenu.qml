@@ -117,7 +117,7 @@ FancyContextMenu {
         visible: !comment.isValid && (comment.rawBody === "[removed]" || comment.rawBody === "[deleted]")
         text: "Uncensor"
         onClicked: {
-                var link = "https://www.removeddit.com" + post.permalink + comment.fullname.substring(3);
+                var link = "https://www.reveddit.com" + post.permalink + comment.fullname.substring(3);
                 globalUtils.createOpenLinkDialog(link);
             }
         }
