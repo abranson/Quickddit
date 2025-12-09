@@ -26,6 +26,8 @@ AbstractPage {
 
     property string username;
 
+    property alias section: userThingModel.section
+
     property bool myself: settings.redditUsername === username && username !== ""
 
     readonly property variant sectionModel: [qsTr("Overview"), qsTr("Comments"), qsTr("Submitted")]

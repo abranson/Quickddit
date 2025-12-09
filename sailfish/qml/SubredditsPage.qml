@@ -120,19 +120,20 @@ AbstractPage {
             Repeater {
                 id: mainOptionRepeater
                 anchors { left: parent.left; right: parent.right }
-                model: [qsTr("Front Page"), qsTr("Popular"), qsTr("All"), qsTr("Browse Subreddits"), qsTr("Multireddits")]
+                model: [qsTr("Front Page"), qsTr("Popular"), qsTr("All"), qsTr("My Saved Things"), qsTr("Multireddits"), qsTr("Browse all Subreddits")]
 
                 SimpleListItem {
                     width: mainOptionRepeater.width
-                    enabled: index == 4 ? quickdditManager.isSignedIn : true
+                    enabled: index <= 2 || index === 5 || quickdditManager.isSignedIn
                     text: modelData
                     onClicked: {
                         switch (index) {
                         case 0: subredditsPage.showSubreddit(""); break;
                         case 1: subredditsPage.showSubreddit("popular"); break;
                         case 2: subredditsPage.showSubreddit("all"); break;
-                        case 3: pageStack.push(Qt.resolvedUrl("SubredditsBrowsePage.qml")); break;
+                        case 3: pageStack.push(Qt.resolvedUrl("UserPage.qml"), { username: settings.redditUsername, section: UserThingModel.SavedSection }); break;
                         case 4: pageStack.push(Qt.resolvedUrl("MultiredditsPage.qml"), { _model: multiredditModel }); break;
+                        case 5: pageStack.push(Qt.resolvedUrl("SubredditsBrowsePage.qml")); break;
                         }
                     }
                 }
