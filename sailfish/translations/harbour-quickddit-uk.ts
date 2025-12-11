@@ -1463,11 +1463,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Повідомлення</translation>
     </message>
     <message>
-        <location filename="../qml/SubredditsPage.qml" line="123"/>
-        <source>Browse Subreddits</source>
-        <translation>Переглянути сабреддіти</translation>
-    </message>
-    <message>
         <location filename="../qml/SubredditsPage.qml" line="150"/>
         <source>Go to a specific subreddit</source>
         <translation>Перейдіть до певного сабреддиту</translation>
