@@ -1787,8 +1787,8 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="340"/>
-        <source>youtube-dl error: %1</source>
-        <translation>youtube-dl-fout: %1</translation>
+        <source>yt-dlp error: %1</source>
+        <translation>yt-dlp-fout: %1</translation>
     </message>
 </context>
 <context>

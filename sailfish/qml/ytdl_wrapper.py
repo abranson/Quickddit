@@ -3,7 +3,7 @@
 
 from __future__ import unicode_literals
 import pyotherside
-import youtube_dl
+import yt_dlp
 
 downloaddir = '/tmp'
 
@@ -26,7 +26,7 @@ ytdl_info_opts = {
     'logger': logger
 }
 
-ytdl_info = youtube_dl.YoutubeDL(ytdl_info_opts);
+ytdl_info = yt_dlp.YoutubeDL(ytdl_info_opts);
 
 def setDownloadDir(dir):
     downloaddir = dir
@@ -36,7 +36,7 @@ def retrieveVideoInfo(url):
         logger.debug('retrieveVideoUrl ' + str(url))
         info = ytdl_info.extract_info(url, download=False)
         return info
-    except youtube_dl.utils.DownloadError as e:
+    except yt_dlp.utils.DownloadError as e:
         pyotherside.send('fail', ','.join(e.args))
 
 def downloadVideo(url):

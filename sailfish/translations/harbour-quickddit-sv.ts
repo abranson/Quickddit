@@ -1787,7 +1787,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="340"/>
-        <source>youtube-dl error: %1</source>
+        <source>yt-dlp error: %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

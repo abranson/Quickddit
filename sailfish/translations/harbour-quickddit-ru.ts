@@ -1800,8 +1800,8 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="340"/>
-        <source>youtube-dl error: %1</source>
-        <translation>Ошибка youtube-dl: %1</translation>
+        <source>yt-dlp error: %1</source>
+        <translation>Ошибка yt-dlp: %1</translation>
     </message>
 </context>
 <context>

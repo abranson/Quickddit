@@ -110,7 +110,7 @@ include(translations/translations.pri)
     system(qdbusxml2cpp iface/org.quickddit.xml -a app_adaptor -p app_interface)
 }
 
-youtube-dl.files = ../youtube-dl/youtube_dl
-youtube-dl.path = /usr/share/$${TARGET}
+yt-dlp.files = ../yt-dlp/yt_dlp
+yt-dlp.path = /usr/share/$${TARGET}
 
-INSTALLS += youtube-dl
+INSTALLS += yt-dlp
