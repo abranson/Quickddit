@@ -17,6 +17,7 @@
 */
 
 import QtQuick 2.0
+import QtGraphicalEffects 1.0
 import Sailfish.Silica 1.0
 import harbour.quickddit.Core 1.0
 
@@ -25,7 +26,6 @@ AbstractPage {
     title: qsTr("User %1").arg("/u/" + username)
 
     property string username;
-
     property alias section: userThingModel.section
 
     property bool myself: settings.redditUsername === username && username !== ""
@@ -77,10 +77,38 @@ AbstractPage {
                 visible: userThingModel.section === UserThingModel.OverviewSection
                 anchors.left: parent.left
                 anchors.margins: constant.paddingMedium
+                spacing: constant.paddingMedium
 
-                Image {
-                    source: "image://theme/icon-m-person"
+                Item {
+                    id: avatarContainer
+                    width: Theme.itemSizeExtraLarge
+                    height: width
                     anchors.verticalCenter: parent.verticalCenter
+                    layer.enabled: true
+                    layer.effect: OpacityMask {
+                        maskSource: Rectangle {
+                            width: avatarContainer.width
+                            height: avatarContainer.height
+                            radius: width/2
+                        }
+                    }
+
+                    Image {
+                        id: avatarImage
+                        anchors.fill: parent
+                        source: userManager.user.iconImg
+                        asynchronous: true
+                        fillMode: Image.PreserveAspectCrop
+                        smooth: true
+                        visible: status === Image.Ready
+                    }
+
+                    Image {
+                        anchors.fill: parent
+                        source: "image://theme/icon-m-person"
+                        fillMode: Image.PreserveAspectFit
+                        visible: avatarImage.status !== Image.Ready
+                    }
                 }
 
                 Text {

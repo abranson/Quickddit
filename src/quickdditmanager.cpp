@@ -44,7 +44,8 @@
 
 QuickdditManager::QuickdditManager(QObject *parent) :
     QObject(parent), m_netManager(new QNetworkAccessManager(this)), m_settings(0), m_busy(false),
-    m_signedIn(false), m_accessTokenRequest(0), m_pendingRequest(0), m_userInfoReply(0)
+    m_signedIn(false), m_accessTokenRequest(0), m_pendingRequest(0), m_userInfoReply(0),
+    m_currentAccountIconImg(QUrl())
 {
 }
 
@@ -273,10 +274,7 @@ void QuickdditManager::onAccessTokenRequestFinished(QNetworkReply *reply)
     m_accessTokenRequest = 0;
 
     if (!m_accessToken.isEmpty()) {
-        if (m_settings->redditUsername().isEmpty())
-            updateRedditUsername();
-        else
-            saveOrAddAccountInfo();
+        updateRedditUsername();
     }
 
     setBusy(false);
@@ -321,8 +319,14 @@ void QuickdditManager::onUserInfoFinished(QNetworkReply *reply)
         QVariantMap userJson = QtJson::parse(reply->readAll(), ok).toMap();
         Q_ASSERT_X(ok, Q_FUNC_INFO, "Error parsing JSON");
         m_settings->setRedditUsername(userJson.value("name").toString());
+        QString iconUrl = userJson.value("icon_img").toString();
+        if (iconUrl.isEmpty())
+            iconUrl = userJson.value("snoovatar_img").toString();
+        iconUrl.replace("&amp;", "&");
+        m_currentAccountIconImg = QUrl(iconUrl);
     } else {
         qDebug("Network error: %s", qPrintable(reply->errorString()));
+        m_currentAccountIconImg = QUrl();
     }
 
     saveOrAddAccountInfo();
@@ -353,6 +357,7 @@ void QuickdditManager::saveOrAddAccountInfo()
     data.accountName = m_settings->redditUsername();
     data.refreshToken = m_settings->refreshToken();
     data.lastSeenMessage = m_settings->lastSeenMessage();
+    data.iconImg = m_currentAccountIconImg;
 
     bool found = false;
     QList<Settings::AccountData> accountlist = m_settings->accounts();
@@ -386,4 +391,3 @@ void QuickdditManager::selectAccount(QString accountName)
         }
     }
 }
-

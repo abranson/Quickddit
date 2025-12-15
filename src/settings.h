@@ -22,6 +22,7 @@
 
 #include <QtCore/QObject>
 #include <QtCore/QStringList>
+#include <QtCore/QUrl>
 
 class QSettings;
 
@@ -81,6 +82,7 @@ public:
         QString accountName;
         QByteArray refreshToken;
         QString lastSeenMessage;
+        QUrl iconImg;
     };
 
     struct SubredditPrefs {
@@ -146,6 +148,7 @@ public:
     QList<AccountData> accounts() const;
     QStringList accountNames() const;
     void setAccounts(const QList<AccountData> accounts);
+    Q_INVOKABLE QUrl accountIcon(const QString &accountName) const;
     Q_INVOKABLE void removeAccount(const QString& accountName);
 
     QStringList filteredSubreddits() const;

@@ -17,6 +17,7 @@
 */
 
 import QtQuick 2.6
+import QtGraphicalEffects 1.0
 import Sailfish.Silica 1.0
 import harbour.quickddit.Core 1.0
 
@@ -29,7 +30,6 @@ AbstractPage {
         anchors.fill: parent
 
         property bool _completed: false
-
 
         PullDownMenu {
             MenuItem {
@@ -67,12 +67,41 @@ AbstractPage {
 
             Row {
                 anchors.verticalCenter: parent.verticalCenter
+                anchors.left: parent.left
                 anchors.leftMargin: constant.paddingMedium
+                spacing: constant.paddingMedium
 
-                IconButton {
-                    icon.source: "image://theme/icon-m-person"
-                    highlighted: listItem.highlighted || settings.redditUsername === modelData
+                Item {
+                    id: avatarContainer
+                    width: Theme.itemSizeSmall
+                    height: width
                     anchors.verticalCenter: parent.verticalCenter
+                    layer.enabled: true
+                    layer.effect: OpacityMask {
+                        maskSource: Rectangle {
+                            width: avatarContainer.width
+                            height: avatarContainer.height
+                            radius: width/2
+                        }
+                    }
+
+                    Image {
+                        id: avatarImage
+                        anchors.fill: parent
+                        source: settings.accountIcon(modelData)
+                        asynchronous: true
+                        fillMode: Image.PreserveAspectCrop
+                        smooth: true
+                        visible: status === Image.Ready
+                    }
+
+                    Image {
+                        anchors.fill: parent
+                        source: "image://theme/icon-m-person"
+                        fillMode: Image.PreserveAspectFit
+                        visible: avatarImage.status !== Image.Ready
+                        opacity: listItem.highlighted || settings.redditUsername === modelData ? 1.0 : 0.8
+                    }
                 }
 
                 Text {

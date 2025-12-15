@@ -108,6 +108,7 @@ private:
 
     APIRequest *m_pendingRequest;
     APIRequest *m_userInfoReply;
+    QUrl m_currentAccountIconImg;
 
     void refreshAccessToken();
     void updateRedditUsername();

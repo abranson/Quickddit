@@ -234,7 +234,7 @@
 <context>
     <name>AccountsPage</name>
     <message>
-        <location filename="../qml/AccountsPage.qml" line="25"/>
+        <location filename="../qml/AccountsPage.qml" line="26"/>
         <source>Accounts</source>
         <translation>Contas</translation>
     </message>
@@ -254,22 +254,22 @@
         <translation>Logout do Reddit feito</translation>
     </message>
     <message>
-        <location filename="../qml/AccountsPage.qml" line="93"/>
+        <location filename="../qml/AccountsPage.qml" line="122"/>
         <source>Remove %1 account</source>
         <translation>Remover conta %1</translation>
     </message>
     <message>
-        <location filename="../qml/AccountsPage.qml" line="110"/>
+        <location filename="../qml/AccountsPage.qml" line="139"/>
         <source>Activate</source>
         <translation>Ativar</translation>
     </message>
     <message>
-        <location filename="../qml/AccountsPage.qml" line="114"/>
+        <location filename="../qml/AccountsPage.qml" line="143"/>
         <source>Remove</source>
         <translation>Remover</translation>
     </message>
     <message>
-        <location filename="../qml/AccountsPage.qml" line="123"/>
+        <location filename="../qml/AccountsPage.qml" line="152"/>
         <source>No known accounts yet.
 
 To add accounts, simply log in. Quickddit will remember succesful logins and list the accounts here</source>
@@ -1527,7 +1527,7 @@ Para adicionar uma conta faça um Login. Aqui estarão listadas todas as contas 
 <context>
     <name>UserPage</name>
     <message>
-        <location filename="../qml/UserPage.qml" line="25"/>
+        <location filename="../qml/UserPage.qml" line="26"/>
         <source>User %1</source>
         <translation>Usuário %1</translation>
     </message>
@@ -1591,62 +1591,62 @@ Para adicionar uma conta faça um Login. Aqui estarão listadas todas as contas 
         <translation>Perfil do Usuário</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="106"/>
+        <location filename="../qml/UserPage.qml" line="134"/>
         <source>Friend</source>
         <translation>Amigo</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="110"/>
+        <location filename="../qml/UserPage.qml" line="138"/>
         <source>Gold</source>
         <translation>Premiado</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="114"/>
+        <location filename="../qml/UserPage.qml" line="142"/>
         <source>Email Verified</source>
         <translation>Email Verificado</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="118"/>
+        <location filename="../qml/UserPage.qml" line="146"/>
         <source>Mod</source>
         <translation>Mod</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="122"/>
+        <location filename="../qml/UserPage.qml" line="150"/>
         <source>No Robots</source>
         <translation>Não Robô</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="141"/>
+        <location filename="../qml/UserPage.qml" line="169"/>
         <source>%1 link karma</source>
         <translation>%1 karma de Links</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="147"/>
+        <location filename="../qml/UserPage.qml" line="175"/>
         <source>%1 comment karma</source>
         <translation>%1 karma de Comentários</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="153"/>
+        <location filename="../qml/UserPage.qml" line="181"/>
         <source>created %1</source>
         <translation>conta criada %1</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="211"/>
+        <location filename="../qml/UserPage.qml" line="239"/>
         <source>Delete</source>
         <translation>Apagar</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="228"/>
+        <location filename="../qml/UserPage.qml" line="256"/>
         <source>Delete link</source>
         <translation>Apagar link</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="249"/>
+        <location filename="../qml/UserPage.qml" line="277"/>
         <source>Nothing here :(</source>
         <translation>Nada aqui :(</translation>
     </message>
     <message>
-        <location filename="../qml/UserPage.qml" line="285"/>
+        <location filename="../qml/UserPage.qml" line="313"/>
         <source>Message sent</source>
         <translation>Mensagem enviada</translation>
     </message>

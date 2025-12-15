@@ -90,6 +90,7 @@ Settings::Settings(QObject *parent) :
         data.accountName = m_settings->value("acctUsername").toString();
         data.refreshToken = m_settings->value("acctRefreshToken").toByteArray();
         data.lastSeenMessage = m_settings->value("acctLastSeenMessage").toString();
+        data.iconImg = m_settings->value("acctIcon").toUrl();
         m_accounts.append(data);
     }
     m_settings->endArray();
@@ -101,6 +102,7 @@ Settings::Settings(QObject *parent) :
         data.accountName = m_redditUsername;
         data.refreshToken = m_refreshToken;
         data.lastSeenMessage = m_lastSeenMessage;
+        data.iconImg = QUrl();
         initial_accounts.append(data);
         setAccounts(initial_accounts);
     }
@@ -382,9 +384,20 @@ void Settings::setAccounts(const QList<Settings::AccountData> accounts)
         m_settings->setValue("acctUsername", m_accounts.at(i).accountName);
         m_settings->setValue("acctRefreshToken", m_accounts.at(i).refreshToken);
         m_settings->setValue("acctLastSeenMessage", m_accounts.at(i).lastSeenMessage);
+        m_settings->setValue("acctIcon", m_accounts.at(i).iconImg);
     }
     m_settings->endArray();
     emit accountsChanged();
+}
+
+QUrl Settings::accountIcon(const QString &accountName) const
+{
+    for (int i = 0; i < m_accounts.size(); ++i) {
+        if (m_accounts.at(i).accountName == accountName) {
+            return m_accounts.at(i).iconImg;
+        }
+    }
+    return QUrl();
 }
 
 void Settings::removeAccount(const QString& accountName)
