@@ -1301,16 +1301,6 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>When enabled, please make sure Tor is installed and active.</source>
         <translation>Після ввімкнення переконайтеся, що Tor встановлено та активовано.</translation>
     </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="171"/>
-        <source>Prefer HLS streams</source>
-        <translation>Надавати перевагу потокам HLS</translation>
-    </message>
-    <message>
-        <location filename="../qml/SettingsPage.qml" line="172"/>
-        <source>HLS adaptive video is more likely to have sound, but may be less stable</source>
-        <translation>Адаптивне відео HLS частіше має звук, але може бути менш стабільним</translation>
-    </message>
 </context>
 <context>
     <name>SignInPage</name>
