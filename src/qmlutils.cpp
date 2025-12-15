@@ -192,6 +192,8 @@ bool QMLUtils::resolveRedditShareUrl(const QString &url)
     qDebug() << "Resolving share URL: " << url;
 
     QNetworkRequest request(requestUrl);
+    request.setRawHeader("User-Agent", "Quickddit/" APP_VERSION);
+
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0))
     // TODO: this will need to be done manually on Harmattan
     request.setAttribute(QNetworkRequest::FollowRedirectsAttribute, true);
@@ -213,8 +215,10 @@ void QMLUtils::onResolveShareUrlFinished()
 
     if (reply->error() == QNetworkReply::NoError)
         emit redditShareUrlResolved(reply->url().toString());
-    else
+    else {
+        qDebug() << reply->error();
         emit redditShareUrlFailed(reply->errorString());
+    }
 
     reply->deleteLater();
 }

@@ -890,7 +890,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="202"/>
+        <location filename="../../src/qmlutils.cpp" line="204"/>
         <source>Unable to resolve share URL</source>
         <translation type="unfinished"></translation>
     </message>

@@ -884,7 +884,7 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="202"/>
+        <location filename="../../src/qmlutils.cpp" line="204"/>
         <source>Unable to resolve share URL</source>
         <translation type="unfinished"></translation>
     </message>

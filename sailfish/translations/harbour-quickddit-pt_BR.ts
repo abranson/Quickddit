@@ -884,7 +884,7 @@ Para adicionar uma conta faça um Login. Aqui estarão listadas todas as contas 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="202"/>
+        <location filename="../../src/qmlutils.cpp" line="204"/>
         <source>Unable to resolve share URL</source>
         <translation type="unfinished"></translation>
     </message>

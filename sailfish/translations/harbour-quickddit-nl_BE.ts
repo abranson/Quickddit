@@ -884,7 +884,7 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
         <translation>Ongeldigen deêl-URL</translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="202"/>
+        <location filename="../../src/qmlutils.cpp" line="204"/>
         <source>Unable to resolve share URL</source>
         <translation>Kost den deêl-URL ni’ vinden</translation>
     </message>

@@ -518,7 +518,7 @@ ApplicationWindow {
                 globalUtils.openRedditLink(resolvedUrl);
         }
         onRedditShareUrlFailed: {
-                infoBanner.alert(qsTr("Unable to resolve reddit share link"));
+                infoBanner.alert(qsTr("Unable to resolve reddit share link") + "\n" + errorString);
         }
     }
 
