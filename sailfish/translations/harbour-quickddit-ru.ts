@@ -1503,12 +1503,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>My Saved Things</source>
-        <translation type="unfinished"></translation>
+        <translation>Мои сохранённые</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse all Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Просмотреть все сабреддиты</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="165"/>
