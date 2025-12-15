@@ -1,9 +1,17 @@
 # Add new changelog entries following the format below.
 # Add newest entries to the top of the list.
-# Separate entries from eachother with a blank line.
+# Separate entries from each other with a blank line.
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Mon Dec 15 2025 Andrew Branson <github@andrewbranson.net> 1.14.4-1
+- new: Support adaptive video streams. Must be enabled in settings. More likely to have sound, but a bit unstable right now.
+- new: Elapsed video time on the left, Video metadata at the top. 
+- new: Cancel button on Comment Reply
+- chg: Reorganize main menu. Add saved things.
+- chg: Switch from youtube-dl to yt-dlp
+- fix: Avoid Share URL resolution server blocking
+
 * Sun Nov 30 2025 Andrew Branson <github@andrewbranson.net> 1.14.3-1
 - new: Menu label showing last refresh time
 - new: Show upvotes on user comment list
