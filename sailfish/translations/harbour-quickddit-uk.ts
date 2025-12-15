@@ -1522,6 +1522,16 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <source>You have unsubscribed from %1</source>
         <translation>Ви відписалися від %1</translation>
     </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <source>My Saved Things</source>
+        <translation>Збережене</translation>
+    </message>
+    <message>
+        <location filename="../qml/SubredditsPage.qml" line="123"/>
+        <source>Browse all Subreddits</source>
+        <translation>Переглянути всі сабреддіти</translation>
+    </message>
 </context>
 <context>
     <name>UserPage</name>
