@@ -1281,13 +1281,13 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
-        <source>Prefer HLS streams</source>
-        <translation>Предпочитать HLS‑потоки</translation>
+        <source>Prefer adaptive video streams</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="172"/>
-        <source>HLS adaptive video is more likely to have sound, but may be less stable</source>
-        <translation>Адаптивное видео HLS чаще имеет звук, но может быть менее стабильным</translation>
+        <source>More likely to have sound, but may be less stable.</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="178"/>

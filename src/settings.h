@@ -40,7 +40,7 @@ class Settings : public QObject
     Q_PROPERTY(ThumbnailScale thumbnailScale READ thumbnailScale WRITE setThumbnailScale NOTIFY thumbnailScaleChanged)
     Q_PROPERTY(bool showLinkType READ showLinkType WRITE setShowLinkType NOTIFY showLinkTypeChanged)
     Q_PROPERTY(bool loopVideos READ loopVideos WRITE setLoopVideos NOTIFY loopVideosChanged)
-    Q_PROPERTY(bool preferHls READ preferHls WRITE setPreferHls NOTIFY preferHlsChanged)
+    Q_PROPERTY(bool preferAdaptive READ preferAdaptive WRITE setPreferAdaptive NOTIFY preferAdaptiveChanged)
     Q_PROPERTY(int subredditSection READ subredditSection WRITE setSubredditSection NOTIFY subredditSectionChanged)
     Q_PROPERTY(int messageSection READ messageSection WRITE setMessageSection NOTIFY messageSectionChanged)
     Q_PROPERTY(int commentSort READ commentSort WRITE setCommentSort NOTIFY commentSortChanged)
@@ -122,8 +122,8 @@ public:
     bool loopVideos() const;
     void setLoopVideos(const bool loopVideos);
 
-    bool preferHls() const;
-    void setPreferHls(const bool preferHls);
+    bool preferAdaptive() const;
+    void setPreferAdaptive(const bool preferAdaptive);
 
     int subredditSection() const;
     void setSubredditSection(const int subredditSection);
@@ -159,7 +159,7 @@ signals:
     void thumbnailScaleChanged();
     void showLinkTypeChanged();
     void loopVideosChanged();
-    void preferHlsChanged();
+    void preferAdaptiveChanged();
     void subredditSectionChanged();
     void messageSectionChanged();
     void commentSortChanged();
@@ -181,7 +181,7 @@ private:
     ThumbnailScale m_thumbnailScale;
     bool m_showLinkType;
     bool m_loopVideos;
-    bool m_preferHls;
+    bool m_preferAdaptive;
     QStringList m_filteredSubreddits;
     int m_subredditSection;
     int m_messageSection;

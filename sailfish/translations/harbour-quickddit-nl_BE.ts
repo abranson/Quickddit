@@ -1275,12 +1275,12 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
-        <source>Prefer HLS streams</source>
+        <source>Prefer adaptive video streams</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="172"/>
-        <source>HLS adaptive video is more likely to have sound, but may be less stable</source>
+        <source>More likely to have sound, but may be less stable.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

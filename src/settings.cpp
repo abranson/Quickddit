@@ -58,7 +58,7 @@ Settings::Settings(QObject *parent) :
     m_thumbnailScale = static_cast<ThumbnailScale>(m_settings->value("thumbnailScale", Settings::ScaleAuto).toInt());
     m_showLinkType = m_settings->value("showLinkType", false).toBool();
     m_loopVideos = m_settings->value("loopVideos", false).toBool();
-    m_preferHls = m_settings->value("preferHls", true).toBool();
+    m_preferAdaptive = m_settings->value("preferAdaptive", false).toBool();
     m_subredditSection = m_settings->value("subredditSection", 0).toInt();
     m_messageSection = m_settings->value("messageSection", 0).toInt();
     m_commentSort = m_settings->value("commentSort", 0).toInt();
@@ -254,17 +254,17 @@ void Settings::setLoopVideos(const bool loopVideos)
     }
 }
 
-bool Settings::preferHls() const
+bool Settings::preferAdaptive() const
 {
-    return m_preferHls;
+    return m_preferAdaptive;
 }
 
-void Settings::setPreferHls(const bool preferHls)
+void Settings::setPreferAdaptive(const bool preferAdaptive)
 {
-    if (m_preferHls != preferHls) {
-        m_preferHls = preferHls;
-        m_settings->setValue("preferHls", m_preferHls);
-        emit preferHlsChanged();
+    if (m_preferAdaptive != preferAdaptive) {
+        m_preferAdaptive = preferAdaptive;
+        m_settings->setValue("preferAdaptive", m_preferAdaptive);
+        emit preferAdaptiveChanged();
     }
 }
 

@@ -1275,13 +1275,13 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
-        <source>Prefer HLS streams</source>
-        <translation>Prefer HLS streams</translation>
+        <source>Prefer adaptive video streams</source>
+        <translation>Prefer adaptive video streams</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="172"/>
-        <source>HLS adaptive video is more likely to have sound, but may be less stable</source>
-        <translation>HLS adaptive video is more likely to have sound, but may be less stable</translation>
+        <source>More likely to have sound, but may be less stable.</source>
+        <translation>More likely to have sound, but may be less stable.</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="178"/>

@@ -313,7 +313,7 @@ AbstractPage {
             }
 
             // Return most preferred URL
-            if (settings.preferHls && adaptiveUrl !== undefined) {
+            if (settings.preferAdaptive && adaptiveUrl !== undefined) {
                 mediaPlayer.source = adaptiveUrl
                 return
             }
