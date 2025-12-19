@@ -92,10 +92,23 @@ Item {
     Component {
         id: gifDelegate
         AnimatedImage {
+            id: gifItem
             property var media
             width: commentCol.width
+            height: implicitWidth > 0 ? Math.round(width * implicitHeight / implicitWidth) : 0
             source: media ? media.source : ""
+            asynchronous: true
+            cache: true
             fillMode: Image.PreserveAspectFit
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    if (!media)
+                        return;
+                    globalUtils.openImageViewPage(media.source);
+                }
+            }
         }
     }
 
@@ -105,7 +118,18 @@ Item {
             property var media
             width: media && media.widthHint ? Math.min(commentCol.width, media.widthHint) : commentCol.width
             source: media ? media.source : ""
+            asynchronous: true
+            cache: true
             fillMode: Image.PreserveAspectFit
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    if (!media)
+                        return;
+                    globalUtils.openImageViewPage(media.source);
+                }
+            }
         }
     }
 
