@@ -4,6 +4,11 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Fri Dec 19 2025 Andrew Branson <github@andrewbranson.net> 1.14.5-1
+- new: Use avatars in user and account pages.
+- chg: Improve inline image handling and scaling. Open in viewer.
+- fix: Caching posted gifs caused OOM crashes
+
 * Mon Dec 15 2025 Andrew Branson <github@andrewbranson.net> 1.14.4-1
 - new: Support adaptive video streams. Must be enabled in settings. More likely to have sound, but a bit unstable right now.
 - new: Elapsed video time on the left, Video metadata at the top. 
