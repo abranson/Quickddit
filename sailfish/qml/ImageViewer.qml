@@ -79,7 +79,7 @@ Item {
             anchors.centerIn: parent
             asynchronous: true
             smooth: !flickable.moving
-            cache: true
+            cache: false
             fillMode: Image.PreserveAspectFit
 
             onScaleChanged: {
