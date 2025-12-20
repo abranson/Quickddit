@@ -1787,7 +1787,7 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="340"/>
-        <source>yt-dlp error: %1</source>
+        <source>youtube-dl error: %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

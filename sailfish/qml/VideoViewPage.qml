@@ -210,8 +210,8 @@ AbstractPage {
 
     Component.onCompleted: {
         if (videoUrl === "") {
-            // resolve with yt-dlp
-            console.log("only origUrl set, resolving with yt-dlp...")
+            // resolve with youtube-dl
+            console.log("only origUrl set, resolving with youtube-dl...")
             python.requestVideoUrlFor(origUrl)
         } else {
             mediaPlayer.source = videoUrl
@@ -337,7 +337,7 @@ AbstractPage {
 
         onError: {
             error = true
-            infoBanner.warning(qsTr("yt-dlp error: %1").arg(traceback));
+            infoBanner.warning(qsTr("youtube-dl error: %1").arg(traceback));
         }
 
         onFail: {

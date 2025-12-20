@@ -1787,7 +1787,7 @@ Para adicionar uma conta faça um Login. Aqui estarão listadas todas as contas 
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="340"/>
-        <source>yt-dlp error: %1</source>
+        <source>youtube-dl error: %1</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
