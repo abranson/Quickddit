@@ -4,6 +4,9 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Sat Dec 20 2025 Andrew Branson <github@andrewbranson.net> 1.14.6-1
+- fix: Revert back to youtube-dl because yt-dlp really doesn't work with Python < 3.10
+
 * Fri Dec 19 2025 Andrew Branson <github@andrewbranson.net> 1.14.5-1
 - new: Use avatars in user and account pages.
 - chg: Improve inline image handling and scaling. Open in viewer.
