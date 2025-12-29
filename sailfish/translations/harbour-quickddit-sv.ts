@@ -143,7 +143,7 @@
         <location filename="../qml/AboutSubredditPage.qml" line="143"/>
         <source>%n subscribers</source>
         <translation>
-            <numerusform>%n prenumeranter</numerusform>
+            <numerusform>%n prenumerant</numerusform>
             <numerusform>%n prenumeranter</numerusform>
         </translation>
     </message>
@@ -213,7 +213,7 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="190"/>
         <source>Mod</source>
-        <translation>Mod</translation>
+        <translation>Modd</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="196"/>
@@ -342,12 +342,12 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
         <source>Enter your reply here</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange ditt svar här</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="438"/>
         <source>Enter your new comment here</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange din nya kommentar här</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="457"/>
@@ -431,7 +431,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Hot</source>
-        <translation>Heta</translation>
+        <translation>Het</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
@@ -462,7 +462,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/CommentPage.qml" line="99"/>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Dela</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="109"/>
@@ -500,7 +500,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/ImageViewPage.qml" line="64"/>
         <source>Share Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Dela bild</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="76"/>
@@ -567,7 +567,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/LoadingFooter.qml" line="61"/>
         <source>Load More…</source>
-        <translation type="unfinished"></translation>
+        <translation>Läs in mer…</translation>
     </message>
 </context>
 <context>
@@ -601,7 +601,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/MainPage.qml" line="136"/>
         <source>Last refreshed</source>
-        <translation type="unfinished"></translation>
+        <translation>Sista uppdaterade</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="157"/>
@@ -616,7 +616,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/MainPage.qml" line="182"/>
         <source>Nothing here</source>
-        <translation type="unfinished"></translation>
+        <translation>Inget här</translation>
     </message>
 </context>
 <context>
@@ -778,13 +778,13 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <location filename="../qml/OpenLinkDialog.qml" line="74"/>
         <location filename="../qml/OpenLinkDialog.qml" line="153"/>
         <source>Open in…</source>
-        <translation type="unfinished"></translation>
+        <translation>Öppna i…</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="78"/>
         <location filename="../qml/OpenLinkDialog.qml" line="157"/>
         <source>Launching…</source>
-        <translation type="unfinished"></translation>
+        <translation>Startar…</translation>
     </message>
     <message>
         <location filename="../qml/OpenLinkDialog.qml" line="84"/>
@@ -881,12 +881,12 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../../src/qmlutils.cpp" line="188"/>
         <source>Invalid share URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Ogiltig delnings-URL</translation>
     </message>
     <message>
         <location filename="../../src/qmlutils.cpp" line="204"/>
         <source>Unable to resolve share URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte att lösa ut delnings-URL</translation>
     </message>
 </context>
 <context>
@@ -947,7 +947,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SearchPage.qml" line="31"/>
         <source>Hot</source>
-        <translation>Heta</translation>
+        <translation>Het</translation>
     </message>
     <message>
         <location filename="../qml/SearchPage.qml" line="31"/>
@@ -1018,7 +1018,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <location filename="../qml/SectionSelectionDialog.qml" line="36"/>
         <location filename="../qml/SectionSelectionDialog.qml" line="39"/>
         <source>Hot</source>
-        <translation>Heta</translation>
+        <translation>Het</translation>
     </message>
     <message>
         <location filename="../qml/SectionSelectionDialog.qml" line="36"/>
@@ -1168,7 +1168,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SendMessagePage.qml" line="99"/>
         <source>Send</source>
-        <translation>Skicka</translation>
+        <translation>Sänd</translation>
     </message>
 </context>
 <context>
@@ -1276,12 +1276,12 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
         <source>Prefer adaptive video streams</source>
-        <translation type="unfinished"></translation>
+        <translation>Föredrar adaptiva videoströmmar</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="172"/>
         <source>More likely to have sound, but may be less stable.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mer benägna att ha ljud, men kan vara mindre stabila.</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="178"/>
@@ -1315,12 +1315,12 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="76"/>
         <source>Sign in successful! Welcome! :)</source>
-        <translation type="unfinished"></translation>
+        <translation>Inloggning slutförd! Välkommen! :)</translation>
     </message>
 </context>
 <context>
@@ -1354,7 +1354,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="99"/>
         <source>Mod</source>
-        <translation>Mod</translation>
+        <translation>Modd</translation>
     </message>
     <message>
         <location filename="../qml/SubredditDelegate.qml" line="105"/>
@@ -1466,22 +1466,22 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SubredditsPage.qml" line="28"/>
         <source>Quickddit</source>
-        <translation type="unfinished"></translation>
+        <translation>Quickddit</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="112"/>
         <source>Signed in as %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Inloggad som %1</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="112"/>
         <source>Not signed in</source>
-        <translation type="unfinished"></translation>
+        <translation>Inte inloggad</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Popular</source>
-        <translation>Heta</translation>
+        <translation>Populär</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
@@ -1496,12 +1496,12 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>My Saved Things</source>
-        <translation type="unfinished"></translation>
+        <translation>Min sparade saker</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse all Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Bläddra i alla Subreddits</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="165"/>
@@ -1608,7 +1608,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/UserPage.qml" line="146"/>
         <source>Mod</source>
-        <translation>Mod</translation>
+        <translation>Modd</translation>
     </message>
     <message>
         <location filename="../qml/UserPage.qml" line="150"/>
@@ -1671,12 +1671,12 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
         <source>[score hidden]</source>
-        <translation type="unfinished">[poäng dolda]</translation>
+        <translation>[poäng dold]</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
         <source>%n pts</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n p</numerusform>
             <numerusform>%n p</numerusform>
         </translation>
@@ -1768,22 +1768,22 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/VideoViewPage.qml" line="26"/>
         <source>Video</source>
-        <translation type="unfinished"></translation>
+        <translation>Video</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="39"/>
         <source>URL</source>
-        <translation type="unfinished">Länk</translation>
+        <translation>URL</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="115"/>
         <source>Error loading video</source>
-        <translation type="unfinished"></translation>
+        <translation>Fel vid inläsning av video</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="335"/>
         <source>Problem finding stream URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Problem att hitta strömnings-URL</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="340"/>
@@ -1830,7 +1830,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <location filename="../qml/main.qml" line="275"/>
         <location filename="../qml/main.qml" line="521"/>
         <source>Unable to resolve reddit share link</source>
-        <translation type="unfinished"></translation>
+        <translation>Kan inte lösa ut reddit delningslänkk</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="297"/>
@@ -1855,12 +1855,12 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/main.qml" line="458"/>
         <source>in /r/%1 by %2</source>
-        <translation type="unfinished"></translation>
+        <translation>i /r/%1 av %2</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="459"/>
         <source>and %1 other</source>
-        <translation type="unfinished"></translation>
+        <translation>och %1 andra</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="468"/>
