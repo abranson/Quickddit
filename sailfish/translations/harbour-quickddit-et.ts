@@ -25,37 +25,37 @@
         <location filename="../qml/AboutMultiredditPage.qml" line="39"/>
         <location filename="../qml/AboutMultiredditPage.qml" line="150"/>
         <source>Add Subreddit</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisa alamreddit</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="57"/>
         <source>Description</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirjeldus</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="67"/>
         <source>No description</source>
-        <translation type="unfinished"></translation>
+        <translation>Kirjeldus puudub</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="71"/>
         <source>Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Alamredditid</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="123"/>
         <source>Go to %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="128"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Eemalda</translation>
     </message>
     <message>
         <location filename="../qml/AboutMultiredditPage.qml" line="155"/>
         <source>Enter subreddit name</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisesta alamredditi nimi</translation>
     </message>
 </context>
 <context>
@@ -63,48 +63,48 @@
     <message>
         <location filename="../qml/AboutPage.qml" line="25"/>
         <source>About</source>
-        <translation type="unfinished"></translation>
+        <translation>Rakenduse teave</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="101"/>
         <source>Quickddit - A free and open source Reddit client for mobile phones</source>
-        <translation type="unfinished"></translation>
+        <translation>Quickddit - tasuta, vaba ja avatud lähtekoodiga Redditi klient nutitelefonidele</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="114"/>
         <source>App icon by Andrew Zhilin</source>
-        <translation type="unfinished"></translation>
+        <translation>Rakenduse ikooni autor on Andrew Zhilin</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="116"/>
         <source>_translator</source>
         <extracomment>_translator is used as a placeholder for the name of the translator (you :)</extracomment>
-        <translation type="unfinished"></translation>
+        <translation>Priit Jõerüüt</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="116"/>
         <source>Current language translation by %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Selle keele tõlke autor on %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="117"/>
         <source>Licensed under GNU GPLv3+</source>
-        <translation type="unfinished"></translation>
+        <translation>Litsentseeritud GNU GPLv3+ alusel</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="125"/>
         <source>Source</source>
-        <translation type="unfinished"></translation>
+        <translation>Lähtekood</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="130"/>
         <source>License</source>
-        <translation type="unfinished"></translation>
+        <translation>Litsents</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="140"/>
         <source>Translations</source>
-        <translation type="unfinished"></translation>
+        <translation>Tõlked</translation>
     </message>
 </context>
 <context>
@@ -112,32 +112,32 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="27"/>
         <source>About %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Rakenduse teave: %1</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="40"/>
         <source>Moderators</source>
-        <translation type="unfinished"></translation>
+        <translation>Moderaatorid</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="47"/>
         <source>Message Moderators</source>
-        <translation type="unfinished"></translation>
+        <translation>Saada sõnum moderaatoritele</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="55"/>
         <source>Unsubscribe</source>
-        <translation type="unfinished"></translation>
+        <translation>Loobu tellimusest</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="55"/>
         <source>Subscribe</source>
-        <translation type="unfinished"></translation>
+        <translation>Telli</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="127"/>
         <source>This subreddit is Not Safe For Work</source>
-        <translation type="unfinished"></translation>
+        <translation>See alamreddit sisaldab ebasobilikku sisu</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/AboutSubredditPage.qml" line="143"/>
@@ -158,37 +158,37 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="156"/>
         <source>Subscribed</source>
-        <translation type="unfinished"></translation>
+        <translation>Tellitud</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="156"/>
         <source>Not Subscribed</source>
-        <translation type="unfinished"></translation>
+        <translation>Pole tellitud</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="161"/>
         <source>Private</source>
-        <translation type="unfinished"></translation>
+        <translation>Privaatne</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="162"/>
         <source>Restricted</source>
-        <translation type="unfinished"></translation>
+        <translation>Piiratud</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="163"/>
         <source>GoldRestricted</source>
-        <translation type="unfinished"></translation>
+        <translation>GoldRestricted</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="163"/>
         <source>Archived</source>
-        <translation type="unfinished"></translation>
+        <translation>Arhiveeritud</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="168"/>
         <source>Links only</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaid lingid</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="168"/>
@@ -198,27 +198,27 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="173"/>
         <source>NSFW</source>
-        <translation type="unfinished"></translation>
+        <translation>Ebasobilik sisu</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="179"/>
         <source>Contributor</source>
-        <translation type="unfinished"></translation>
+        <translation>Kaasautor</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="184"/>
         <source>Banned</source>
-        <translation type="unfinished"></translation>
+        <translation>Keelatud</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="190"/>
         <source>Mod</source>
-        <translation type="unfinished"></translation>
+        <translation>Mod</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="196"/>
         <source>Muted</source>
-        <translation type="unfinished"></translation>
+        <translation>Summutatud</translation>
     </message>
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="226"/>
@@ -236,7 +236,7 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="26"/>
         <source>Accounts</source>
-        <translation type="unfinished"></translation>
+        <translation>Kasutajakontod</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="36"/>
@@ -261,12 +261,12 @@
     <message>
         <location filename="../qml/AccountsPage.qml" line="139"/>
         <source>Activate</source>
-        <translation type="unfinished"></translation>
+        <translation>Lülita sisse</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="143"/>
         <source>Remove</source>
-        <translation type="unfinished"></translation>
+        <translation>Eemalda</translation>
     </message>
     <message>
         <location filename="../qml/AccountsPage.qml" line="152"/>
@@ -281,12 +281,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/CommentDelegate.qml" line="154"/>
         <source>Sticky</source>
-        <translation type="unfinished"></translation>
+        <translation>Kleepuv</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="161"/>
         <source>Gilded</source>
-        <translation type="unfinished"></translation>
+        <translation>Kullatud</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="253"/>
@@ -296,17 +296,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message numerus="yes">
         <location filename="../qml/CommentDelegate.qml" line="254"/>
         <source>%n pts</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n pt</numerusform>
-            <numerusform>%n pts</numerusform>
+            <numerusform>%n pt</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/CommentDelegate.qml" line="360"/>
         <source>Load %n hidden comments</source>
-        <translation type="unfinished">
-            <numerusform>Load %n hidden comment</numerusform>
-            <numerusform>Load %n hidden comments</numerusform>
+        <translation>
+            <numerusform>Laadi %n peidetud kommentaar</numerusform>
+            <numerusform>Laadi %n peidetud kommentaari</numerusform>
         </translation>
     </message>
     <message>
@@ -317,9 +317,9 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message numerus="yes">
         <location filename="../qml/CommentDelegate.qml" line="395"/>
         <source>Show %n collapsed comments</source>
-        <translation type="unfinished">
-            <numerusform>Show %n collapsed comment</numerusform>
-            <numerusform>Show %n collapsed comments</numerusform>
+        <translation>
+            <numerusform>Näita %n ahendatud kommentaari</numerusform>
+            <numerusform>Näita %n ahendatud kommentaari</numerusform>
         </translation>
     </message>
     <message>
@@ -350,12 +350,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/CommentDelegate.qml" line="457"/>
         <source>Save</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvesta</translation>
     </message>
     <message>
         <location filename="../qml/CommentDelegate.qml" line="457"/>
         <source>Add</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisa</translation>
     </message>
 </context>
 <context>
@@ -363,17 +363,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../../src/commentmanager.cpp" line="103"/>
         <source>The comment has been added</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentaar on lisatud</translation>
     </message>
     <message>
         <location filename="../../src/commentmanager.cpp" line="106"/>
         <source>The comment has been edited</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentaar on muudetud</translation>
     </message>
     <message>
         <location filename="../../src/commentmanager.cpp" line="110"/>
         <source>The comment has been deleted</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentaar on kustutatud</translation>
     </message>
 </context>
 <context>
@@ -381,27 +381,27 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/CommentMenu.qml" line="78"/>
         <source>Copy Comment</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopeeri kommentaar</translation>
     </message>
     <message>
         <location filename="../qml/CommentMenu.qml" line="81"/>
         <source>Comment copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentaar on kopeeritud lõikelauale</translation>
     </message>
     <message>
         <location filename="../qml/CommentMenu.qml" line="87"/>
         <source>Reply</source>
-        <translation type="unfinished"></translation>
+        <translation>Vasta</translation>
     </message>
     <message>
         <location filename="../qml/CommentMenu.qml" line="97"/>
         <source>Edit</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuda</translation>
     </message>
     <message>
         <location filename="../qml/CommentMenu.qml" line="102"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustuta</translation>
     </message>
 </context>
 <context>
@@ -409,78 +409,78 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/CommentPage.qml" line="27"/>
         <source>Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentaarid</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Best</source>
-        <translation type="unfinished"></translation>
+        <translation>Parim</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Top</source>
-        <translation type="unfinished"></translation>
+        <translation>Populaarseim</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>New</source>
-        <translation type="unfinished"></translation>
+        <translation>Uus</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Hot</source>
-        <translation type="unfinished"></translation>
+        <translation>Kuum</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Controversial</source>
-        <translation type="unfinished"></translation>
+        <translation>Vastuoluline</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="43"/>
         <source>Old</source>
-        <translation type="unfinished"></translation>
+        <translation>Vana</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="64"/>
         <source>Edit Post</source>
-        <translation type="unfinished"></translation>
+        <translation>Muuda postitust</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="78"/>
         <location filename="../qml/CommentPage.qml" line="79"/>
         <source>Sort</source>
-        <translation type="unfinished"></translation>
+        <translation>Järjesta</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="90"/>
         <source>Add comment</source>
-        <translation type="unfinished"></translation>
+        <translation>Lisa kommentaar</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="99"/>
         <source>Share</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaga</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="109"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Värskenda andmeid</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="242"/>
         <source>Viewing a single comment&apos;s thread</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaatad ühe kommentaari jutulõnga</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="247"/>
         <source>View All Comments</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaata kõiki kommentaare</translation>
     </message>
     <message>
         <location filename="../qml/CommentPage.qml" line="279"/>
         <source>Deleting comment</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustutan kommentaari</translation>
     </message>
 </context>
 <context>
@@ -488,37 +488,37 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/ImageViewPage.qml" line="27"/>
         <source>Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilt</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="59"/>
         <source>Save Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvesta pilt</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="64"/>
         <source>Share Image</source>
-        <translation type="unfinished"></translation>
+        <translation>Jaga pilti</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="76"/>
         <source>URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Võrguaadress</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="130"/>
         <source>Error loading image</source>
-        <translation type="unfinished"></translation>
+        <translation>Viga pildi laadimisel</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="232"/>
         <source>Image saved to gallery</source>
-        <translation type="unfinished"></translation>
+        <translation>Pilt on salvestatud galeriisse</translation>
     </message>
     <message>
         <location filename="../qml/ImageViewPage.qml" line="233"/>
         <source>Image save failed!</source>
-        <translation type="unfinished"></translation>
+        <translation>Pildi salvestamine ei õnnestunud!</translation>
     </message>
 </context>
 <context>
@@ -552,12 +552,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/LinkMenu.qml" line="79"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustuta</translation>
     </message>
     <message>
         <location filename="../qml/LinkMenu.qml" line="85"/>
         <source>Hide</source>
-        <translation type="unfinished"></translation>
+        <translation>Peida</translation>
     </message>
 </context>
 <context>
@@ -584,17 +584,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/MainPage.qml" line="115"/>
         <location filename="../qml/MainPage.qml" line="117"/>
         <source>Section</source>
-        <translation type="unfinished"></translation>
+        <translation>Alajaotus</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="127"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Otsi</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="131"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Värskenda andmeid</translation>
     </message>
     <message>
         <location filename="../qml/MainPage.qml" line="136"/>
@@ -645,12 +645,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MessageMenu.qml" line="36"/>
         <source>Reply</source>
-        <translation type="unfinished"></translation>
+        <translation>Vasta</translation>
     </message>
     <message>
         <location filename="../qml/MessageMenu.qml" line="43"/>
         <source>Delete</source>
-        <translation type="unfinished"></translation>
+        <translation>Kustuta</translation>
     </message>
     <message>
         <location filename="../qml/MessageMenu.qml" line="49"/>
@@ -669,17 +669,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/MessagePage.qml" line="27"/>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>Messages</source>
-        <translation type="unfinished"></translation>
+        <translation>Sõnumid</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>All</source>
-        <translation type="unfinished"></translation>
+        <translation>Kõik</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>Unread</source>
-        <translation type="unfinished"></translation>
+        <translation>Lugemata</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
@@ -694,7 +694,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
         <source>Sent</source>
-        <translation type="unfinished"></translation>
+        <translation>Saadetud</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="40"/>
@@ -710,12 +710,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <location filename="../qml/MessagePage.qml" line="53"/>
         <location filename="../qml/MessagePage.qml" line="55"/>
         <source>Section</source>
-        <translation type="unfinished"></translation>
+        <translation>Alajaotus</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="64"/>
         <source>Refresh</source>
-        <translation type="unfinished"></translation>
+        <translation>Värskenda andmeid</translation>
     </message>
     <message>
         <location filename="../qml/MessagePage.qml" line="87"/>
@@ -739,7 +739,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/ModeratorListPage.qml" line="25"/>
         <source>Moderators</source>
-        <translation type="unfinished"></translation>
+        <translation>Moderaatorid</translation>
     </message>
 </context>
 <context>
@@ -852,25 +852,25 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message numerus="yes">
         <location filename="../qml/PostInfoText.qml" line="116"/>
         <source>%n crossposts</source>
-        <translation type="unfinished">
-            <numerusform>%n crosspost</numerusform>
-            <numerusform>%n crossposts</numerusform>
+        <translation>
+            <numerusform>%n ristpostitus</numerusform>
+            <numerusform>%n ristpostitust</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/PostInfoText.qml" line="143"/>
         <source>%n points</source>
-        <translation type="unfinished">
-            <numerusform>%n point</numerusform>
-            <numerusform>%n points</numerusform>
+        <translation>
+            <numerusform>%n punkt</numerusform>
+            <numerusform>%n punkti</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/PostInfoText.qml" line="155"/>
         <source>%n comments</source>
-        <translation type="unfinished">
-            <numerusform>%n comment</numerusform>
-            <numerusform>%n comments</numerusform>
+        <translation>
+            <numerusform>%n kommentaar</numerusform>
+            <numerusform>%n kommentaari</numerusform>
         </translation>
     </message>
 </context>
@@ -1326,9 +1326,9 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message numerus="yes">
         <location filename="../qml/SubredditBrowseDelegate.qml" line="82"/>
         <source>%n subscribers</source>
-        <translation type="unfinished">
-            <numerusform>%n subscriber</numerusform>
-            <numerusform>%n subscribers</numerusform>
+        <translation>
+            <numerusform>%n tellija</numerusform>
+            <numerusform>%n tellijat</numerusform>
         </translation>
     </message>
 </context>
@@ -1674,9 +1674,9 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message numerus="yes">
         <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
         <source>%n pts</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>%n pt</numerusform>
-            <numerusform>%n pts</numerusform>
+            <numerusform>%n pt</numerusform>
         </translation>
     </message>
 </context>
@@ -1705,7 +1705,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/UserPageLinkDelegate.qml" line="96"/>
         <source>Locked</source>
-        <translation type="unfinished"></translation>
+        <translation>Lukus</translation>
     </message>
 </context>
 <context>
@@ -1713,51 +1713,51 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../../src/utils.cpp" line="36"/>
         <source>Now</source>
-        <translation type="unfinished"></translation>
+        <translation>Äsja</translation>
     </message>
     <message>
         <location filename="../../src/utils.cpp" line="38"/>
         <source>Just now</source>
-        <translation type="unfinished"></translation>
+        <translation>Hetk tagasi</translation>
     </message>
     <message numerus="yes">
         <location filename="../../src/utils.cpp" line="43"/>
         <source>%n mins ago</source>
-        <translation type="unfinished">
-            <numerusform>%n min ago</numerusform>
-            <numerusform>%n mins ago</numerusform>
+        <translation>
+            <numerusform>%n min tagasi</numerusform>
+            <numerusform>%n min tagasi</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../../src/utils.cpp" line="48"/>
         <source>%n hours ago</source>
-        <translation type="unfinished">
-            <numerusform>%n hour ago</numerusform>
-            <numerusform>%n hours ago</numerusform>
+        <translation>
+            <numerusform>%n tund tagasi</numerusform>
+            <numerusform>%n tundi tagasi</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../../src/utils.cpp" line="53"/>
         <source>%n days ago</source>
-        <translation type="unfinished">
-            <numerusform>%n day ago</numerusform>
-            <numerusform>%n days ago</numerusform>
+        <translation>
+            <numerusform>%n päev tagasi</numerusform>
+            <numerusform>%n päeva tagasi</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../../src/utils.cpp" line="58"/>
         <source>%n months ago</source>
-        <translation type="unfinished">
-            <numerusform>%n month ago</numerusform>
-            <numerusform>%n months ago</numerusform>
+        <translation>
+            <numerusform>%n kuu tagasi</numerusform>
+            <numerusform>%n kuud tagasi</numerusform>
         </translation>
     </message>
     <message numerus="yes">
         <location filename="../../src/utils.cpp" line="61"/>
         <source>%n years ago</source>
-        <translation type="unfinished">
-            <numerusform>%n year ago</numerusform>
-            <numerusform>%n years ago</numerusform>
+        <translation>
+            <numerusform>%n aasta tagasi</numerusform>
+            <numerusform>%n aastat tagasi</numerusform>
         </translation>
     </message>
 </context>
@@ -1799,27 +1799,27 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/WebViewer.qml" line="87"/>
         <source>Copy URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kopeeri võrguaadress</translation>
     </message>
     <message>
         <location filename="../qml/WebViewer.qml" line="90"/>
         <source>URL copied to clipboard</source>
-        <translation type="unfinished"></translation>
+        <translation>Võrguaadress on kopeeritud lõikelauale</translation>
     </message>
     <message>
         <location filename="../qml/WebViewer.qml" line="94"/>
         <source>Open in browser</source>
-        <translation type="unfinished"></translation>
+        <translation>Ava veebibrauseris</translation>
     </message>
     <message>
         <location filename="../qml/WebViewer.qml" line="100"/>
         <source>Back</source>
-        <translation type="unfinished"></translation>
+        <translation>Tagasi</translation>
     </message>
     <message>
         <location filename="../qml/WebViewer.qml" line="105"/>
         <source>Forward</source>
-        <translation type="unfinished"></translation>
+        <translation>Edasi</translation>
     </message>
 </context>
 <context>
@@ -1827,58 +1827,58 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/main.qml" line="297"/>
         <source>Unsupported reddit url</source>
-        <translation type="unfinished"></translation>
+        <translation>See Redditi võrguaadress pole toetatud</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="340"/>
         <source>Unsupported image url</source>
-        <translation type="unfinished"></translation>
+        <translation>See pildi võrguaadress pole toetatud</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="349"/>
         <source>Unsupported video url</source>
-        <translation type="unfinished"></translation>
+        <translation>See video võrguaadress pole toetatud</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="429"/>
         <source>Please log in again</source>
-        <translation type="unfinished"></translation>
+        <translation>Palun logi uuesti sisse</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="458"/>
         <source>in /r/%1 by %2</source>
-        <translation type="unfinished"></translation>
+        <translation>teemas /r/%1 autorilt %2</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="459"/>
         <source>and %1 other</source>
-        <translation type="unfinished"></translation>
+        <translation>ja %1 üks teine</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="468"/>
         <location filename="../qml/main.qml" line="469"/>
         <source>Message from %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Sõnum saatjalt %1</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="479"/>
         <source>New message from %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Uus sõnum saatjalt %s</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/main.qml" line="480"/>
         <source>%n new messages</source>
         <comment>0</comment>
-        <translation type="unfinished">
-            <numerusform>%n new message</numerusform>
-            <numerusform>%n new messages</numerusform>
+        <translation>
+            <numerusform>%n uus sõnum</numerusform>
+            <numerusform>%n uut sõnumit</numerusform>
         </translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="275"/>
         <location filename="../qml/main.qml" line="521"/>
         <source>Unable to resolve reddit share link</source>
-        <translation type="unfinished"></translation>
+        <translation>Redditi jagamislingi lahendamine ei õnnestu</translation>
     </message>
 </context>
 </TS>
