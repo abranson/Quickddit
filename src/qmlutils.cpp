@@ -27,6 +27,8 @@
 #include <QScreen>
 #include <QDir>
 #include <QDebug>
+#include <QFileInfo>
+#include <QCryptographicHash>
 
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
   #include <QStandardPaths>
@@ -58,6 +60,22 @@ QMLUtils::QMLUtils(QObject *parent) :
     m_clipboard = QApplication::clipboard();
 #endif
     connect(m_clipboard, SIGNAL(dataChanged()), this, SLOT(onClipboardChanged()));
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+    QString cacheLocation = QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
+#else
+    QString cacheLocation = QDesktopServices::storageLocation(QDesktopServices::DataLocation);
+#endif
+    if (cacheLocation.isEmpty())
+        cacheLocation = QDir::tempPath() + QDir::separator() + "Quickddit";
+    m_animatedCacheDir = cacheLocation + QDir::separator() + "animated";
+    clearAnimatedImageCache();
+    QDir().mkpath(m_animatedCacheDir);
+}
+
+QMLUtils::~QMLUtils()
+{
+    clearAnimatedImageCache();
 }
 
 void QMLUtils::copyToClipboard(const QString &text)
@@ -179,6 +197,161 @@ void QMLUtils::onSaveImageFinished()
     }
     m_reply->deleteLater();
     m_reply = 0;
+}
+
+void QMLUtils::clearAnimatedImageCache()
+{
+    QHash<QNetworkReply*, QFile*>::iterator fileIt = m_animatedImageFiles.begin();
+    while (fileIt != m_animatedImageFiles.end()) {
+        QNetworkReply *reply = fileIt.key();
+        QFile *file = fileIt.value();
+        QString finalPath = m_animatedImageFinalPaths.value(reply);
+        QString partPath = finalPath.isEmpty() ? QString() : finalPath + ".part";
+
+        if (reply)
+            reply->abort();
+        if (file) {
+            if (file->isOpen())
+                file->close();
+            delete file;
+        }
+        if (!partPath.isEmpty())
+            QFile::remove(partPath);
+        if (reply)
+            delete reply;
+
+        ++fileIt;
+    }
+
+    m_animatedImageFiles.clear();
+    m_animatedImageUrls.clear();
+    m_animatedImageFinalPaths.clear();
+    m_pendingAnimatedImageUrls.clear();
+    m_animatedImageCache.clear();
+
+    QDir cacheDir(m_animatedCacheDir);
+    if (!cacheDir.exists())
+        return;
+
+    QFileInfoList entries = cacheDir.entryInfoList(QDir::Files | QDir::NoDotAndDotDot);
+    foreach (const QFileInfo &entry, entries)
+        QFile::remove(entry.absoluteFilePath());
+}
+
+QString QMLUtils::cachedAnimatedImageUrl(const QString &url) const
+{
+    QString originalUrl = QUrl(url).toString();
+    return m_animatedImageCache.value(originalUrl);
+}
+
+void QMLUtils::cacheAnimatedImage(const QString &url)
+{
+    QUrl sourceUrl(url);
+    if (!sourceUrl.isValid())
+        return;
+    if (!sourceUrl.scheme().startsWith("http"))
+        return;
+
+    QString originalUrl = sourceUrl.toString();
+    if (m_animatedImageCache.contains(originalUrl)) {
+        emit animatedImageCached(originalUrl, m_animatedImageCache.value(originalUrl));
+        return;
+    }
+    if (m_pendingAnimatedImageUrls.contains(originalUrl))
+        return;
+
+    QByteArray hash = QCryptographicHash::hash(originalUrl.toUtf8(), QCryptographicHash::Md5).toHex();
+    QString extension = QFileInfo(sourceUrl.path()).suffix().toLower();
+    if (extension.isEmpty())
+        extension = "gif";
+    QString finalPath = m_animatedCacheDir + QDir::separator() + QString::fromLatin1(hash) + "." + extension;
+    QString partPath = finalPath + ".part";
+
+    if (QFile::exists(finalPath) && QFileInfo(finalPath).size() > 0) {
+        QString localUrl = QUrl::fromLocalFile(finalPath).toString();
+        m_animatedImageCache.insert(originalUrl, localUrl);
+        emit animatedImageCached(originalUrl, localUrl);
+        return;
+    }
+
+    QFile::remove(partPath);
+    QFile *file = new QFile(partPath, this);
+    if (!file->open(QIODevice::WriteOnly)) {
+        file->deleteLater();
+        return;
+    }
+
+    QNetworkRequest request(sourceUrl);
+    request.setRawHeader("User-Agent", "Quickddit/" APP_VERSION);
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 6, 0))
+    request.setAttribute(QNetworkRequest::FollowRedirectsAttribute, true);
+#endif
+
+    QNetworkReply *reply = m_manager.get(request);
+    if (!reply) {
+        file->close();
+        file->deleteLater();
+        return;
+    }
+
+    m_pendingAnimatedImageUrls.insert(originalUrl);
+    m_animatedImageFiles.insert(reply, file);
+    m_animatedImageUrls.insert(reply, originalUrl);
+    m_animatedImageFinalPaths.insert(reply, finalPath);
+
+    connect(reply, SIGNAL(readyRead()), this, SLOT(onAnimatedImageReadyRead()));
+    connect(reply, SIGNAL(finished()), this, SLOT(onAnimatedImageFinished()));
+}
+
+void QMLUtils::onAnimatedImageReadyRead()
+{
+    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
+    if (!reply)
+        return;
+
+    QFile *file = m_animatedImageFiles.value(reply, 0);
+    if (!file)
+        return;
+
+    file->write(reply->readAll());
+}
+
+void QMLUtils::onAnimatedImageFinished()
+{
+    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
+    if (!reply)
+        return;
+
+    QFile *file = m_animatedImageFiles.take(reply);
+    QString originalUrl = m_animatedImageUrls.take(reply);
+    QString finalPath = m_animatedImageFinalPaths.take(reply);
+    QString partPath = finalPath + ".part";
+    m_pendingAnimatedImageUrls.remove(originalUrl);
+
+    if (!file) {
+        reply->deleteLater();
+        return;
+    }
+
+    file->write(reply->readAll());
+    file->close();
+
+    if (reply->error() == QNetworkReply::NoError && file->size() > 0) {
+        QFile::remove(finalPath);
+        if (QFile::rename(partPath, finalPath)) {
+            QString localUrl = QUrl::fromLocalFile(finalPath).toString();
+            m_animatedImageCache.insert(originalUrl, localUrl);
+            emit animatedImageCached(originalUrl, localUrl);
+        } else {
+            QFile::remove(partPath);
+        }
+    } else {
+        QFile::remove(partPath);
+    }
+
+    file->deleteLater();
+    reply->deleteLater();
 }
 
 bool QMLUtils::resolveRedditShareUrl(const QString &url)

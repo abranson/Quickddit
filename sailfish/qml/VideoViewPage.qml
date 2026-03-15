@@ -282,11 +282,11 @@ AbstractPage {
                 // http-360p: 360p (vimeo)
                 // http-720p, 720p (vimeo)
                 if (~["mp4-mobile","18","http-360p","22","http-720p"].indexOf(format["format_id"])) {
-                    if (format["format_id"] !== undefined && format["format_id"].indexOf("av01") > -1) continue; // poorly supported
+                    if (format["format_id"] !== undefined && format["vcodec"].indexOf("av01") > -1) continue; // poorly supported
                     var idHeight = ~["22","http-720p"].indexOf(format["format_id"]) ? 720 : 360
                     checkUrl(format["url"], idHeight, false, "format selected by id " + format["format_id"])
                 } else if (~["mp4","webm"].indexOf(format["ext"]) && ~[360,480,720].indexOf(format["height"])) {
-                    if (format["format_id"] !== undefined && format["format_id"].indexOf("av01") > -1) continue; // poorly supported
+                    if (format["format_id"] !== undefined && format["vcodec"].indexOf("av01") > -1) continue; // poorly supported
                     checkUrl(format["url"], format["height"], false, "format selected by ext " + format["ext"] + " and height " + format["height"])
                 }
             }

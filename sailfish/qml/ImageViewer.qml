@@ -34,6 +34,11 @@ Item {
 
     property Flickable flickable
 
+    function _isRemoteAnimatedSource(url) {
+        var src = String(url)
+        return /^https?:\/\//i.test(src) && /\.(gif|apng|webp)(\?|#|$)/i.test(src)
+    }
+
     width: Math.max(image.width * image.scale, flickable.width)
     height: Math.max(image.height * image.scale, flickable.height)
 
@@ -74,13 +79,60 @@ Item {
             id: imageItem
 
             paused: imageViewer.paused
-            source: imageViewer.source
+            property url requestedSource: imageViewer.source
+            property url resolvedSource: imageViewer.source
+            property url cachedLocalSource: ""
+            property bool pendingCachedSwitch: false
+            source: resolvedSource
+
+            function applyCachedSource() {
+                if (cachedLocalSource.length === 0 || resolvedSource === cachedLocalSource)
+                    return
+
+                resolvedSource = cachedLocalSource
+                pendingCachedSwitch = false
+            }
+
+            function queueOrApplyCachedSource() {
+                if (cachedLocalSource.length === 0)
+                    return
+
+                if (!playing || status !== Image.Ready) {
+                    applyCachedSource()
+                    return
+                }
+
+                if (frameCount <= 1 || currentFrame >= frameCount - 1) {
+                    applyCachedSource()
+                    return
+                }
+
+                pendingCachedSwitch = true
+            }
 
             anchors.centerIn: parent
             asynchronous: true
             smooth: !flickable.moving
             cache: false
             fillMode: Image.PreserveAspectFit
+
+            onRequestedSourceChanged: {
+                resolvedSource = requestedSource
+                cachedLocalSource = ""
+                pendingCachedSwitch = false
+
+                if (!imageViewer._isRemoteAnimatedSource(requestedSource))
+                    return
+
+                var originalUrl = String(requestedSource)
+                var cachedUrl = QMLUtils.cachedAnimatedImageUrl(originalUrl)
+                if (cachedUrl.length > 0)
+                    cachedLocalSource = cachedUrl
+                else
+                    QMLUtils.cacheAnimatedImage(originalUrl)
+
+                queueOrApplyCachedSource()
+            }
 
             onScaleChanged: {
                 _onScaleChanged()
@@ -98,6 +150,27 @@ Item {
             onWidthChanged: {
                 if (width > 4096)
                     parent.safe = true
+            }
+
+            onCurrentFrameChanged: {
+                if (pendingCachedSwitch && frameCount > 1 && currentFrame >= frameCount - 1)
+                    applyCachedSource()
+            }
+
+            onPlayingChanged: {
+                if (pendingCachedSwitch && playing)
+                    applyCachedSource()
+            }
+
+            Connections {
+                target: QMLUtils
+                onAnimatedImageCached: {
+                    if (originalUrl !== String(imageItem.requestedSource))
+                        return
+
+                    imageItem.cachedLocalSource = localUrl
+                    imageItem.queueOrApplyCachedSource()
+                }
             }
 
             NumberAnimation {

@@ -25,6 +25,8 @@
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
 #include <QFile>
+#include <QHash>
+#include <QSet>
 
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
   #include <QtGui/QGuiApplication>
@@ -51,6 +53,7 @@ public:
     static QString translationsUrl() { return TRANSLATIONS_URL; }
 
     explicit QMLUtils(QObject *parent = 0);
+    ~QMLUtils();
 
     float pScale() { return cpScale; }
     QString clipboardText() const;
@@ -83,6 +86,8 @@ public:
     Q_INVOKABLE QString toAbsoluteUrl(const QString &url);
 
     Q_INVOKABLE void saveImage(const QString &url);
+    Q_INVOKABLE void cacheAnimatedImage(const QString &url);
+    Q_INVOKABLE QString cachedAnimatedImageUrl(const QString &url) const;
 
     Q_INVOKABLE void publishNotification(const QString &summary, const QString &body, const int count);
     Q_INVOKABLE void clearNotification();
@@ -91,6 +96,8 @@ private slots:
     void onSaveImageFinished();
     void onClipboardChanged();
     void onResolveShareUrlFinished();
+    void onAnimatedImageReadyRead();
+    void onAnimatedImageFinished();
 
 signals:
     void saveImageSucceeded(const QString &name);
@@ -98,13 +105,22 @@ signals:
     void clipboardChanged();
     void redditShareUrlResolved(const QString &resolvedUrl);
     void redditShareUrlFailed(const QString &errorString);
+    void animatedImageCached(const QString &originalUrl, const QString &localUrl);
 
 private:
+    void clearAnimatedImageCache();
+
     QNetworkAccessManager m_manager;
     QNetworkReply* m_reply;
     QFile *m_imageFile;
     QClipboard *m_clipboard;
     QString m_myclip;
+    QString m_animatedCacheDir;
+    QHash<QString, QString> m_animatedImageCache;
+    QSet<QString> m_pendingAnimatedImageUrls;
+    QHash<QNetworkReply*, QFile*> m_animatedImageFiles;
+    QHash<QNetworkReply*, QString> m_animatedImageUrls;
+    QHash<QNetworkReply*, QString> m_animatedImageFinalPaths;
 
     float cpScale;
     void setPScale();

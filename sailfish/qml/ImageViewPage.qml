@@ -26,28 +26,43 @@ AbstractPage {
     id: imageViewPage
     title: qsTr("Image")
 
-    property alias imageUrl: viewer.source
+    property url imageUrl
     property alias imgurUrl: imgurManager.imgurUrl
     property alias galleryUrl: galleryManager.galleryUrl
     property QtObject activeManager: imgurManager.imgurUrl ? imgurManager : galleryManager
+
+    property int imageCount: activeManager.imageUrls.length > 0
+                             ? activeManager.imageUrls.length
+                             : imageUrl.toString() !== "" ? 1 : 0
+    property Item currentSwipeItem: imageSwipeView.currentItem
+    property Item currentViewer: currentSwipeItem ? currentSwipeItem.viewer : null
+    property bool currentImageZoomed: currentViewer && currentViewer.image
+                                      && currentViewer.image.scale > (currentViewer.fitScale * 1.01)
+    property url currentImageUrl: currentSwipeItem ? currentSwipeItem.sourceUrl : imageUrl
+
+    function jumpToImage(index) {
+        if (index < 0 || index >= imageSwipeView.count)
+            return
+
+        imageSwipeView.cancelFlick()
+        imageSwipeView.positionViewAtIndex(index, ListView.Beginning)
+        if (imageSwipeView.currentIndex !== index)
+            imageSwipeView.currentIndex = index
+    }
 
     // to make the image outside of the page not visible during page transitions
     clip: true
 
     SilicaFlickable {
-        id: imageFlickable
+        id: pageFlickable
         anchors {
-            top: parent.top; left: parent.left;
-            right: isPortrait ? parent.right : thumbnailListView.left;
+            top: parent.top
+            left: parent.left
+            right: isPortrait ? parent.right : thumbnailListView.left
             bottom: isPortrait ? thumbnailListView.top : parent.bottom
         }
-        contentWidth: viewer.width; contentHeight: viewer.height
-
-        // When orientation changes, both height and width properties receive changed events
-        // in random order. Fire a short timer to wait out the updates, then fit to screen
-        onHeightChanged: {
-            resizeTimer.start()
-        }
+        contentWidth: width
+        contentHeight: height
 
         ShareAction {
             id: sharer
@@ -57,36 +72,90 @@ AbstractPage {
         PullDownMenu {
             MenuItem {
                 text: qsTr("Save Image")
-                enabled: imageUrl.toString() !== ""
-                onClicked: QMLUtils.saveImage(imageUrl.toString());
+                enabled: currentImageUrl.toString() !== ""
+                onClicked: QMLUtils.saveImage(currentImageUrl.toString())
             }
             MenuItem {
                 text: qsTr("Share Image")
-                enabled: viewer.status == Image.Ready
+                enabled: currentViewer && currentViewer.status === Image.Ready
                 onClicked: {
                     var url;
-                    if (imgurUrl.toString() !== "") { url = imgurUrl.toString(); console.log("Imgur "+url); }
-                    else if (galleryUrl.toString() !== "") { url = galleryUrl.toString(); console.log("Gallery "+url); }
-                    else if (imageUrl.toString() !== "") { url = imageUrl.toString(); console.log("Image "+url); }
+                    if (imgurUrl.toString() !== "") { url = imgurUrl.toString(); console.log("Imgur " + url); }
+                    else if (galleryUrl.toString() !== "") { url = galleryUrl.toString(); console.log("Gallery " + url); }
+                    else if (currentImageUrl.toString() !== "") { url = currentImageUrl.toString(); console.log("Image " + url); }
                     sharer.resources = [{ "type": "text/x-url", "linkTitle": "Image from Reddit", "status": url.toString() }]
                     sharer.trigger()
                 }
             }
             MenuItem {
                 text: qsTr("URL")
-                onClicked: globalUtils.createOpenLinkDialog(imgurUrl || galleryUrl || imageUrl.toString());
+                onClicked: globalUtils.createOpenLinkDialog(imgurUrl || galleryUrl || currentImageUrl.toString())
             }
         }
 
-        ImageViewer {
-            id: viewer
-            flickable: imageFlickable
-            // pause the animation when app is in background
-            paused: imageViewPage.status !== PageStatus.Active || !Qt.application.active
-            onSourceChanged: console.log("source changed: " + source);
-        }
+        ListView {
+            id: imageSwipeView
+            anchors.fill: parent
+            clip: true
+            orientation: ListView.Horizontal
+            snapMode: ListView.SnapOneItem
+            boundsBehavior: Flickable.StopAtBounds
+            highlightRangeMode: ListView.StrictlyEnforceRange
+            preferredHighlightBegin: 0
+            preferredHighlightEnd: width
+            model: imageCount
+            interactive: count > 1 && !currentImageZoomed
 
-        ScrollDecorator {}
+            delegate: Item {
+                id: imagePageDelegate
+
+                width: imageSwipeView.width
+                height: imageSwipeView.height
+                property bool isCurrentImage: imageSwipeView.currentIndex === index
+
+                property alias viewer: viewer
+                property url sourceUrl: activeManager.imageUrls.length > 0
+                                        ? activeManager.imageUrls[index]
+                                        : imageViewPage.imageUrl
+
+                SilicaFlickable {
+                    id: imageFlickable
+                    anchors.fill: parent
+                    contentWidth: viewer.width
+                    contentHeight: viewer.height
+
+                    // Width and height updates can arrive in random order during orientation changes.
+                    onHeightChanged: resizeTimer.start()
+                    onWidthChanged: resizeTimer.start()
+
+                    ImageViewer {
+                        id: viewer
+                        flickable: imageFlickable
+                        source: imagePageDelegate.sourceUrl
+                        paused: imageViewPage.status !== PageStatus.Active
+                                || !Qt.application.active
+                                || !imagePageDelegate.isCurrentImage
+                        onSourceChanged: console.log("source changed: " + source)
+                    }
+
+                    ScrollDecorator {}
+                }
+
+                Timer {
+                    id: resizeTimer
+                    interval: 1
+                    repeat: false
+                    onTriggered: viewer._fitToScreen()
+                }
+            }
+
+            onCurrentIndexChanged: {
+                if (activeManager.imageUrls.length > 0 && activeManager.selectedIndex !== currentIndex)
+                    activeManager.selectedIndex = currentIndex
+                if (thumbnailListView.count > 0)
+                    thumbnailListView.positionViewAtIndex(currentIndex, ListView.Center)
+            }
+        }
     }
 
     Loader {
@@ -94,9 +163,12 @@ AbstractPage {
         anchors.centerIn: parent
         sourceComponent: {
             if (activeManager.busy)
-                return busyIndicatorComponent;
+                return busyIndicatorComponent
 
-            switch (viewer.status) {
+            if (!currentViewer)
+                return undefined
+
+            switch (currentViewer.status) {
             case Image.Loading: return busyIndicatorComponent
             case Image.Error: return failedLoading
             default: return undefined
@@ -122,7 +194,7 @@ AbstractPage {
                     anchors.centerIn: parent
                     visible: !activeManager.busy
                     font.pixelSize: constant.fontSizeSmall
-                    text: Math.round(viewer.progress * 100) + "%"
+                    text: Math.round((currentViewer ? currentViewer.progress : 0) * 100) + "%"
                 }
             }
         }
@@ -135,9 +207,9 @@ AbstractPage {
         property int _itemSize: 150
 
         anchors {
-            left: isPortrait ? parent.left : undefined;
-            right: parent.right;
-            top: isPortrait ? undefined : parent.top;
+            left: isPortrait ? parent.left : undefined
+            right: parent.right
+            top: isPortrait ? undefined : parent.top
             bottom: parent.bottom
         }
         height: isPortrait
@@ -175,23 +247,28 @@ AbstractPage {
                 id: selectedIndicator
                 anchors.fill: parent
                 color: "transparent"
-                border.color: index === activeManager.selectedIndex ? "steelblue" : "black"
+                border.color: index === imageSwipeView.currentIndex ? "steelblue" : "black"
                 border.width: 4
             }
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: activeManager.selectedIndex = index;
+                onClicked: {
+                    imageViewPage.jumpToImage(index)
+                    if (activeManager.selectedIndex !== index)
+                        activeManager.selectedIndex = index
+                }
             }
         }
 
-        onModelChanged: positionViewAtIndex(activeManager.selectedIndex, ListView.Center)
+        onModelChanged: if (count > 0) positionViewAtIndex(imageSwipeView.currentIndex, ListView.Center)
         onOrientationChanged: latePositioning.start()
 
         Timer {
             id: latePositioning
-            interval: 0; repeat: false
-            onTriggered: thumbnailListView.positionViewAtIndex(activeManager.selectedIndex, ListView.Center)
+            interval: 0
+            repeat: false
+            onTriggered: if (thumbnailListView.count > 0) thumbnailListView.positionViewAtIndex(imageSwipeView.currentIndex, ListView.Center)
         }
     }
 
@@ -199,8 +276,8 @@ AbstractPage {
         id: imgurManager
         manager: quickdditManager
         onError: {
-            infoBanner.warning(errorString);
-            console.log(errorString);
+            infoBanner.warning(errorString)
+            console.log(errorString)
         }
     }
 
@@ -208,36 +285,25 @@ AbstractPage {
         id: galleryManager
         manager: quickdditManager
         onError: {
-            infoBanner.warning(errorString);
-            console.log(errorString);
+            infoBanner.warning(errorString)
+            console.log(errorString)
         }
     }
 
-    Binding {
-        target: viewer
-        property: "source"
-        value: imgurManager.imageUrl
-        when: imageViewPage.imgurUrl
-    }
-
-    Binding {
-        target: viewer
-        property: "source"
-        value: galleryManager.imageUrl
-        when: imageViewPage.galleryUrl.toString() !== ""
+    Connections {
+        target: activeManager
+        onSelectedIndexChanged: {
+            if (activeManager.selectedIndex >= 0
+                    && activeManager.selectedIndex < imageSwipeView.count
+                    && imageSwipeView.currentIndex !== activeManager.selectedIndex) {
+                imageViewPage.jumpToImage(activeManager.selectedIndex)
+            }
+        }
     }
 
     Connections {
         target: QMLUtils
-        onSaveImageSucceeded: infoBanner.alert(qsTr("Image saved to gallery"));
-        onSaveImageFailed: infoBanner.warning(qsTr("Image save failed!"));
-    }
-
-    Timer {
-        id: resizeTimer
-        interval: 1
-        repeat: false
-
-        onTriggered: viewer._fitToScreen()
+        onSaveImageSucceeded: infoBanner.alert(qsTr("Image saved to gallery"))
+        onSaveImageFailed: infoBanner.warning(qsTr("Image save failed!"))
     }
 }
