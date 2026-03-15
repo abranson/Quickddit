@@ -4,6 +4,11 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Sun Mar 15 2026 Andrew Branson <github@andrewbranson.net> 1.14.7-1
+- new: Swipeable gallery for images
+- fix: Cache animated images to reduce memory use
+- chg: Update translations
+
 * Sat Dec 20 2025 Andrew Branson <github@andrewbranson.net> 1.14.6-1
 - fix: Revert back to youtube-dl because yt-dlp really doesn't work with Python < 3.10
 
