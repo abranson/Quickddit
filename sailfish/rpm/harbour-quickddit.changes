@@ -4,6 +4,10 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Mon Mar 16 2026 Andrew Branson <github@andrewbranson.net> 1.14.7.1-1
+- fix: Override the embedded Reddit sign-in user agent for Sailfish browser compatibility
+- chg: Update translation source locations
+
 * Sun Mar 15 2026 Andrew Branson <github@andrewbranson.net> 1.14.7-1
 - new: Swipeable gallery for images
 - fix: Cache animated images to reduce memory use

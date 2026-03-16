@@ -493,32 +493,32 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <translation>Bild</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="59"/>
+        <location filename="../qml/ImageViewPage.qml" line="74"/>
         <source>Save Image</source>
         <translation>Spara bild</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="64"/>
+        <location filename="../qml/ImageViewPage.qml" line="79"/>
         <source>Share Image</source>
         <translation>Dela bild</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="76"/>
+        <location filename="../qml/ImageViewPage.qml" line="91"/>
         <source>URL</source>
         <translation>Länk</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="130"/>
+        <location filename="../qml/ImageViewPage.qml" line="202"/>
         <source>Error loading image</source>
         <translation>Kunde inte läsa in bild</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="232"/>
+        <location filename="../qml/ImageViewPage.qml" line="306"/>
         <source>Image saved to gallery</source>
         <translation>Bild sparad i Galleri</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="233"/>
+        <location filename="../qml/ImageViewPage.qml" line="307"/>
         <source>Image save failed!</source>
         <translation>Kunde inte spara bild!</translation>
     </message>
@@ -879,12 +879,12 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
 <context>
     <name>QMLUtils</name>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="188"/>
+        <location filename="../../src/qmlutils.cpp" line="361"/>
         <source>Invalid share URL</source>
         <translation>Ogiltig delnings-URL</translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="204"/>
+        <location filename="../../src/qmlutils.cpp" line="377"/>
         <source>Unable to resolve share URL</source>
         <translation>Kan inte att lösa ut delnings-URL</translation>
     </message>
@@ -1315,10 +1315,10 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation>Avbryt</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SignInPage.qml" line="76"/>
+        <location filename="../qml/SignInPage.qml" line="77"/>
         <source>Sign in successful! Welcome! :)</source>
         <translation>Inloggning slutförd! Välkommen! :)</translation>
     </message>

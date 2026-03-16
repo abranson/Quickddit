@@ -493,32 +493,32 @@ Mõne lisamiseks lihtsalt logi sisse. Quickddit jätab õnnestunud sisselogimise
         <translation>Pilt</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="59"/>
+        <location filename="../qml/ImageViewPage.qml" line="74"/>
         <source>Save Image</source>
         <translation>Salvesta pilt</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="64"/>
+        <location filename="../qml/ImageViewPage.qml" line="79"/>
         <source>Share Image</source>
         <translation>Jaga pilti</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="76"/>
+        <location filename="../qml/ImageViewPage.qml" line="91"/>
         <source>URL</source>
         <translation>Võrguaadress</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="130"/>
+        <location filename="../qml/ImageViewPage.qml" line="202"/>
         <source>Error loading image</source>
         <translation>Viga pildi laadimisel</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="232"/>
+        <location filename="../qml/ImageViewPage.qml" line="306"/>
         <source>Image saved to gallery</source>
         <translation>Pilt on salvestatud galeriisse</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="233"/>
+        <location filename="../qml/ImageViewPage.qml" line="307"/>
         <source>Image save failed!</source>
         <translation>Pildi salvestamine ei õnnestunud!</translation>
     </message>
@@ -879,12 +879,12 @@ Mõne lisamiseks lihtsalt logi sisse. Quickddit jätab õnnestunud sisselogimise
 <context>
     <name>QMLUtils</name>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="188"/>
+        <location filename="../../src/qmlutils.cpp" line="361"/>
         <source>Invalid share URL</source>
         <translation>Vigane jagamise võrguaadress</translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="204"/>
+        <location filename="../../src/qmlutils.cpp" line="377"/>
         <source>Unable to resolve share URL</source>
         <translation>Jagamise võrguaadressi sisu pole võimalik tuvastada</translation>
     </message>
@@ -1315,10 +1315,10 @@ Mõne lisamiseks lihtsalt logi sisse. Quickddit jätab õnnestunud sisselogimise
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation>Katkesta</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SignInPage.qml" line="76"/>
+        <location filename="../qml/SignInPage.qml" line="77"/>
         <source>Sign in successful! Welcome! :)</source>
         <translation>Sisselogimine õnnestus! Tere tulemast! :)</translation>
     </message>

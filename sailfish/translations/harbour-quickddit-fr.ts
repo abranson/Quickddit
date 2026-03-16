@@ -491,32 +491,32 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Image</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="59"/>
+        <location filename="../qml/ImageViewPage.qml" line="74"/>
         <source>Save Image</source>
         <translation>Enregistrer l&apos;image</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="64"/>
+        <location filename="../qml/ImageViewPage.qml" line="79"/>
         <source>Share Image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="76"/>
+        <location filename="../qml/ImageViewPage.qml" line="91"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="130"/>
+        <location filename="../qml/ImageViewPage.qml" line="202"/>
         <source>Error loading image</source>
         <translation>Erreur lors du chargement de l&apos;image</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="232"/>
+        <location filename="../qml/ImageViewPage.qml" line="306"/>
         <source>Image saved to gallery</source>
         <translation>Image enregistrée dans la galerie</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="233"/>
+        <location filename="../qml/ImageViewPage.qml" line="307"/>
         <source>Image save failed!</source>
         <translation>Échec lors de l&apos;enregistrement de l&apos;image !</translation>
     </message>
@@ -762,7 +762,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/MultiredditsPage.qml" line="106"/>
         <source>Nothing here :(</source>
-        <translation>Il n&apos;y a rien ici&#xa0;:(</translation>
+        <translation>Il n&apos;y a rien ici :(</translation>
     </message>
 </context>
 <context>
@@ -877,12 +877,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>QMLUtils</name>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="188"/>
+        <location filename="../../src/qmlutils.cpp" line="361"/>
         <source>Invalid share URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="204"/>
+        <location filename="../../src/qmlutils.cpp" line="377"/>
         <source>Unable to resolve share URL</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1316,7 +1316,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SignInPage.qml" line="76"/>
+        <location filename="../qml/SignInPage.qml" line="77"/>
         <source>Sign in successful! Welcome! :)</source>
         <translation type="unfinished"></translation>
     </message>

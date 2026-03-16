@@ -486,32 +486,32 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Kép</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="59"/>
+        <location filename="../qml/ImageViewPage.qml" line="74"/>
         <source>Save Image</source>
         <translation>Kép mentése</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="76"/>
+        <location filename="../qml/ImageViewPage.qml" line="91"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="130"/>
+        <location filename="../qml/ImageViewPage.qml" line="202"/>
         <source>Error loading image</source>
         <translation>Hiba a kép betöltésekor</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="232"/>
+        <location filename="../qml/ImageViewPage.qml" line="306"/>
         <source>Image saved to gallery</source>
         <translation>Kép mentve a glériába</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="233"/>
+        <location filename="../qml/ImageViewPage.qml" line="307"/>
         <source>Image save failed!</source>
         <translation>Kép mentése sikertelen!</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="64"/>
+        <location filename="../qml/ImageViewPage.qml" line="79"/>
         <source>Share Image</source>
         <translation type="unfinished"></translation>
     </message>
@@ -869,12 +869,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>QMLUtils</name>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="188"/>
+        <location filename="../../src/qmlutils.cpp" line="361"/>
         <source>Invalid share URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="204"/>
+        <location filename="../../src/qmlutils.cpp" line="377"/>
         <source>Unable to resolve share URL</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1305,10 +1305,10 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation>Mégse</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qml/SignInPage.qml" line="76"/>
+        <location filename="../qml/SignInPage.qml" line="77"/>
         <source>Sign in successful! Welcome! :)</source>
         <translation>A belépés sikeres! Üdvözlünk! :)</translation>
     </message>
