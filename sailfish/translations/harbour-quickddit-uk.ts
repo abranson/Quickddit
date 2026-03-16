@@ -1323,7 +1323,7 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation>Скасувати</translation>
+        <translation type="unfinished">Скасувати</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="76"/>
