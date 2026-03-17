@@ -4,6 +4,9 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Tue Mar 17 2026 Andrew Branson <github@andrewbranson.net> 1.14.8-1
+- chg: Re-release the Sailfish sign-in compatibility fix as 1.14.8 for harbour versioning compatibility. Grr.
+
 * Mon Mar 16 2026 Andrew Branson <github@andrewbranson.net> 1.14.7.1-1
 - fix: Override the embedded Reddit sign-in user agent for Sailfish browser compatibility
 - chg: Update translation source locations
