@@ -1315,7 +1315,7 @@ Mõne lisamiseks lihtsalt logi sisse. Quickddit jätab õnnestunud sisselogimise
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Katkesta</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="77"/>
