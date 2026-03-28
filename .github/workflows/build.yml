@@ -72,7 +72,7 @@ jobs:
                 mkdir -p build
                 cp -r /share/* /share/.git* build
                 cd build/sailfish
-                mb2 -t "$target" -s rpm/harbour-quickddit.spec build \
+                mb2 -t "$target" -s rpm/harbour-quickddit.spec build -d \
                   --define "quickddit_reddit_client_id $REDDIT_CLIENT_ID" \
                   --define "quickddit_reddit_client_secret $REDDIT_CLIENT_SECRET" \
                   --define "quickddit_reddit_redirect_url $REDDIT_REDIRECT_URL"
@@ -181,12 +181,24 @@ jobs:
           # Move new RPMs into repo
           for f in ../*.rpm; do
             [ -e "$f" ] || continue
+            filename=$(basename "$f")
+            nvra=${filename%.rpm}
+            arch=${nvra##*.}
+            nvr=${nvra%.$arch}
+            release=${nvr##*-}
+            nv=${nvr%-*}
+            pkgname=${nv%-*}
+
             case "$f" in
               *aarch64.rpm) dest="aarch64" ;;
               *armv7hl.rpm) dest="armv7hl" ;;
               *i486.rpm)    dest="i486" ;;
               *) echo "Skipping unknown arch in $f"; continue ;;
             esac
+
+            echo "Removing older ${pkgname} packages from $dest/"
+            rm -f "$dest"/"${pkgname}"-*.${arch}.rpm
+
             echo "Moving $f -> $dest/"
             mv "$f" "$dest/"
           done
