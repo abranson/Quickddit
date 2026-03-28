@@ -4,6 +4,12 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Sat Mar 28 2026 Andrew Branson <github@andrewbranson.net> 1.14.9-1
+- chg: Add Reddit API key build-time configuration for packaged builds
+- fix: Restore loading progress for animated image downloads
+- chg: Keep only the newest published RPM per package and architecture in the repo
+- chg: Update translations
+
 * Tue Mar 17 2026 Andrew Branson <github@andrewbranson.net> 1.14.8-1
 - chg: Re-release the Sailfish sign-in compatibility fix as 1.14.8 for harbour versioning compatibility. Grr.
 
