@@ -508,17 +508,17 @@ Mõne lisamiseks lihtsalt logi sisse. Quickddit jätab õnnestunud sisselogimise
         <translation>Võrguaadress</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="202"/>
+        <location filename="../qml/ImageViewPage.qml" line="204"/>
         <source>Error loading image</source>
         <translation>Viga pildi laadimisel</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="306"/>
+        <location filename="../qml/ImageViewPage.qml" line="308"/>
         <source>Image saved to gallery</source>
         <translation>Pilt on salvestatud galeriisse</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="307"/>
+        <location filename="../qml/ImageViewPage.qml" line="309"/>
         <source>Image save failed!</source>
         <translation>Pildi salvestamine ei õnnestunud!</translation>
     </message>
@@ -879,12 +879,12 @@ Mõne lisamiseks lihtsalt logi sisse. Quickddit jätab õnnestunud sisselogimise
 <context>
     <name>QMLUtils</name>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="361"/>
+        <location filename="../../src/qmlutils.cpp" line="380"/>
         <source>Invalid share URL</source>
         <translation>Vigane jagamise võrguaadress</translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="377"/>
+        <location filename="../../src/qmlutils.cpp" line="396"/>
         <source>Unable to resolve share URL</source>
         <translation>Jagamise võrguaadressi sisu pole võimalik tuvastada</translation>
     </message>

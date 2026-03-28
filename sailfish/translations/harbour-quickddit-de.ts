@@ -508,17 +508,17 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="202"/>
+        <location filename="../qml/ImageViewPage.qml" line="204"/>
         <source>Error loading image</source>
         <translation>Fehler bei Laden des Bildes</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="306"/>
+        <location filename="../qml/ImageViewPage.qml" line="308"/>
         <source>Image saved to gallery</source>
         <translation>Bild in Galerie gespeichert</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="307"/>
+        <location filename="../qml/ImageViewPage.qml" line="309"/>
         <source>Image save failed!</source>
         <translation>Bild speichern gescheitert!</translation>
     </message>
@@ -879,12 +879,12 @@ Um Konten hinzuzufügen, logge dich ein. Quickddit merkt sich erfolgreiche Login
 <context>
     <name>QMLUtils</name>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="361"/>
+        <location filename="../../src/qmlutils.cpp" line="380"/>
         <source>Invalid share URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="377"/>
+        <location filename="../../src/qmlutils.cpp" line="396"/>
         <source>Unable to resolve share URL</source>
         <translation type="unfinished"></translation>
     </message>

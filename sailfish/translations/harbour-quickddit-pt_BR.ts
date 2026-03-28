@@ -508,17 +508,17 @@ Para adicionar uma conta faça um Login. Aqui estarão listadas todas as contas 
         <translation>Endereço</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="202"/>
+        <location filename="../qml/ImageViewPage.qml" line="204"/>
         <source>Error loading image</source>
         <translation>Erro ao carregar imagem</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="306"/>
+        <location filename="../qml/ImageViewPage.qml" line="308"/>
         <source>Image saved to gallery</source>
         <translation>Imagem salva na galeria</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="307"/>
+        <location filename="../qml/ImageViewPage.qml" line="309"/>
         <source>Image save failed!</source>
         <translation>Erro ao salvar imagem!</translation>
     </message>
@@ -879,12 +879,12 @@ Para adicionar uma conta faça um Login. Aqui estarão listadas todas as contas 
 <context>
     <name>QMLUtils</name>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="361"/>
+        <location filename="../../src/qmlutils.cpp" line="380"/>
         <source>Invalid share URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="377"/>
+        <location filename="../../src/qmlutils.cpp" line="396"/>
         <source>Unable to resolve share URL</source>
         <translation type="unfinished"></translation>
     </message>

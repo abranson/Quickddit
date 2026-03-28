@@ -506,17 +506,17 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="202"/>
+        <location filename="../qml/ImageViewPage.qml" line="204"/>
         <source>Error loading image</source>
         <translation>Σφάλμα φόρτωσης της εικόνας</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="306"/>
+        <location filename="../qml/ImageViewPage.qml" line="308"/>
         <source>Image saved to gallery</source>
         <translation>Η εικόνα αποθηκεύτηκε στην πινακοθήκη</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="307"/>
+        <location filename="../qml/ImageViewPage.qml" line="309"/>
         <source>Image save failed!</source>
         <translation>Η αποθήκευση της εικόνας απέτυχε!</translation>
     </message>
@@ -877,12 +877,12 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>QMLUtils</name>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="361"/>
+        <location filename="../../src/qmlutils.cpp" line="380"/>
         <source>Invalid share URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="377"/>
+        <location filename="../../src/qmlutils.cpp" line="396"/>
         <source>Unable to resolve share URL</source>
         <translation type="unfinished"></translation>
     </message>

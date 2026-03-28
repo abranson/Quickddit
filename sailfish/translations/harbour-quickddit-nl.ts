@@ -508,17 +508,17 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="202"/>
+        <location filename="../qml/ImageViewPage.qml" line="204"/>
         <source>Error loading image</source>
         <translation>Fout bij laden van afbeelding</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="306"/>
+        <location filename="../qml/ImageViewPage.qml" line="308"/>
         <source>Image saved to gallery</source>
         <translation>Afbeelding opgeslagen in galerij</translation>
     </message>
     <message>
-        <location filename="../qml/ImageViewPage.qml" line="307"/>
+        <location filename="../qml/ImageViewPage.qml" line="309"/>
         <source>Image save failed!</source>
         <translation>Opslaan van afbeelding mislukt!</translation>
     </message>
@@ -879,12 +879,12 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
 <context>
     <name>QMLUtils</name>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="361"/>
+        <location filename="../../src/qmlutils.cpp" line="380"/>
         <source>Invalid share URL</source>
         <translation>Ongeldige deel-URL</translation>
     </message>
     <message>
-        <location filename="../../src/qmlutils.cpp" line="377"/>
+        <location filename="../../src/qmlutils.cpp" line="396"/>
         <source>Unable to resolve share URL</source>
         <translation>Kon de deel-URL niet vinden</translation>
     </message>
