@@ -24,8 +24,11 @@ Item {
     id: imageViewer
 
     property QtObject image: imageLoader.item
-    property int status
-    property real progress: 0
+    property int status: image ? image.status : Image.Null
+    property bool cacheLoading: false
+    property real cacheProgress: 0
+    property real progress: cacheLoading ? cacheProgress : image ? image.progress : 0
+    property bool loading: cacheLoading || status === Image.Loading || (progress > 0 && progress < 1)
     property url source
     property bool paused: false
 
@@ -120,6 +123,8 @@ Item {
                 resolvedSource = requestedSource
                 cachedLocalSource = ""
                 pendingCachedSwitch = false
+                imageViewer.cacheLoading = false
+                imageViewer.cacheProgress = 0
 
                 if (!imageViewer._isRemoteAnimatedSource(requestedSource))
                     return
@@ -128,8 +133,10 @@ Item {
                 var cachedUrl = QMLUtils.cachedAnimatedImageUrl(originalUrl)
                 if (cachedUrl.length > 0)
                     cachedLocalSource = cachedUrl
-                else
+                else {
+                    imageViewer.cacheLoading = true
                     QMLUtils.cacheAnimatedImage(originalUrl)
+                }
 
                 queueOrApplyCachedSource()
             }
@@ -168,8 +175,26 @@ Item {
                     if (originalUrl !== String(imageItem.requestedSource))
                         return
 
+                    imageViewer.cacheLoading = false
+                    imageViewer.cacheProgress = 1
                     imageItem.cachedLocalSource = localUrl
                     imageItem.queueOrApplyCachedSource()
+                }
+
+                onAnimatedImageCacheProgress: {
+                    if (originalUrl !== String(imageItem.requestedSource))
+                        return
+
+                    imageViewer.cacheLoading = true
+                    imageViewer.cacheProgress = progress
+                }
+
+                onAnimatedImageCacheFailed: {
+                    if (originalUrl !== String(imageItem.requestedSource))
+                        return
+
+                    imageViewer.cacheLoading = false
+                    imageViewer.cacheProgress = 0
                 }
             }
 
@@ -180,17 +205,6 @@ Item {
                 duration: 250
                 from: 0; to: 1
                 easing.type: Easing.InOutQuad
-            }
-
-            Binding {
-                target: imageViewer
-                property: "progress"
-                value: imageItem.progress
-            }
-            Binding {
-                target: imageViewer
-                property: "status"
-                value: imageItem.status
             }
 
             DisplayBlanking {
@@ -236,17 +250,6 @@ Item {
                 duration: 250
                 from: 0; to: 1
                 easing.type: Easing.InOutQuad
-            }
-
-            Binding {
-                target: imageViewer
-                property: "progress"
-                value: imageItem.progress
-            }
-            Binding {
-                target: imageViewer
-                property: "status"
-                value: imageItem.status
             }
 
             Component.onCompleted: console.log("Safe Image viewer used")

@@ -168,11 +168,13 @@ AbstractPage {
             if (!currentViewer)
                 return undefined
 
-            switch (currentViewer.status) {
-            case Image.Loading: return busyIndicatorComponent
-            case Image.Error: return failedLoading
-            default: return undefined
-            }
+            if (currentViewer.loading)
+                return busyIndicatorComponent
+
+            if (currentViewer.status === Image.Error)
+                return failedLoading
+
+            return undefined
         }
 
         Component {

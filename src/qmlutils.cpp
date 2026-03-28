@@ -301,6 +301,7 @@ void QMLUtils::cacheAnimatedImage(const QString &url)
     m_animatedImageFinalPaths.insert(reply, finalPath);
 
     connect(reply, SIGNAL(readyRead()), this, SLOT(onAnimatedImageReadyRead()));
+    connect(reply, SIGNAL(downloadProgress(qint64,qint64)), this, SLOT(onAnimatedImageDownloadProgress(qint64,qint64)));
     connect(reply, SIGNAL(finished()), this, SLOT(onAnimatedImageFinished()));
 }
 
@@ -315,6 +316,22 @@ void QMLUtils::onAnimatedImageReadyRead()
         return;
 
     file->write(reply->readAll());
+}
+
+void QMLUtils::onAnimatedImageDownloadProgress(qint64 bytesReceived, qint64 bytesTotal)
+{
+    QNetworkReply *reply = qobject_cast<QNetworkReply *>(sender());
+    if (!reply)
+        return;
+
+    QString originalUrl = m_animatedImageUrls.value(reply);
+    if (originalUrl.isEmpty())
+        return;
+
+    if (bytesTotal > 0) {
+        qreal progress = qreal(bytesReceived) / qreal(bytesTotal);
+        emit animatedImageCacheProgress(originalUrl, progress);
+    }
 }
 
 void QMLUtils::onAnimatedImageFinished()
@@ -345,9 +362,11 @@ void QMLUtils::onAnimatedImageFinished()
             emit animatedImageCached(originalUrl, localUrl);
         } else {
             QFile::remove(partPath);
+            emit animatedImageCacheFailed(originalUrl);
         }
     } else {
         QFile::remove(partPath);
+        emit animatedImageCacheFailed(originalUrl);
     }
 
     file->deleteLater();

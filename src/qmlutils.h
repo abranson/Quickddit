@@ -97,6 +97,7 @@ private slots:
     void onClipboardChanged();
     void onResolveShareUrlFinished();
     void onAnimatedImageReadyRead();
+    void onAnimatedImageDownloadProgress(qint64 bytesReceived, qint64 bytesTotal);
     void onAnimatedImageFinished();
 
 signals:
@@ -105,6 +106,8 @@ signals:
     void clipboardChanged();
     void redditShareUrlResolved(const QString &resolvedUrl);
     void redditShareUrlFailed(const QString &errorString);
+    void animatedImageCacheProgress(const QString &originalUrl, qreal progress);
+    void animatedImageCacheFailed(const QString &originalUrl);
     void animatedImageCached(const QString &originalUrl, const QString &localUrl);
 
 private:
