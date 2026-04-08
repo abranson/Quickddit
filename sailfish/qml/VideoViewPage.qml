@@ -29,6 +29,11 @@ AbstractPage {
     property string origUrl
 
     property bool error: false
+    readonly property real topInset: orientation == Orientation.Portrait
+                                     && Screen.hasCutouts
+                                     && Screen.topCutout.height > 0
+                                     ? Screen.topCutout.height + Theme.paddingSmall
+                                     : 0
 
     SilicaFlickable {
         id: videoFlickable
@@ -123,7 +128,7 @@ AbstractPage {
                 right: parent.right
                 leftMargin: constant.paddingLarge
                 rightMargin: constant.paddingLarge
-                topMargin: constant.paddingLarge
+                topMargin: videoViewPage.topInset + constant.paddingLarge
             }
             text: ( mediaPlayer.metaData.videoCodec !== undefined ? mediaPlayer.metaData.videoCodec + " | " : "" ) +
                 ( mediaPlayer.metaData.audioCodec !== undefined ? mediaPlayer.metaData.audioCodec + " | " : "" ) +

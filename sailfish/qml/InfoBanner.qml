@@ -24,27 +24,30 @@ MouseArea {
     id: infoBanner
 
     property bool isWarning: false
+    readonly property real topInset: Screen.hasCutouts && Screen.topCutout.height > 0
+                                     ? Screen.topCutout.height + Theme.paddingSmall
+                                     : 0
+    property bool isPortrait: appWindow.deviceOrientation === Orientation.Portrait
+                              || appWindow.deviceOrientation === Orientation.PortraitInverted
 
     function alert(text) {
         isWarning = false
-        messageText.text = text;
-        infoBanner.opacity = 1.0;
-        hideTimer.start();
-        console.log(text);
+        messageText.text = text
+        infoBanner.opacity = 1.0
+        hideTimer.restart()
+        console.log(text)
     }
 
     function warning(text) {
         isWarning = true
-        messageText.text = text;
-        infoBanner.opacity = 1.0;
-        hideTimer.start();
-        console.log(text);
+        messageText.text = text
+        infoBanner.opacity = 1.0
+        hideTimer.restart()
+        console.log(text)
     }
 
-    property bool isPortrait: appWindow.deviceOrientation === Orientation.Portrait || appWindow.deviceOrientation === Orientation.PortraitInverted
-
     width: isPortrait ? parent.width : parent.height
-    height: messageText.height + 2 * constant.paddingMedium
+    height: topInset + messageText.height + 2 * constant.paddingMedium
     visible: opacity > 0.0
     opacity: 0.0
 
@@ -56,6 +59,7 @@ MouseArea {
         value: {
             switch (appWindow.deviceOrientation) {
             case Orientation.Portrait:
+                return 0
             case Orientation.Landscape:
                 return 0
             case Orientation.PortraitInverted:
@@ -72,11 +76,13 @@ MouseArea {
         value: {
             switch (appWindow.deviceOrientation) {
             case Orientation.Portrait:
-            case Orientation.LandscapeInverted:
                 return 0
             case Orientation.Landscape:
+                return appWindow.width
             case Orientation.PortraitInverted:
                 return appWindow.width
+            case Orientation.LandscapeInverted:
+                return 0
             }
         }
     }
@@ -106,10 +112,12 @@ MouseArea {
         spacing: 20
 
         anchors {
-            margins: constant.paddingMedium
-            left: parent.left;
-            right: parent.right;
-            verticalCenter: parent.verticalCenter
+            left: parent.left
+            right: parent.right
+            top: parent.top
+            topMargin: topInset + constant.paddingMedium
+            leftMargin: constant.paddingMedium
+            rightMargin: constant.paddingMedium
         }
 
         Image {
@@ -130,11 +138,11 @@ MouseArea {
     Timer {
         id: hideTimer
         interval: 3000
-        onTriggered: infoBanner.opacity = 0.0;
+        onTriggered: infoBanner.opacity = 0.0
     }
 
     onClicked: {
-        opacity = 0.0;
-        hideTimer.stop();
+        opacity = 0.0
+        hideTimer.stop()
     }
 }

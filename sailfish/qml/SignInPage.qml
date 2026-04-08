@@ -13,7 +13,7 @@ import Sailfish.Silica 1.0
 import Sailfish.WebView 1.0 as SailfishWebView
 import Sailfish.WebView.Popups 1.0 as SailfishWebViewPopups
 
-Dialog {
+AbstractDialog {
     id: signInDialog
 
     // For CoverPage

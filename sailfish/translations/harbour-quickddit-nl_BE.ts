@@ -1771,22 +1771,22 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
         <translation>Filmke</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="39"/>
+        <location filename="../qml/VideoViewPage.qml" line="44"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="115"/>
+        <location filename="../qml/VideoViewPage.qml" line="120"/>
         <source>Error loading video</source>
         <translation>Fout bij laden van filmke</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="335"/>
+        <location filename="../qml/VideoViewPage.qml" line="340"/>
         <source>Problem finding stream URL</source>
         <translation>Kost de stream-URL ni’ vinden</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="340"/>
+        <location filename="../qml/VideoViewPage.qml" line="345"/>
         <source>youtube-dl error: %1</source>
         <translation>youtube-dl-fout: %1</translation>
     </message>

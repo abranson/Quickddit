@@ -1771,22 +1771,22 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
         <translation>Video</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="39"/>
+        <location filename="../qml/VideoViewPage.qml" line="44"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="115"/>
+        <location filename="../qml/VideoViewPage.qml" line="120"/>
         <source>Error loading video</source>
         <translation>Error loading video</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="335"/>
+        <location filename="../qml/VideoViewPage.qml" line="340"/>
         <source>Problem finding stream URL</source>
         <translation>Problem finding stream URL</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="340"/>
+        <location filename="../qml/VideoViewPage.qml" line="345"/>
         <source>youtube-dl error: %1</source>
         <translation>youtube-dl error: %1</translation>
     </message>

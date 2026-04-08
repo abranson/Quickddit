@@ -1771,22 +1771,22 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
         <translation>Video</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="39"/>
+        <location filename="../qml/VideoViewPage.qml" line="44"/>
         <source>URL</source>
         <translation>URL</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="115"/>
+        <location filename="../qml/VideoViewPage.qml" line="120"/>
         <source>Error loading video</source>
         <translation>Fel vid inläsning av video</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="335"/>
+        <location filename="../qml/VideoViewPage.qml" line="340"/>
         <source>Problem finding stream URL</source>
         <translation>Problem att hitta strömnings-URL</translation>
     </message>
     <message>
-        <location filename="../qml/VideoViewPage.qml" line="340"/>
+        <location filename="../qml/VideoViewPage.qml" line="345"/>
         <source>youtube-dl error: %1</source>
         <translation>youtube-dl-fel: %1</translation>
     </message>
