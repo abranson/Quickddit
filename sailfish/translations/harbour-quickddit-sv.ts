@@ -137,7 +137,7 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="127"/>
         <source>This subreddit is Not Safe For Work</source>
-        <translation>Denna subreddit är inte arbetsplatssäker (NSFW)</translation>
+        <translation>Denna subreddit är inte arbetsplatssäker</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/AboutSubredditPage.qml" line="143"/>
@@ -1315,7 +1315,7 @@ Logga in för att lägga till konton. Quickddit kommer ihåg en lyckad inloggnin
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="77"/>
