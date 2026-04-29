@@ -137,7 +137,7 @@
     <message>
         <location filename="../qml/AboutSubredditPage.qml" line="127"/>
         <source>This subreddit is Not Safe For Work</source>
-        <translation>Questo subreddit è Non Idoneo Al Lavoro (NSFW)</translation>
+        <translation>Questo subreddit è Non Idoneo Al Lavoro</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/AboutSubredditPage.qml" line="143"/>
@@ -1315,7 +1315,7 @@ Per aggiungere account, effettua l&apos;accesso. Quickddit si ricorderà degli a
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Cancella</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="77"/>
@@ -1671,7 +1671,7 @@ Per aggiungere account, effettua l&apos;accesso. Quickddit si ricorderà degli a
     <message>
         <location filename="../qml/UserPageCommentDelegate.qml" line="140"/>
         <source>[score hidden]</source>
-        <translation type="unfinished">[punteggio nascosto]</translation>
+        <translation>[punteggio nascosto]</translation>
     </message>
     <message numerus="yes">
         <location filename="../qml/UserPageCommentDelegate.qml" line="141"/>
@@ -1773,7 +1773,7 @@ Per aggiungere account, effettua l&apos;accesso. Quickddit si ricorderà degli a
     <message>
         <location filename="../qml/VideoViewPage.qml" line="39"/>
         <source>URL</source>
-        <translation type="unfinished">URL</translation>
+        <translation>URL</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="115"/>
@@ -1840,12 +1840,12 @@ Per aggiungere account, effettua l&apos;accesso. Quickddit si ricorderà degli a
     <message>
         <location filename="../qml/main.qml" line="340"/>
         <source>Unsupported image url</source>
-        <translation>URL immagine non supportato</translation>
+        <translation>Url immagine non supportato</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="349"/>
         <source>Unsupported video url</source>
-        <translation>URL video non supportato</translation>
+        <translation>Url video non supportato</translation>
     </message>
     <message>
         <location filename="../qml/main.qml" line="429"/>
