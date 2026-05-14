@@ -45,5 +45,13 @@ void DbusApp::showInbox()
 void DbusApp::openURL(const QString& url)
 {
     qDebug() << "openURL" << url;
-    emit requestOpenURL(url);
+    if (!url.isEmpty())
+        emit requestOpenURL(url);
+}
+
+void DbusApp::openURL(const QStringList& urls)
+{
+    qDebug() << "openURL" << urls;
+    if (!urls.isEmpty())
+        openURL(urls.first());
 }

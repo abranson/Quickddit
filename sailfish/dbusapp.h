@@ -20,6 +20,8 @@
 #define DBUSAPP_H
 
 #include <QObject>
+#include <QString>
+#include <QStringList>
 
 class DbusApp : public QObject
 {
@@ -34,6 +36,7 @@ signals:
 public slots:
     void showInbox();
     void openURL(const QString& url);
+    void openURL(const QStringList& urls);
 };
 
 #endif // DBUSAPP_H

@@ -4,7 +4,7 @@
     <interface name="org.quickddit.view">
         <method name="showInbox"/>
         <method name="openURL">
-            <arg name="url" type="s" direction="in"/>
+            <arg name="urls" type="as" direction="in"/>
         </method>
     </interface>
 </node>

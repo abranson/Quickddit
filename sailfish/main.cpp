@@ -21,6 +21,7 @@
 #include <QtQuick>
 #endif
 
+#include <QtCore/QStringList>
 #include <QtGui/QGuiApplication>
 #include <QtQml/qqml.h> // for qmlRegisterType
 #include <QtQml/QQmlContext>
@@ -97,10 +98,14 @@ int main(int argc, char *argv[])
     view->setSource(SailfishApp::pathTo("qml/main.qml"));
     view->show();
 
-    if (argc == 2) {
-        dbusApp.requestOpenURL(argv[1]);
+    const QStringList arguments = app->arguments();
+    for (int i = 1; i < arguments.count(); ++i) {
+        const QString argument = arguments.at(i);
+        if (!argument.startsWith("-")) {
+            dbusApp.openURL(argument);
+            break;
+        }
     }
 
     return app->exec();
 }
-
