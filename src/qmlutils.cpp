@@ -422,7 +422,7 @@ void QMLUtils::publishNotification(const QString &summary, const QString &body,
     MNotification notification("quickddit.inbox", summary, body);
     notification.setCount(count);
     notification.setIdentifier("0");
-    MRemoteAction action("nl.outrightsolutions.Quickddit", "/nl/outrightsolutions/Quickddit", "org.quickddit.view", "showInbox");
+    MRemoteAction action("org.quickddit", "/", "org.quickddit.view", "showInbox");
     notification.setAction(action);
     notification.publish();
 #elif Q_OS_SAILFISH
@@ -437,7 +437,7 @@ void QMLUtils::publishNotification(const QString &summary, const QString &body,
 
     notification.setRemoteAction(
                 Notification::remoteAction(
-                    "default", "Show Inbox", "nl.outrightsolutions.Quickddit", "/nl/outrightsolutions/Quickddit", "org.quickddit.view", "showInbox"));
+                    "default", "Show Inbox", "org.quickddit.Quickddit", "/org/quickddit/Quickddit", "org.quickddit.view", "showInbox"));
 
     notification.publish();
 #endif

@@ -6,12 +6,9 @@ X-DBusActivatable=true
 Icon=harbour-quickddit
 Exec=harbour-quickddit %U
 MimeType=x-url-handler/reddit.com;x-url-handler/www.reddit.com;x-url-handler/old.reddit.com
-X-Maemo-Service=nl.outrightsolutions.Quickddit
-X-Maemo-Object-Path=/nl/outrightsolutions/Quickddit
-X-Maemo-Method=org.quickddit.view.openURL
 
 [X-Sailjail]
 Permissions=Internet;Audio;Pictures;WebView
-OrganizationName=nl.outrightsolutions
+OrganizationName=org.quickddit
 ApplicationName=Quickddit
 ExecDBus=harbour-quickddit --prestart

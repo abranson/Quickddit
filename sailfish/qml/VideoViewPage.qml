@@ -24,6 +24,8 @@ import harbour.quickddit.Core 1.0
 AbstractPage {
     id: videoViewPage
     title: qsTr("Video")
+    cutoutMode: CutoutMode.FullScreen
+    backgroundColor: "black"
 
     property string videoUrl
     property string origUrl

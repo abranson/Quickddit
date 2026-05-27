@@ -19,9 +19,34 @@
 #ifndef DBUSAPP_H
 #define DBUSAPP_H
 
+#include <QDBusAbstractAdaptor>
 #include <QObject>
 #include <QString>
 #include <QStringList>
+#include <QVariantMap>
+
+class ApplicationAdaptor : public QDBusAbstractAdaptor
+{
+    Q_OBJECT
+    Q_CLASSINFO("D-Bus Interface", "org.freedesktop.Application")
+    Q_CLASSINFO("D-Bus Introspection", ""
+"  <interface name=\"org.freedesktop.Application\">\n"
+"    <method name=\"Activate\">\n"
+"      <arg direction=\"in\" type=\"a{sv}\" name=\"platform_data\"/>\n"
+"    </method>\n"
+"    <method name=\"Open\">\n"
+"      <arg direction=\"in\" type=\"as\" name=\"uris\"/>\n"
+"      <arg direction=\"in\" type=\"a{sv}\" name=\"platform_data\"/>\n"
+"    </method>\n"
+"  </interface>\n"
+        "")
+public:
+    explicit ApplicationAdaptor(QObject *parent);
+
+public slots:
+    void Activate(const QVariantMap &platform_data);
+    void Open(const QStringList &uris, const QVariantMap &platform_data);
+};
 
 class DbusApp : public QObject
 {

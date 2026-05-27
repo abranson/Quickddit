@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
 
     app->setApplicationDisplayName("Quickddit");
     app->setApplicationName("Quickddit");
-    app->setOrganizationName("nl.outrightsolutions");
-    app->setOrganizationDomain("outrightsolutions.nl");
+    app->setOrganizationName("org.quickddit");
+    app->setOrganizationDomain("quickddit.org");
     app->setApplicationVersion(APP_VERSION);
 
     qmlRegisterType<Settings>("harbour.quickddit.Core", 1, 0, "Settings");

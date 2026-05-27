@@ -27,13 +27,33 @@ DbusApp::DbusApp(QObject *parent) :
     QObject(parent)
 {
     new ViewAdaptor(this);
+    new ApplicationAdaptor(this);
 
     QDBusConnection c = QDBusConnection::sessionBus();
-    bool ret = c.registerService("nl.outrightsolutions.Quickddit");
+    bool ret = c.registerService("org.quickddit.Quickddit");
     Q_ASSERT(ret);
-    ret = c.registerObject("/nl/outrightsolutions/Quickddit", this);
+    ret = c.registerObject("/org/quickddit/Quickddit", this);
     Q_ASSERT(ret);
     Q_UNUSED(ret);
+}
+
+ApplicationAdaptor::ApplicationAdaptor(QObject *parent) :
+    QDBusAbstractAdaptor(parent)
+{
+    setAutoRelaySignals(true);
+}
+
+void ApplicationAdaptor::Activate(const QVariantMap &platform_data)
+{
+    Q_UNUSED(platform_data);
+    qDebug() << "Activate";
+}
+
+void ApplicationAdaptor::Open(const QStringList &uris, const QVariantMap &platform_data)
+{
+    Q_UNUSED(platform_data);
+    qDebug() << "Open" << uris;
+    QMetaObject::invokeMethod(parent(), "openURL", Q_ARG(QStringList, uris));
 }
 
 void DbusApp::showInbox()
