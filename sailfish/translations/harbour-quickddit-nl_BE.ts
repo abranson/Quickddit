@@ -1261,7 +1261,7 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
     <message>
         <location filename="../qml/SettingsPage.qml" line="140"/>
         <source>Check Messages</source>
-        <translation>Bericht</translation>
+        <translation>Berichten controleren</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="148"/>
@@ -1276,12 +1276,12 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
         <source>Prefer adaptive video streams</source>
-        <translation type="unfinished"></translation>
+        <translation>Adaptieve videostreams verkiezen</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="172"/>
         <source>More likely to have sound, but may be less stable.</source>
-        <translation type="unfinished"></translation>
+        <translation>De kans is grôter da’ de stream geluid bevat, ma misschien minder stabiel is.</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="178"/>
@@ -1315,7 +1315,7 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuleren</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="77"/>
@@ -1496,12 +1496,12 @@ Meld u aan voor accounts toe te voegen. Quickddit gaat uw succesvolle aanmelding
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>My Saved Things</source>
-        <translation type="unfinished"></translation>
+        <translation>Mijn opgeslagen dingen</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse all Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladeren deur alle subreddits</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="165"/>
