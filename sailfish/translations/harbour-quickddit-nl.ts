@@ -1261,7 +1261,7 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/SettingsPage.qml" line="140"/>
         <source>Check Messages</source>
-        <translation>Bericht</translation>
+        <translation>Berichten controleren</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="148"/>
@@ -1276,12 +1276,12 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/SettingsPage.qml" line="171"/>
         <source>Prefer adaptive video streams</source>
-        <translation type="unfinished"></translation>
+        <translation>Adaptieve videostreams verkiezen</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="172"/>
         <source>More likely to have sound, but may be less stable.</source>
-        <translation type="unfinished"></translation>
+        <translation>De kans is groter dat de stream geluid bevat, maar misschien minder stabiel is.</translation>
     </message>
     <message>
         <location filename="../qml/SettingsPage.qml" line="178"/>
@@ -1315,7 +1315,7 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/SignInPage.qml" line="37"/>
         <source>Cancel</source>
-        <translation type="unfinished"></translation>
+        <translation>Annuleren</translation>
     </message>
     <message>
         <location filename="../qml/SignInPage.qml" line="77"/>
@@ -1496,12 +1496,12 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>My Saved Things</source>
-        <translation type="unfinished"></translation>
+        <translation>Mijn opgeslagen dingen</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="123"/>
         <source>Browse all Subreddits</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladeren door alle subreddits</translation>
     </message>
     <message>
         <location filename="../qml/SubredditsPage.qml" line="165"/>
@@ -1768,27 +1768,27 @@ Meld je aan om accounts toe te voegen. Quickddit zal je succesvolle aanmeldingen
     <message>
         <location filename="../qml/VideoViewPage.qml" line="26"/>
         <source>Video</source>
-        <translation type="unfinished"></translation>
+        <translation>Video</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="44"/>
         <source>URL</source>
-        <translation type="unfinished">URL</translation>
+        <translation>URL</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="120"/>
         <source>Error loading video</source>
-        <translation type="unfinished"></translation>
+        <translation>Fout bij laden van video</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="340"/>
         <source>Problem finding stream URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Kon stream-URL niet vinden</translation>
     </message>
     <message>
         <location filename="../qml/VideoViewPage.qml" line="345"/>
         <source>youtube-dl error: %1</source>
-        <translation type="unfinished"></translation>
+        <translation>youtube-dl-fout: %1</translation>
     </message>
 </context>
 <context>
