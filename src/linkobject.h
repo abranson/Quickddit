@@ -181,6 +181,13 @@ public:
     void setNSFW(bool isNSFW);
 
     /**
+     * indicate if this post is marked as a spoiler
+     * equivalent to "spoiler" in Reddit's JSON
+     */
+    bool isSpoiler() const;
+    void setSpoiler(bool isSpoiler);
+
+    /**
      * indicate if this is a promoted (sponsored) post
      * equivalent to "promoted" in Reddit's JSON
      */

@@ -127,6 +127,24 @@ AbstractPage {
             }
 
             TextSwitch {
+                text: qsTr("Blur Spoilers")
+                description: qsTr("Blur thumbnails of posts marked as spoiler. Tap to reveal.")
+                checked: settings.blurSpoilers;
+                onCheckedChanged: {
+                    settings.blurSpoilers = checked;
+                }
+            }
+
+            TextSwitch {
+                text: qsTr("Blur NSFW")
+                description: qsTr("Blur thumbnails of posts marked as NSFW. Tap to reveal.")
+                checked: settings.blurNSFW;
+                onCheckedChanged: {
+                    settings.blurNSFW = checked;
+                }
+            }
+
+            TextSwitch {
                 text: qsTr("Comments Tap To Hide")
                 checked: settings.commentsTapToHide;
                 onCheckedChanged: {

@@ -17,23 +17,67 @@
 */
 
 import QtQuick 2.0
+import QtGraphicalEffects 1.0
 import Sailfish.Silica 1.0
 import harbour.quickddit.Core 1.0
 
-Image {
+Item {
     id: thumbnail
 
     property variant link
     property bool enabled: true
     property bool showLinkTypeIndicator: true
 
-    source: link.thumbnailUrl
-    asynchronous: true
+    property alias source: image.source
+    property alias sourceSize: image.sourceSize
+    property alias status: image.status
+
+    // blurred until the user taps once to reveal it
+    property bool revealed: false
+    readonly property bool blurred: !revealed && image.status === Image.Ready
+                                    && ((settings.blurNSFW && !!link.isNSFW) || (settings.blurSpoilers && !!link.isSpoiler))
+
+    implicitWidth: image.implicitWidth
+    implicitHeight: image.implicitHeight
+
+    Image {
+        id: image
+        anchors.fill: parent
+        source: link.thumbnailUrl
+        asynchronous: true
+        visible: !thumbnail.blurred
+    }
+
+    FastBlur {
+        anchors.fill: image
+        source: image
+        radius: 64
+        visible: thumbnail.blurred
+    }
+
+    Label {
+        anchors.centerIn: parent
+        width: parent.width - 2 * constant.paddingSmall
+        visible: thumbnail.blurred
+        horizontalAlignment: Text.AlignHCenter
+        wrapMode: Text.Wrap
+        font.pixelSize: Theme.fontSizeExtraSmall
+        font.bold: true
+        color: "white"
+        style: Text.Outline
+        styleColor: "black"
+        text: (settings.blurNSFW && !!link.isNSFW) ? qsTr("NSFW") : qsTr("Spoiler")
+    }
 
     MouseArea {
         anchors.fill: parent
-        enabled: !link.isSelfPost && thumbnail.enabled
-        onClicked: globalUtils.openLink(link.url)
+        enabled: (!link.isSelfPost || thumbnail.blurred) && thumbnail.enabled
+        onClicked: {
+            if (thumbnail.blurred)
+                thumbnail.revealed = true;
+            else
+                globalUtils.openLink(link.url);
+        }
     }
 
     onStatusChanged: {
@@ -76,7 +120,7 @@ Image {
     Image {
         id: linkTypeIndicator
         opacity: 0.8
-        visible: settings.showLinkType && showLinkTypeIndicator && thumbnail.status === Image.Ready
+        visible: settings.showLinkType && showLinkTypeIndicator && thumbnail.status === Image.Ready && !thumbnail.blurred
         width: 24 * QMLUtils.pScale
         height: 24 * QMLUtils.pScale
         source: globalUtils.previewableImage(link.url) ? "image://theme/icon-m-image?" + Theme.primaryColor
