@@ -68,6 +68,7 @@ public:
         UrlRole,
         IsStickyRole,
         IsNSFWRole,
+        IsSpoilerRole,
         IsPromotedRole,
         FlairTextRole,
         IsSelfPostRole,

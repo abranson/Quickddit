@@ -57,6 +57,8 @@ Settings::Settings(QObject *parent) :
     m_pollUnread = m_settings->value("pollUnread", true).toBool();
     m_thumbnailScale = static_cast<ThumbnailScale>(m_settings->value("thumbnailScale", Settings::ScaleAuto).toInt());
     m_showLinkType = m_settings->value("showLinkType", false).toBool();
+    m_blurSpoilers = m_settings->value("blurSpoilers", true).toBool();
+    m_blurNSFW = m_settings->value("blurNSFW", true).toBool();
     m_loopVideos = m_settings->value("loopVideos", false).toBool();
     m_preferAdaptive = m_settings->value("preferAdaptive", false).toBool();
     m_subredditSection = m_settings->value("subredditSection", 0).toInt();
@@ -239,6 +241,34 @@ void Settings::setShowLinkType(const bool showLinkType)
         m_showLinkType = showLinkType;
         m_settings->setValue("showLinkType", m_showLinkType);
         emit showLinkTypeChanged();
+    }
+}
+
+bool Settings::blurSpoilers() const
+{
+    return m_blurSpoilers;
+}
+
+void Settings::setBlurSpoilers(const bool blurSpoilers)
+{
+    if (m_blurSpoilers != blurSpoilers) {
+        m_blurSpoilers = blurSpoilers;
+        m_settings->setValue("blurSpoilers", m_blurSpoilers);
+        emit blurSpoilersChanged();
+    }
+}
+
+bool Settings::blurNSFW() const
+{
+    return m_blurNSFW;
+}
+
+void Settings::setBlurNSFW(const bool blurNSFW)
+{
+    if (m_blurNSFW != blurNSFW) {
+        m_blurNSFW = blurNSFW;
+        m_settings->setValue("blurNSFW", m_blurNSFW);
+        emit blurNSFWChanged();
     }
 }
 

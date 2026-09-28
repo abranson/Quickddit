@@ -124,6 +124,7 @@ QVariantMap UserThingModel::linkData(const LinkObject* o) const
     result.insert("flairText", QVariant(o->flairText()));
     result.insert("isSticky", QVariant(o->isSticky()));
     result.insert("isNSFW", QVariant(o->isNSFW()));
+    result.insert("isSpoiler", QVariant(o->isSpoiler()));
     result.insert("isPromoted", QVariant(o->isPromoted()));
     result.insert("gilded", QVariant(o->gilded()));
     result.insert("domain", QVariant(o->domain()));

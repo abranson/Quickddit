@@ -52,6 +52,13 @@ Column {
         }
 
         Bubble {
+            color: "grey"
+            visible: !!link.isSpoiler
+            text: qsTr("Spoiler")
+            font.bold: true
+        }
+
+        Bubble {
             color: "green"
             visible: !!link.isPromoted
             text: qsTr("Promoted")

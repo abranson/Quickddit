@@ -28,7 +28,7 @@ class LinkObjectData : public QSharedData
 {
 public:
     LinkObjectData() : score(0), likes(0), commentsCount(0), previewHeight(0), previewWidth(0),
-        distinguished(LinkObject::NotDistinguished), crossposts(0), isSticky(false), isNSFW(false), isPromoted(false) {}
+        distinguished(LinkObject::NotDistinguished), crossposts(0), isSticky(false), isNSFW(false), isSpoiler(false), isPromoted(false) {}
 
     QString author;
     QDateTime created;
@@ -53,12 +53,12 @@ public:
     QPair<QVariant,QVariant> galleryData;
     bool isSticky;
     bool isNSFW;
+    bool isSpoiler;
     bool isPromoted;
     bool isArchived;
     bool isLocked;
     // int num_reports
     // bool pinned
-    // bool spoiler
 
 private:
     Q_DISABLE_COPY(LinkObjectData)
@@ -286,6 +286,16 @@ bool LinkObject::isNSFW() const
 void LinkObject::setNSFW(bool isNSFW)
 {
     d->isNSFW = isNSFW;
+}
+
+bool LinkObject::isSpoiler() const
+{
+    return d->isSpoiler;
+}
+
+void LinkObject::setSpoiler(bool isSpoiler)
+{
+    d->isSpoiler = isSpoiler;
 }
 
 bool LinkObject::isPromoted() const
