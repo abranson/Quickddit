@@ -7,6 +7,9 @@ Icon=harbour-quickddit
 Exec=harbour-quickddit %U
 MimeType=x-url-handler/reddit.com;x-url-handler/www.reddit.com;x-url-handler/old.reddit.com
 
+[X-HarbourBackup]
+BackupPathList=.config/org.quickddit/Quickddit/
+
 [X-Sailjail]
 Permissions=Internet;Audio;Pictures;WebView
 OrganizationName=org.quickddit
