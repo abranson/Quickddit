@@ -1435,6 +1435,11 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>SignInPage</name>
     <message>
+        <location filename="../qml/SignInPage.qml" line="57"/>
+        <source>Reddit no longer allows anonymous access. Please sign in to continue.</source>
+        <translation>Reddit no longer allows anonymous access. Please sign in to continue.</translation>
+    </message>
+    <message>
         <location filename="../qml/SignInPage.qml" line="20"/>
         <location filename="../qml/SignInPage.qml" line="32"/>
         <source>Sign in to Reddit</source>

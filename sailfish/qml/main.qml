@@ -17,18 +17,23 @@
     along with this program.  If not, see [http://www.gnu.org/licenses/].
 */
 
-import QtQuick 2.0
+import QtQuick 2.6
 import Sailfish.Silica 1.0
 import io.thp.pyotherside 1.5
 import harbour.quickddit.Core 1.0
 
 ApplicationWindow {
     id: appWindow
+
     initialPage: Component { SubredditsPage { } }
     cover: Qt.resolvedUrl("cover/CoverPage.qml");
 
     Component.onCompleted: {
-        pageStack.animatorPush("MainPage.qml", {}, PageStackAction.Immediate);
+        if (settings.hasRefreshToken()) {
+            pageStack.animatorPush("MainPage.qml", {}, PageStackAction.Immediate);
+        } else {
+            pageStack.animatorPush("SignInPage.qml", { showSignInReason: true }, PageStackAction.Immediate);
+        }
     }
 
     Python {

@@ -116,7 +116,7 @@ public:
 
     QByteArray refreshToken() const;
     void setRefreshToken(const QByteArray &token);
-    bool hasRefreshToken() const;
+    Q_INVOKABLE bool hasRefreshToken() const;
 
     OrientationProfile orientationProfile() const;
     void setOrientationProfile(const OrientationProfile profile);

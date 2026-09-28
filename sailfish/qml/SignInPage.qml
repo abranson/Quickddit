@@ -8,7 +8,7 @@
   SPDX-License-Identifier: GPL-3.0-or-later
 */
 
-import QtQuick 2.0
+import QtQuick 2.6
 import Sailfish.Silica 1.0
 import Sailfish.WebView 1.0 as SailfishWebView
 import Sailfish.WebView.Popups 1.0 as SailfishWebViewPopups
@@ -18,6 +18,7 @@ AbstractDialog {
 
     // For CoverPage
     property string title: qsTr("Sign in to Reddit")
+    property bool showSignInReason
 
     backNavigation: webView.atXBeginning && webView.atXEnd && !webView.moving && !webView.pulleyMenuActive
     canAccept: false
@@ -38,15 +39,37 @@ AbstractDialog {
     }
 
 
+    Rectangle {
+        id: signInReason
+
+        anchors.top: dialogHeader.bottom
+        width: parent.width
+        height: visible ? signInReasonLabel.height + 2 * Theme.paddingMedium : 0
+        visible: signInDialog.showSignInReason
+        color: Theme.highlightBackgroundColor
+
+        Label {
+            id: signInReasonLabel
+
+            x: Theme.horizontalPageMargin
+            y: Theme.paddingMedium
+            width: parent.width - 2 * x
+            text: qsTr("Reddit no longer allows anonymous access. Please sign in to continue.")
+            color: Theme.primaryColor
+            font.pixelSize: Theme.fontSizeSmall
+            wrapMode: Text.Wrap
+        }
+    }
+
     SilicaFlickable  {
         id: webViewFlickable
 
         property alias webView: webView
 
-        y: dialogHeader.height + Theme.paddingSmall
+        y: signInReason.y + signInReason.height + Theme.paddingSmall
         x: parent.x +Theme.paddingSmall
         width: parent.width  - 2*Theme.paddingSmall
-        height: parent.height - dialogHeader.height - 2*Theme.paddingSmall
+        height: parent.height - y - Theme.paddingSmall
 
 
         SailfishWebView.WebView {
