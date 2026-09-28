@@ -33,6 +33,7 @@ class Settings : public QObject
     Q_ENUMS(OrientationProfile)
     Q_ENUMS(ThumbnailScale)
     Q_ENUMS(VideoSize)
+    Q_ENUMS(VideoDownloader)
     Q_PROPERTY(bool commentsTapToHide READ commentsTapToHide WRITE setCommentsTapToHide NOTIFY commentsTapToHideChanged)
     Q_PROPERTY(FontSize fontSize READ fontSize WRITE setFontSize NOTIFY fontSizeChanged)
     Q_PROPERTY(QString redditUsername READ redditUsername NOTIFY usernameChanged)
@@ -49,6 +50,8 @@ class Settings : public QObject
     Q_PROPERTY(int commentSort READ commentSort WRITE setCommentSort NOTIFY commentSortChanged)
     Q_PROPERTY(bool useTor READ useTor WRITE setUseTor NOTIFY useTorChanged)
     Q_PROPERTY(VideoSize preferredVideoSize READ preferredVideoSize WRITE setPreferredVideoSize NOTIFY preferredVideoSizeChanged)
+    Q_PROPERTY(VideoDownloader videoDownloader READ videoDownloader WRITE setVideoDownloader NOTIFY videoDownloaderChanged)
+    Q_PROPERTY(QString videoDownloaderExecutable READ videoDownloaderExecutable WRITE setVideoDownloaderExecutable NOTIFY videoDownloaderExecutableChanged)
     Q_PROPERTY(QStringList accountNames READ accountNames NOTIFY accountsChanged)
 
 public:
@@ -78,6 +81,13 @@ public:
     enum VideoSize {
         VS360,
         VS720
+    };
+
+    enum VideoDownloader {
+        BundledYoutubeDl,
+        InstalledYoutubeDl,
+        InstalledYtDlp,
+        DownloaderExecutable
     };
 
     struct AccountData {
@@ -150,6 +160,12 @@ public:
     VideoSize preferredVideoSize() const;
     void setPreferredVideoSize(const VideoSize preferredVideoSize);
 
+    VideoDownloader videoDownloader() const;
+    void setVideoDownloader(VideoDownloader videoDownloader);
+
+    QString videoDownloaderExecutable() const;
+    void setVideoDownloaderExecutable(const QString &executable);
+
     QList<SubredditPrefs> subredditPrefs() const;
     void setSubredditPrefs(const QList<SubredditPrefs> subredditPrefs);
 
@@ -178,6 +194,8 @@ signals:
     void commentSortChanged();
     void useTorChanged();
     void preferredVideoSizeChanged();
+    void videoDownloaderChanged();
+    void videoDownloaderExecutableChanged();
     void subredditPrefsChanged();
     void accountsChanged();
 
@@ -203,6 +221,8 @@ private:
     int m_commentSort;
     bool m_useTor;
     VideoSize m_preferredVideoSize;
+    VideoDownloader m_videoDownloader;
+    QString m_videoDownloaderExecutable;
     QList<SubredditPrefs> m_subredditPrefs;
     QList<AccountData> m_accounts;
 };

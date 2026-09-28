@@ -1174,6 +1174,46 @@ To add accounts, simply log in. Quickddit will remember succesful logins and lis
 <context>
     <name>SettingsPage</name>
     <message>
+        <location filename="../qml/SettingsPage.qml" line="169"/>
+        <source>Video downloader</source>
+        <translation>Video downloader</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="170"/>
+        <source>Install the selected downloader separately to update it independently of Quickddit.</source>
+        <translation>Install the selected downloader separately to update it independently of Quickddit.</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="173"/>
+        <source>Bundled youtube-dl</source>
+        <translation>Bundled youtube-dl</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="174"/>
+        <source>Installed youtube-dl</source>
+        <translation>Installed youtube-dl</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="175"/>
+        <source>Installed yt-dlp</source>
+        <translation>Installed yt-dlp</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="176"/>
+        <source>Executable</source>
+        <translation>Executable</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="184"/>
+        <source>Executable path</source>
+        <translation>Executable path</translation>
+    </message>
+    <message>
+        <location filename="../qml/SettingsPage.qml" line="196"/>
+        <source>Use a youtube-dl-compatible executable. You must make it and its dependencies accessible inside Quickddit's sandbox.</source>
+        <translation>Use a youtube-dl-compatible executable. You must make it and its dependencies accessible inside Quickddit's sandbox.</translation>
+    </message>
+    <message>
         <location filename="../qml/SettingsPage.qml" line="16"/>
         <source>Settings</source>
         <translation>Settings</translation>

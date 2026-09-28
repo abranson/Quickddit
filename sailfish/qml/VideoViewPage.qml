@@ -289,17 +289,17 @@ AbstractPage {
                 // http-360p: 360p (vimeo)
                 // http-720p, 720p (vimeo)
                 if (~["mp4-mobile","18","http-360p","22","http-720p"].indexOf(format["format_id"])) {
-                    if (format["format_id"] !== undefined && format["vcodec"].indexOf("av01") > -1) continue; // poorly supported
+                    if ((format["vcodec"] || "").indexOf("av01") > -1) continue; // poorly supported
                     var idHeight = ~["22","http-720p"].indexOf(format["format_id"]) ? 720 : 360
                     checkUrl(format["url"], idHeight, false, "format selected by id " + format["format_id"])
                 } else if (~["mp4","webm"].indexOf(format["ext"]) && ~[360,480,720].indexOf(format["height"])) {
-                    if (format["format_id"] !== undefined && format["vcodec"].indexOf("av01") > -1) continue; // poorly supported
+                    if ((format["vcodec"] || "").indexOf("av01") > -1) continue; // poorly supported
                     checkUrl(format["url"], format["height"], false, "format selected by ext " + format["ext"] + " and height " + format["height"])
                 }
             }
 
             // Special Reddit video hack
-            if (python.info["extractor"].indexOf("Reddit") === 0) {
+            if ((python.info["extractor"] || "").indexOf("Reddit") === 0) {
                 for (i = 0; i < formats.length; i++) {
                     var format = formats[i]
                     // selection by height if format_id is like hls-*, for v.redd.it (with 'deref' HLS stream by string replace, so only works for v.redd.it)

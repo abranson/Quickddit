@@ -55,6 +55,25 @@ Download
 - SailfishOS (Jolla): [OpenRepos](https://openrepos.net/content/abranson/quickddit)
 - Ubuntu-touch: [OpenStore](https://open-store.io/app/quickddit) or build with `clickable -c ubuntu-touch/clickable.json`
 
+Video downloaders on Sailfish OS
+-------------------------------
+
+In Settings, under Media, select **Video downloader** to use the bundled
+youtube-dl (the default), a separately installed youtube-dl or yt-dlp Python
+package, or a **youtube-dl-compatible executable**.
+The installed module options use the system Python packages `youtube_dl` and `yt_dlp`;
+install a version compatible with the device's Python runtime. A standalone
+command-line executable can be used by selecting **Executable** and entering its
+path, for example `/usr/bin/yt-dlp`. Enter just the executable path, without
+arguments or shell quoting. Quickddit requests JSON metadata without downloading
+the video, ignores downloader configuration files, and times out after two minutes.
+Sailjail permissions are unchanged: the user is responsible for making the executable,
+its interpreter (if needed), and other dependencies accessible inside Quickddit's
+sandbox. Quickddit does not install downloaders or alter sandbox configuration.
+
+Downloaders can be updated independently of Quickddit. If the selected downloader is missing or incompatible,
+Quickddit reports an error instead of silently using its bundled copy.
+
 Translations
 ------------
 

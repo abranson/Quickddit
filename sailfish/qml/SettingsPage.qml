@@ -166,6 +166,40 @@ AbstractPage {
             SectionHeader { text: qsTr("Media") }
 
             ComboBox {
+                label: qsTr("Video downloader")
+                description: qsTr("Install the selected downloader separately to update it independently of Quickddit.")
+                currentIndex: settings.videoDownloader
+                menu: ContextMenu {
+                    MenuItem { text: qsTr("Bundled youtube-dl") }
+                    MenuItem { text: qsTr("Installed youtube-dl") }
+                    MenuItem { text: qsTr("Installed yt-dlp") }
+                    MenuItem { text: qsTr("Executable") }
+                }
+                onCurrentIndexChanged: settings.videoDownloader = currentIndex
+            }
+
+            TextField {
+                width: parent.width
+                visible: settings.videoDownloader === Settings.DownloaderExecutable
+                label: qsTr("Executable path")
+                placeholderText: "/usr/bin/yt-dlp"
+                text: settings.videoDownloaderExecutable
+                inputMethodHints: Qt.ImhNoAutoUppercase | Qt.ImhNoPredictiveText
+                onTextChanged: settings.videoDownloaderExecutable = text
+                EnterKey.onClicked: focus = false
+            }
+
+            Label {
+                x: Theme.horizontalPageMargin
+                width: parent.width - 2 * x
+                visible: settings.videoDownloader === Settings.DownloaderExecutable
+                text: qsTr("Use a youtube-dl-compatible executable. You must make it and its dependencies accessible inside Quickddit's sandbox.")
+                wrapMode: Text.WordWrap
+                font.pixelSize: Theme.fontSizeExtraSmall
+                color: Theme.secondaryColor
+            }
+
+            ComboBox {
                 label: qsTr("Preferred Video Size")
                 currentIndex:  {
                     switch (settings.preferredVideoSize) {

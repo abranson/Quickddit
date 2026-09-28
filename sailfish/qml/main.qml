@@ -41,7 +41,6 @@ ApplicationWindow {
 
         Component.onCompleted: {
             addImportPath(Qt.resolvedUrl('.'));
-            addImportPath(Qt.resolvedUrl('..'));
 
             setHandler('log', function(msg) {
                 console.log('python: ' + msg)
@@ -57,8 +56,8 @@ ApplicationWindow {
 
         function requestVideoUrlFor(url) {
             console.log("video url requested " + url)
-            call('ytdl_wrapper.retrieveVideoInfo', [url.toString()], function(result) {
-                if (result === undefined) {
+            call('ytdl_wrapper.retrieveVideoInfo', [url.toString(), settings.videoDownloader, settings.videoDownloaderExecutable], function(result) {
+                if (!result) {
                     return;
                 }
 

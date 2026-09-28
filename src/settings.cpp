@@ -66,6 +66,8 @@ Settings::Settings(QObject *parent) :
     m_commentSort = m_settings->value("commentSort", 0).toInt();
     m_useTor = m_settings->value("useTor", false).toBool();
     m_preferredVideoSize = static_cast<VideoSize>(m_settings->value("preferredVideoSize", Settings::VS360).toInt());
+    m_videoDownloader = static_cast<VideoDownloader>(m_settings->value("videoDownloader", Settings::BundledYoutubeDl).toInt());
+    m_videoDownloaderExecutable = m_settings->value("videoDownloaderExecutable").toString();
     m_filteredSubreddits = m_settings->value("filteredSubreddits").toStringList();
 
     int size;
@@ -367,6 +369,34 @@ void Settings::setPreferredVideoSize(const Settings::VideoSize preferredVideoSiz
         m_preferredVideoSize = preferredVideoSize;
         m_settings->setValue("preferredVideoSize", m_preferredVideoSize);
         emit preferredVideoSizeChanged();
+    }
+}
+
+Settings::VideoDownloader Settings::videoDownloader() const
+{
+    return m_videoDownloader;
+}
+
+void Settings::setVideoDownloader(VideoDownloader videoDownloader)
+{
+    if (m_videoDownloader != videoDownloader) {
+        m_videoDownloader = videoDownloader;
+        m_settings->setValue("videoDownloader", m_videoDownloader);
+        emit videoDownloaderChanged();
+    }
+}
+
+QString Settings::videoDownloaderExecutable() const
+{
+    return m_videoDownloaderExecutable;
+}
+
+void Settings::setVideoDownloaderExecutable(const QString &executable)
+{
+    if (m_videoDownloaderExecutable != executable) {
+        m_videoDownloaderExecutable = executable;
+        m_settings->setValue("videoDownloaderExecutable", m_videoDownloaderExecutable);
+        emit videoDownloaderExecutableChanged();
     }
 }
 
