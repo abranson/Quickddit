@@ -4,6 +4,14 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Mon Sep 28 2026 Andrew Branson <github@andrewbranson.net> 1.15.0-1
+- new: Blur spoiler and NSFW thumbnails (thanks jplexer)
+- new: Back up account details and settings with MyBackup
+- new: Support installed youtube-dl and yt-dlp modules or a compatible executable
+- chg: Update translations
+- fix: Include Portuguese and Ukrainian translations in builds
+- fix: Stop logging account refresh tokens
+
 * Wed May 27 2026 Andrew Branson <github@andrewbranson.net> 1.14.11-1
 - fix: Use Sailjail D-Bus activation for the launcher
 - fix: Let video playback extend into screen cutouts

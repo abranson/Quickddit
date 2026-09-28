@@ -79,7 +79,7 @@
         <location filename="../qml/AboutPage.qml" line="116"/>
         <source>_translator</source>
         <extracomment>_translator is used as a placeholder for the name of the translator (you :)</extracomment>
-        <translation>David &quot;zarel&quot; Costa</translation>
+        <translation>David &quot;zarel&quot; Costa, Luca Rastelli</translation>
     </message>
     <message>
         <location filename="../qml/AboutPage.qml" line="116"/>

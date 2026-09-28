@@ -61,6 +61,94 @@
 <context>
     <name>AboutPage</name>
     <message>
+        <location filename="../qml/AboutPage.qml" line="137"/>
+        <source>Brazilian Portuguese</source>
+        <translation>Brazilian Portuguese</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="138"/>
+        <location filename="../qml/AboutPage.qml" line="142"/>
+        <source>Italian</source>
+        <translation>Italian</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="139"/>
+        <location filename="../qml/AboutPage.qml" line="146"/>
+        <source>Russian</source>
+        <translation>Russian</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="139"/>
+        <source>Ukrainian</source>
+        <translation>Ukrainian</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="140"/>
+        <location filename="../qml/AboutPage.qml" line="143"/>
+        <source>French</source>
+        <translation>French</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="141"/>
+        <source>Hungarian</source>
+        <translation>Hungarian</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="144"/>
+        <source>Polish</source>
+        <translation>Polish</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="145"/>
+        <source>Dutch</source>
+        <translation>Dutch</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="147"/>
+        <source>German</source>
+        <translation>German</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="148"/>
+        <source>Estonian</source>
+        <translation>Estonian</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="149"/>
+        <source>Portuguese</source>
+        <translation>Portuguese</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="150"/>
+        <source>Swedish</source>
+        <translation>Swedish</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="151"/>
+        <source>Greek</source>
+        <translation>Greek</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="126"/>
+        <source>Contributors</source>
+        <translation>Contributors</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="127"/>
+        <source>Thanks to %1 for spoiler detection and thumbnail blurring.</source>
+        <translation>Thanks to %1 for spoiler detection and thumbnail blurring.</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="136"/>
+        <source>Thanks to our translators</source>
+        <translation>Thanks to our translators</translation>
+    </message>
+    <message>
+        <location filename="../qml/AboutPage.qml" line="152"/>
+        <source>And everyone who contributed translations anonymously.</source>
+        <translation>And everyone who contributed translations anonymously.</translation>
+    </message>
+    <message>
         <location filename="../qml/AboutPage.qml" line="25"/>
         <source>About</source>
         <translation>About</translation>

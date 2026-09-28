@@ -12,9 +12,11 @@ TRANSLATIONS = translations/harbour-quickddit.ts \
     translations/harbour-quickddit-nl.ts \
     translations/harbour-quickddit-nl_BE.ts \
     translations/harbour-quickddit-pl.ts \
+    translations/harbour-quickddit-pt.ts \
     translations/harbour-quickddit-pt_BR.ts \
     translations/harbour-quickddit-ru.ts \
     translations/harbour-quickddit-sv.ts \
+    translations/harbour-quickddit-uk.ts \
 
 updateqm.input = TRANSLATIONS
 updateqm.output = translations/${QMAKE_FILE_BASE}.qm

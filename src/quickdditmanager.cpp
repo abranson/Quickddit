@@ -351,8 +351,6 @@ void QuickdditManager::onUseTorChanged()
 // update the account info
 void QuickdditManager::saveOrAddAccountInfo()
 {
-    qDebug() << "saveRefreshToken" << m_settings->refreshToken() << m_settings->redditUsername();
-
     Settings::AccountData data;
     data.accountName = m_settings->redditUsername();
     data.refreshToken = m_settings->refreshToken();

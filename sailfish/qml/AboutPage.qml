@@ -17,7 +17,7 @@
     along with this program.  If not, see [http://www.gnu.org/licenses/].
 */
 
-import QtQuick 2.0
+import QtQuick 2.6
 import Sailfish.Silica 1.0
 
 AbstractPage {
@@ -115,6 +115,41 @@ AbstractPage {
                           //: _translator is used as a placeholder for the name of the translator (you :)
                           (qsTr("_translator") !== "_translator" ? qsTr("Current language translation by %1").arg(qsTr("_translator")) + "\n\n" : "") +
                           qsTr("Licensed under GNU GPLv3+")
+                }
+
+                Text {
+                    anchors { left: parent.left; right: parent.right; margins: constant.paddingMedium }
+                    horizontalAlignment: Text.AlignHCenter
+                    font.pixelSize: constant.fontSizeSmall
+                    color: constant.colorLight
+                    wrapMode: Text.Wrap
+                    text: qsTr("Contributors") + "\n\n" +
+                          qsTr("Thanks to %1 for spoiler detection and thumbnail blurring.").arg("jplexer")
+                }
+
+                Text {
+                    anchors { left: parent.left; right: parent.right; margins: constant.paddingMedium }
+                    horizontalAlignment: Text.AlignHCenter
+                    font.pixelSize: constant.fontSizeSmall
+                    color: constant.colorLight
+                    wrapMode: Text.Wrap
+                    text: qsTr("Thanks to our translators") + "\n\n" +
+                          "caio2k (" + qsTr("Brazilian Portuguese") + ")\n" +
+                          "David \"zarel\" Costa (" + qsTr("Italian") + ")\n" +
+                          "Denis Lednev (" + qsTr("Russian") + ", " + qsTr("Ukrainian") + ")\n" +
+                          "Jean-Luc (" + qsTr("French") + ")\n" +
+                          "leoka - Szabó G. (" + qsTr("Hungarian") + ")\n" +
+                          "Luca Rastelli (" + qsTr("Italian") + ")\n" +
+                          "lutinotmalin (" + qsTr("French") + ")\n" +
+                          "Maciej Wereski (" + qsTr("Polish") + ")\n" +
+                          "Nathan Follens (" + qsTr("Dutch") + ")\n" +
+                          "Pavel Bibichenko (" + qsTr("Russian") + ")\n" +
+                          "PawelSpoon (" + qsTr("German") + ")\n" +
+                          "Priit Jõerüüt (" + qsTr("Estonian") + ")\n" +
+                          "ssantos (" + qsTr("Portuguese") + ")\n" +
+                          "Åke Engelbrektson (" + qsTr("Swedish") + ")\n" +
+                          "Δημήτριος Γλενταδάκης (" + qsTr("Greek") + ")\n\n" +
+                          qsTr("And everyone who contributed translations anonymously.")
                 }
 
                 Row {
