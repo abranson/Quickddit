@@ -4,6 +4,10 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Mon Sep 28 2026 Andrew Branson <github@andrewbranson.net> 1.15.1-1
+- fix: Open sign-in on startup when no login is saved
+- new: Explain that Reddit no longer allows anonymous access
+
 * Mon Sep 28 2026 Andrew Branson <github@andrewbranson.net> 1.15.0-1
 - new: Blur spoiler and NSFW thumbnails (thanks jplexer)
 - new: Back up account details and settings with MyBackup
