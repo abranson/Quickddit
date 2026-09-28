@@ -79,6 +79,8 @@ OTHER_FILES += \
     qml/SendLinkPage.qml \
     qml/PostThumbnail.qml \
     qml/PostInfoText.qml \
+    qml/PostBubbles.qml \
+    qml/LinkCard.qml \
     qml/PostButtonRow.qml \
     qml/QuickdditPageHeader.qml \
     qml/FancyContextMenu.qml \

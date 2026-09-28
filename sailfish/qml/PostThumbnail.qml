@@ -32,6 +32,9 @@ Item {
     property alias sourceSize: image.sourceSize
     property alias status: image.status
 
+    // the MouseArea below takes the press, so forward long presses to the list item
+    signal longPressed()
+
     // blurred until the user taps once to reveal it
     property bool revealed: false
     readonly property bool blurred: !revealed && image.status === Image.Ready
@@ -78,6 +81,7 @@ Item {
             else
                 globalUtils.openLink(link.url);
         }
+        onPressAndHold: thumbnail.longPressed()
     }
 
     onStatusChanged: {

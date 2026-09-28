@@ -56,6 +56,7 @@ Settings::Settings(QObject *parent) :
     m_lastSeenMessage = m_settings->value("lastSeenMessage").toString();
     m_pollUnread = m_settings->value("pollUnread", true).toBool();
     m_thumbnailScale = static_cast<ThumbnailScale>(m_settings->value("thumbnailScale", Settings::ScaleAuto).toInt());
+    m_postLayout = static_cast<PostLayout>(m_settings->value("postLayout", Settings::CompactLayout).toInt());
     m_showLinkType = m_settings->value("showLinkType", false).toBool();
     m_blurSpoilers = m_settings->value("blurSpoilers", true).toBool();
     m_blurNSFW = m_settings->value("blurNSFW", true).toBool();
@@ -229,6 +230,20 @@ void Settings::setThumbnailScale(const Settings::ThumbnailScale scale)
         m_thumbnailScale = scale;
         m_settings->setValue("thumbnailScale", m_thumbnailScale);
         emit thumbnailScaleChanged();
+    }
+}
+
+Settings::PostLayout Settings::postLayout() const
+{
+    return m_postLayout;
+}
+
+void Settings::setPostLayout(const Settings::PostLayout postLayout)
+{
+    if (m_postLayout != postLayout) {
+        m_postLayout = postLayout;
+        m_settings->setValue("postLayout", m_postLayout);
+        emit postLayoutChanged();
     }
 }
 

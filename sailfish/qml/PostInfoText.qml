@@ -28,63 +28,9 @@ Column {
 
     spacing: constant.paddingMedium
 
-    Flow {
+    PostBubbles {
         anchors { left: parent.left; right: parent.right }
-        spacing: constant.paddingMedium
-
-        Bubble {
-            visible: link.flairText !== ""
-            text: link.flairText
-        }
-
-        Bubble {
-            color: "green"
-            visible: !!link.isSticky
-            text: qsTr("Sticky")
-            font.bold: true
-        }
-
-        Bubble {
-            color: "red"
-            visible: !!link.isNSFW
-            text: qsTr("NSFW")
-            font.bold: true
-        }
-
-        Bubble {
-            color: "grey"
-            visible: !!link.isSpoiler
-            text: qsTr("Spoiler")
-            font.bold: true
-        }
-
-        Bubble {
-            color: "green"
-            visible: !!link.isPromoted
-            text: qsTr("Promoted")
-            font.bold: true
-        }
-
-        Bubble {
-            visible: !!link.gilded && link.gilded > 0
-            text: link.gilded > 1 ? qsTr("Gilded") + " " + link.gilded + "x" : qsTr("Gilded")
-            color: "gold"
-            font.bold: true
-        }
-
-        Bubble {
-            color: constant.colorDisabled
-            visible: !!link.isArchived
-            text: qsTr("Archived")
-            font.bold: true
-        }
-
-        Bubble {
-            color: Qt.lighter("purple", 1.5)
-            visible: !!link.isLocked
-            text: qsTr("Locked")
-            font.bold: true
-        }
+        link: parent.link
     }
 
     Text {

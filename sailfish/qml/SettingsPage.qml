@@ -84,6 +84,19 @@ AbstractPage {
             }
 
             ComboBox {
+                label: qsTr("Post Layout")
+                description: qsTr("Card shows a large preview image for each post")
+                currentIndex: settings.postLayout === Settings.CardLayout ? 1 : 0
+                menu: ContextMenu {
+                    MenuItem { text: qsTr("Compact") }
+                    MenuItem { text: qsTr("Card") }
+                }
+                onCurrentIndexChanged: {
+                    settings.postLayout = currentIndex === 1 ? Settings.CardLayout : Settings.CompactLayout;
+                }
+            }
+
+            ComboBox {
                 label: qsTr("Thumbnail Size")
                 currentIndex:  {
                     switch (settings.thumbnailScale) {

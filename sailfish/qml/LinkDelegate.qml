@@ -18,36 +18,80 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
+import harbour.quickddit.Core 1.0
 
 ListItem {
     id: linkDelegate
 
     property bool showSubreddit: true
 
-    contentHeight: Math.max(thumbnail.height, postInfoText.height) + (2 * constant.paddingMedium)
+    readonly property bool cardLayout: settings.postLayout === Settings.CardLayout
+    // inset of the card background from the list item edges
+    readonly property int cardInset: constant.paddingSmall
 
-    PostInfoText {
-        id: postInfoText
+    contentHeight: layoutLoader.height + 2 * (cardLayout ? cardInset + constant.paddingMedium : constant.paddingMedium)
 
-        link: model
-        compact: true
-        highlighted: linkDelegate.highlighted
-        showSubreddit: linkDelegate.showSubreddit
-
-        anchors {
-            left: parent.left; right: thumbnail.left; margins: constant.paddingMedium
-            verticalCenter: parent.verticalCenter
-        }
-
-        height: childrenRect.height
-        spacing: constant.paddingSmall
+    Rectangle {
+        visible: cardLayout
+        anchors { fill: parent; margins: cardInset }
+        radius: constant.paddingSmall
+        color: Theme.rgba(constant.colorMid, 0.1)
     }
 
-    PostThumbnail {
-        id: thumbnail
+    Loader {
+        id: layoutLoader
+        anchors {
+            left: parent.left; right: parent.right
+            leftMargin: cardLayout ? cardInset + constant.paddingMedium : constant.paddingMedium
+            rightMargin: cardLayout ? cardInset + constant.paddingMedium : constant.paddingMedium
+            verticalCenter: parent.verticalCenter
+        }
+        sourceComponent: cardLayout ? cardComponent : compactComponent
+    }
 
-        link: model
-        anchors { right: parent.right; verticalCenter: parent.verticalCenter; rightMargin: constant.paddingMedium }
+    Component {
+        id: compactComponent
+
+        Item {
+            height: Math.max(thumbnail.height, postInfoText.height)
+
+            PostInfoText {
+                id: postInfoText
+
+                link: model
+                compact: true
+                highlighted: linkDelegate.highlighted
+                showSubreddit: linkDelegate.showSubreddit
+
+                anchors {
+                    left: parent.left; right: thumbnail.left; rightMargin: constant.paddingMedium
+                    verticalCenter: parent.verticalCenter
+                }
+
+                height: childrenRect.height
+                spacing: constant.paddingSmall
+            }
+
+            PostThumbnail {
+                id: thumbnail
+
+                link: model
+                anchors { right: parent.right; verticalCenter: parent.verticalCenter }
+                onLongPressed: linkDelegate.pressAndHold(null)
+            }
+        }
+    }
+
+    Component {
+        id: cardComponent
+
+        LinkCard {
+            link: model
+            highlighted: linkDelegate.highlighted
+            showSubreddit: linkDelegate.showSubreddit
+            bleed: constant.paddingMedium
+            onLongPressed: linkDelegate.pressAndHold(null)
+        }
     }
 
     Rectangle {
