@@ -165,7 +165,7 @@ AbstractPage {
                 });
             }
 
-            AltMarker { }
+            AltMarker { visible: index % 2 == 0 && !linkDelegate.cardLayout }
         }
 
         footer: LoadingFooter {

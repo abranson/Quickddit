@@ -32,6 +32,7 @@ class Settings : public QObject
     Q_ENUMS(FontSize)
     Q_ENUMS(OrientationProfile)
     Q_ENUMS(ThumbnailScale)
+    Q_ENUMS(PostLayout)
     Q_ENUMS(VideoSize)
     Q_ENUMS(VideoDownloader)
     Q_PROPERTY(bool commentsTapToHide READ commentsTapToHide WRITE setCommentsTapToHide NOTIFY commentsTapToHideChanged)
@@ -40,6 +41,7 @@ class Settings : public QObject
     Q_PROPERTY(OrientationProfile orientationProfile READ orientationProfile WRITE setOrientationProfile NOTIFY orientationProfileChanged)
     Q_PROPERTY(bool pollUnread READ pollUnread WRITE setPollUnread NOTIFY pollUnreadChanged)
     Q_PROPERTY(ThumbnailScale thumbnailScale READ thumbnailScale WRITE setThumbnailScale NOTIFY thumbnailScaleChanged)
+    Q_PROPERTY(PostLayout postLayout READ postLayout WRITE setPostLayout NOTIFY postLayoutChanged)
     Q_PROPERTY(bool showLinkType READ showLinkType WRITE setShowLinkType NOTIFY showLinkTypeChanged)
     Q_PROPERTY(bool blurSpoilers READ blurSpoilers WRITE setBlurSpoilers NOTIFY blurSpoilersChanged)
     Q_PROPERTY(bool blurNSFW READ blurNSFW WRITE setBlurNSFW NOTIFY blurNSFWChanged)
@@ -76,6 +78,11 @@ public:
         Scale175,
         Scale200,
         Scale250
+    };
+
+    enum PostLayout {
+        CompactLayout,
+        CardLayout
     };
 
     enum VideoSize {
@@ -129,6 +136,9 @@ public:
 
     ThumbnailScale thumbnailScale() const;
     void setThumbnailScale(const ThumbnailScale scale);
+
+    PostLayout postLayout() const;
+    void setPostLayout(const PostLayout postLayout);
 
     bool showLinkType() const;
     void setShowLinkType(const bool showLinkType);
@@ -184,6 +194,7 @@ signals:
     void orientationProfileChanged();
     void pollUnreadChanged();
     void thumbnailScaleChanged();
+    void postLayoutChanged();
     void showLinkTypeChanged();
     void blurSpoilersChanged();
     void blurNSFWChanged();
@@ -210,6 +221,7 @@ private:
     QString m_lastSeenMessage;
     bool m_pollUnread;
     ThumbnailScale m_thumbnailScale;
+    PostLayout m_postLayout;
     bool m_showLinkType;
     bool m_blurSpoilers;
     bool m_blurNSFW;
