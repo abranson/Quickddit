@@ -4,6 +4,9 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Tue Sep 29 2026 Andrew Branson <github@andrewbranson.net> 1.15.3-1
+- fix: Keep settings selectors usable after scrolling down the page
+
 * Tue Sep 29 2026 Andrew Branson <github@andrewbranson.net> 1.15.2-1
 - new: Optional card post layout with large previews (thanks jplexer)
 - fix: Open the post menu when long-pressing thumbnails and card previews
