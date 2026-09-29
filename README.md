@@ -9,13 +9,17 @@ The logic part is developed in C++ while the UI is developed in QML.
 
 The Harmattan port has been left at 1.0.0 feature level, and will not receive new features.
 
+Reddit no longer allows anonymous access, so you need to sign in to use Quickddit.
+On Sailfish OS, Quickddit opens the sign-in page at startup when no login is saved,
+with a banner explaining why.
+
 Features
 ========
 | Feature                | SailfishOS | Ubuntu Touch | Nokia Harmattan (N9) |
 |------------------------|:----------:|:------------:|:--------------------:|
-| Browse anonymously     | Y | Y | Y |
 | Sign into Reddit       | Y | Y | Y |
 | Multi account          | Y | Y | Y |
+| Compact and card post layouts | Y | | |
 | Submit/edit new links and self-posts | Y | Y | Y |
 | add, reply, edit, delete comments | Y | Y | Y |
 | Browse your messages   | Y | Y | Y |
@@ -27,6 +31,7 @@ Features
 | integrated reddit gallery viewer | Y | Y | |
 | integrated Imgur album viewer | Y | Y | Y |
 | integrated video player | Y | Y | |
+| Use independently updated youtube-dl or yt-dlp | Y | | |
 | integrated webviewer   | Y | Y | |
 | search posts           | Y | | Y |
 | search subreddits      | Y | Y | Y |
@@ -55,16 +60,28 @@ Download
 - SailfishOS (Jolla): [OpenRepos](https://openrepos.net/content/abranson/quickddit)
 - Ubuntu-touch: [OpenStore](https://open-store.io/app/quickddit) or build with `clickable -c ubuntu-touch/clickable.json`
 
+Post layouts on Sailfish OS
+--------------------------
+
+In **Settings → Post Layout**, choose **Compact** (the default) or **Card**.
+Card layout shows larger previews, with a thumbnail or text fallback when a preview
+is unavailable. Tap a preview to open it, or tap a blurred preview to reveal it.
+Long-press a post, thumbnail or card preview to open the post menu.
+
 Video downloaders on Sailfish OS
 -------------------------------
 
-In Settings, under Media, select **Video downloader** to use the bundled
-youtube-dl (the default), a separately installed youtube-dl or yt-dlp Python
-package, or a **youtube-dl-compatible executable**.
-The installed module options use the system Python packages `youtube_dl` and `yt_dlp`;
-install a version compatible with the device's Python runtime. A standalone
-command-line executable can be used by selecting **Executable** and entering its
-path, for example `/usr/bin/yt-dlp`. Enter just the executable path, without
+In **Settings → Media → Video downloader**, choose how Quickddit finds video streams:
+
+| Option | Uses |
+| --- | --- |
+| **Bundled youtube-dl** (default) | The copy included with Quickddit; no separate installation needed. |
+| **Installed youtube-dl** | A separately installed `youtube_dl` Python package. |
+| **Installed yt-dlp** | A separately installed `yt_dlp` Python package. |
+| **Executable** | A youtube-dl-compatible command-line program at the path you enter, such as `/usr/bin/yt-dlp`. |
+
+The installed Python packages must be compatible with the device's Python runtime.
+For **Executable**, enter just the executable path, without
 arguments or shell quoting. Quickddit requests JSON metadata without downloading
 the video, ignores downloader configuration files, and times out after two minutes.
 Sailjail permissions are unchanged: the user is responsible for making the executable,
