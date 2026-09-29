@@ -6,7 +6,7 @@
 
 Name:       harbour-quickddit
 Summary:    Reddit client for mobile phones
-Version:    1.15.1
+Version:    1.15.2
 Release:    1
 Group:      Qt/Qt
 License:    GPLv3+

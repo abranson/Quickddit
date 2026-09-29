@@ -4,6 +4,10 @@
 
 # * date Author's Name <author's email> version-release
 # - Summary of changes
+* Tue Sep 29 2026 Andrew Branson <github@andrewbranson.net> 1.15.2-1
+- new: Optional card post layout with large previews (thanks jplexer)
+- fix: Open the post menu when long-pressing thumbnails and card previews
+
 * Mon Sep 28 2026 Andrew Branson <github@andrewbranson.net> 1.15.1-1
 - fix: Open sign-in on startup when no login is saved
 - new: Explain that Reddit no longer allows anonymous access
