@@ -15,9 +15,10 @@ AbstractPage {
     id: settingsPage
     title: qsTr("Settings")
 
-    SilicaListView {
+    SilicaFlickable {
         id: settingFlickable
         anchors.fill: parent
+        contentHeight: settingColumn.height
 
         PullDownMenu {
             MenuItem {
@@ -26,7 +27,7 @@ AbstractPage {
             }
         }
 
-        header: Column {
+        Column {
             id: settingColumn
             width: parent.width
 
@@ -258,5 +259,7 @@ AbstractPage {
                 }
             }
         }
+
+        VerticalScrollDecorator {}
     }
 }
